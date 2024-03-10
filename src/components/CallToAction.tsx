@@ -30,8 +30,9 @@ function CallToAction() {
           </h2>
           <div className="w-full">
             <img src="/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-72px] sm:mt-4 max-sm:mt-4" />
-            <div className="flex flex-col gap-2 text-indigo-950">
+            <div className="text-indigo-950">
               <p className="my-2 style-p">You can already try the demo right now! Make sure to set your wallet network to Preview.</p>
+              <div className="h-2" />
               <p className="my-2 style-p">
                 <b>NOTE:</b> The current look and feel of the app does not represent the actual public Testnet and Mainnet release later.
               </p>
