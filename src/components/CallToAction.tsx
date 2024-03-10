@@ -8,16 +8,16 @@ function CallToAction() {
       <div id="call-to-action" className="relative -top-20" />
 
       {/* Call to Action */}
-      <div className="mockup-browser bg-base-content bg-opacity-90 m-2 shadow-xl">
-        <div className="flex">
-          <div className="input border border-neutral border-opacity-25 !bg-opacity-0 w-full h-fit m-4 truncate link-neutral">
+      <div className="mockup-browser bg-base-content bg-opacity-90 m-2 shadow-xl hover:animate-wiggle">
+        <div className="flex bg-violet-950 shadow-xl">
+          <div className="input border border-neutral border-opacity-25 bg-base-content bg-opacity-90 w-full h-fit m-4 truncate link-neutral">
             <a href="https://preview.genwealth.app" className="link link-hover leading-7">
               https://preview.genwealth.app
             </a>
           </div>
-          <div className="btn btn-circle btn-xs btn-disabled mr-2 my-auto" />
-          <div className="btn btn-circle btn-xs btn-disabled mr-2 my-auto" />
-          <div className="btn btn-circle btn-xs btn-disabled mr-4 my-auto" />
+          <div className="btn btn-circle btn-xs btn-disabled !btn-success mr-2 my-auto" />
+          <div className="btn btn-circle btn-xs btn-disabled !btn-warning mr-2 my-auto" />
+          <div className="btn btn-circle btn-xs btn-disabled !btn-error mr-4 my-auto" />
         </div>
         <div className="flex flex-col gap-2 p-4 border-t border-neutral border-opacity-20">
           <h2 className="text-purple-950 m-2 style-h2 xl:tracking-tighter xl:font-thin lg:text-5xl lg:tracking-tight lg:font-light md:tracking-normal md:font-medium sm:text-4xl sm:tracking-wide sm:font-bold max-sm:text-3xl max-sm:tracking-wider max-sm:font-black">
