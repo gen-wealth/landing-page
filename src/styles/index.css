@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  cursor: pointer;
+}
+
+@layer components {
+  .button {
+    @apply btn;
+    @apply shadow-xl;
+    @apply border-t-0;
+    @apply border-l-0;
+    @apply normal-case;
+  }
+  .button-primary {
+    @apply button;
+    @apply bg-violet-950;
+    @apply border-indigo-950;
+    @apply hover:bg-violet-900;
+    @apply hover:border-indigo-900;
+  }
+}
+
+@layer utilities {
+  .style-link {
+    @apply text-purple-950;
+    @apply font-bold;
+  }
+}
+
+.style-hero {
+  -webkit-mask-image: linear-gradient(to bottom, #111 75%, #0000);
+  mask-image: linear-gradient(to bottom, #111 75%, #0000);
+}
+
+h1.style1,
+h2.style1,
+h3.style1,
+p.style1 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.175rem;
+  width: 100%;
+  font-size: 4.25em;
+  line-height: 1.125;
+  font-weight: 500;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.412) 0%, #ffffff 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.style-h1 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.175rem;
+  width: 100%;
+  font-size: 3em;
+  line-height: 1.125;
+  font-weight: 500;
+  background-image: linear-gradient(45deg, rgba(95, 71, 107, 0.412) 0%, #5f476b 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-genwealth {
+  background-image: linear-gradient(45deg, rgba(95, 71, 107, 0.412) 0%, #5f476b 67%);
+  border-width: 0;
+  /* box-shadow: 4px 3px 2px 1px rgba(95, 71, 107, 0.412); */
+}
+.bg-light-gradient {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.412) 0%, #ffffff 67%);
+}
+h1.style1 mark,
+h2.style1 mark,
+h3.style1 mark,
+p.style1 mark {
+  color: #00a3ff;
+  background-color: transparent;
+}
+h1.style1 a,
+h2.style1 a,
+h3.style1 a,
+p.style1 a {
+  text-decoration: none;
+}
+h1.style1 a:hover,
+h2.style1 a:hover,
+h3.style1 a:hover,
+p.style1 a:hover {
+  text-decoration: underline;
+}
+h1.style1 span.p:nth-child(n + 2),
+h2.style1 span.p:nth-child(n + 2),
+h3.style1 span.p:nth-child(n + 2),
+p.style1 span.p:nth-child(n + 2) {
+  margin-top: 1rem;
+  -webkit-text-fill-color: currentcolor;
+}
+h1.style1 span.p,
+h2.style1 span.p,
+h3.style1 span.p,
+p.style1 span.p {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.412) 0%, #ffffff 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+h1.style3,
+h2.style3,
+h3.style3,
+p.style3 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.05rem;
+  width: 100%;
+  font-size: 2em;
+  line-height: 1.125;
+  font-weight: 500;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.412) 0%, #ffffff 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1.style3 mark,
+h2.style3 mark,
+h3.style3 mark,
+p.style3 mark {
+  color: #00a3ff;
+  background-color: transparent;
+}
+h1.style3 a,
+h2.style3 a,
+h3.style3 a,
+p.style3 a {
+  text-decoration: none;
+}
+h1.style3 a:hover,
+h2.style3 a:hover,
+h3.style3 a:hover,
+p.style3 a:hover {
+  text-decoration: underline;
+}
+h1.style3 span.p:nth-child(n + 2),
+h2.style3 span.p:nth-child(n + 2),
+h3.style3 span.p:nth-child(n + 2),
+p.style3 span.p:nth-child(n + 2) {
+  margin-top: 1rem;
+  -webkit-text-fill-color: currentcolor;
+}
+h1.style3 span.p,
+h2.style3 span.p,
+h3.style3 span.p,
+p.style3 span.p {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.412) 0%, #ffffff 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+h1.style4,
+h2.style4,
+h3.style4,
+p.style4 {
+  color: rgba(255, 255, 255, 0.478);
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  line-height: 1.875;
+  font-weight: 400;
+}
+.style-p {
+  line-height: 1.875;
+}
+h1.style4 a,
+h2.style4 a,
+h3.style4 a,
+p.style4 a {
+  text-decoration: underline;
+}
+h1.style4 a:hover,
+h2.style4 a:hover,
+h3.style4 a:hover,
+p.style4 a:hover {
+  text-decoration: none;
+}
+h1.style4 span.p:nth-child(n + 2),
+h2.style4 span.p:nth-child(n + 2),
+h3.style4 span.p:nth-child(n + 2),
+p.style4 span.p:nth-child(n + 2) {
+  margin-top: 1rem;
+}
+h1.style2,
+h2.style2,
+h3.style2,
+p.style2 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.175rem;
+  width: 100%;
+  font-size: 3em;
+  line-height: 1.125;
+  font-weight: 500;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.412) 0%, #ffffff 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.style-h2 {
+  letter-spacing: -0.175rem;
+  font-size: 3em;
+  line-height: 1.125;
+  -webkit-background-clip: text;
+}
+h1.style2 mark,
+h2.style2 mark,
+h3.style2 mark,
+p.style2 mark {
+  color: #00a3ff;
+  background-color: transparent;
+}
+h1.style2 a,
+h2.style2 a,
+h3.style2 a,
+p.style2 a {
+  text-decoration: none;
+}
+h1.style2 a:hover,
+h2.style2 a:hover,
+h3.style2 a:hover,
+p.style2 a:hover {
+  text-decoration: underline;
+}
+h1.style2 span.p:nth-child(n + 2),
+h2.style2 span.p:nth-child(n + 2),
+h3.style2 span.p:nth-child(n + 2),
+p.style2 span.p:nth-child(n + 2) {
+  margin-top: 1rem;
+  -webkit-text-fill-color: currentcolor;
+}
+h1.style2 span.p,
+h2.style2 span.p,
+h3.style2 span.p,
+p.style2 span.p {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.412) 0%, #ffffff 67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+}
+h1.style5,
+h2.style5,
+h3.style5,
+p.style5 {
+  color: #5f476b;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75em;
+  line-height: 1.875;
+  font-weight: 400;
+}
+h1.style5 a,
+h2.style5 a,
+h3.style5 a,
+p.style5 a {
+  text-decoration: underline;
+}
+h1.style5 a:hover,
+h2.style5 a:hover,
+h3.style5 a:hover,
+p.style5 a:hover {
+  text-decoration: none;
+}
+h1.style5 span.p:nth-child(n + 2),
+h2.style5 span.p:nth-child(n + 2),
+h3.style5 span.p:nth-child(n + 2),
+p.style5 span.p:nth-child(n + 2) {
+  margin-top: 1rem;
+}
