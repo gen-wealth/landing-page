@@ -68,18 +68,17 @@ function TeamMembers() {
             <a
               // href={`#${member.id}`}
               onClick={(e) => scrollToElement(e, `#${member.id}`)}
+              className="min-[807px]:w-min"
             >
               {member.name}
             </a>
           </h2>
-          {/* <div className="h-full" /> */}
-          <p className="text-indigo-950 style-p">{member.headline}</p>
-          {/* <div className="h-full" /> */}
+          <div className="h-full text-indigo-950 style-p">{member.headline}</div>
           <div className="card-actions">
             {member.links.map((link) => (
-              <div className="flex items-center">
+              <div key={`${link.xlinkHref}.${member.id}`} className="flex items-center">
                 <p className="text-indigo-950 style-p">{link.linkName}&nbsp;</p>
-                <a key={`${link.xlinkHref}.${member.id}`} href={link.linkURL}>
+                <a href={link.linkURL}>
                   <Svg xlinkHref={link.xlinkHref} w={23} h={23} className="fill-violet-950" />
                 </a>
               </div>
