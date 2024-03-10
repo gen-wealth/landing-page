@@ -19,8 +19,8 @@ function CallToAction() {
           <div className="btn btn-circle btn-xs btn-disabled !btn-warning mr-2 my-auto" />
           <div className="btn btn-circle btn-xs btn-disabled !btn-error mr-4 my-auto" />
         </div>
-        <div className="flex flex-col gap-2 p-4 border-t border-neutral border-opacity-20">
-          <h2 className="text-purple-950 m-2 style-h2 xl:tracking-tighter xl:font-thin lg:text-5xl lg:tracking-tight lg:font-light md:tracking-normal md:font-medium sm:text-4xl sm:tracking-wide sm:font-bold max-sm:text-3xl max-sm:tracking-wider max-sm:font-black">
+        <div className="flex flex-col gap-2 p-8 border-t border-neutral border-opacity-20">
+          <h2 className="text-purple-950 my-2 style-h2 xl:tracking-tighter xl:font-thin lg:text-5xl lg:tracking-tight lg:font-light md:tracking-normal md:font-medium sm:text-4xl sm:tracking-wide sm:font-bold max-sm:text-3xl max-sm:tracking-wider max-sm:font-black">
             <a
               // href="#call-to-action"
               onClick={(e) => scrollToElement(e, "#call-to-action")}
@@ -30,14 +30,14 @@ function CallToAction() {
           </h2>
           <div className="w-full">
             <img src="/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-72px] sm:mt-4 max-sm:mt-4" />
-            <div className="text-indigo-950">
-              <p className="m-2 style-p">You can already try the demo right now! Make sure to set your wallet network to Preview.</p>
-              <p className="m-2 style-p">
+            <div className="flex flex-col gap-2 text-indigo-950">
+              <p className="my-2 style-p">You can already try the demo right now! Make sure to set your wallet network to Preview.</p>
+              <p className="my-2 style-p">
                 <b>NOTE:</b> The current look and feel of the app does not represent the actual public Testnet and Mainnet release later.
               </p>
             </div>
           </div>
-          <div className="flex gap-2 m-2">
+          <div className="flex gap-2">
             <a href="https://preview.genwealth.app" className="button-primary">
               Launch app
             </a>
