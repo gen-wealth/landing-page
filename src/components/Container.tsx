@@ -37,9 +37,9 @@ function Container(props: {
             </a>
           </h2>
           {props.paragraphs.map((paragraph, i) => (
-            <p key={`${props.title}.${i}`} className="text-indigo-950 my-2 style-p">
+            <div key={`${props.title}.${i}`} className="text-indigo-950 my-2 style-p">
               {paragraph}
-            </p>
+            </div>
           ))}
           <div className="card-actions justify-center">
             {props.links.map((link) => (

@@ -1,5 +1,4 @@
 import { scrollToElement } from "../util";
-// import ContainerTxtImg from "./ContainerTxtImg";
 
 function CallToAction() {
   return (
@@ -50,34 +49,6 @@ function CallToAction() {
       </div>
     </div>
   );
-
-  // return (
-  // <ContainerTxtImg
-  //     id={"call-to-action"}
-  //     image={{
-  //     imageSource: "/svg/Prototype.svg",
-  //     alternateText: "Call to Action",
-  //     className: "p-4 max-w-96 max-h-96 !object-contain",
-  //     }}
-  //     title={"Try the Prototype"}
-  //     paragraphs={[
-  //     <>You can already try the demo right now! Make sure to set your wallet network to Preview.</>,
-  //     <>
-  //         <b>NOTE:</b> The current look and feel of the app does not represent the actual public Testnet and Mainnet release later.
-  //     </>,
-  //     ]}
-  //     links={[
-  //     {
-  //         linkName: "Launch app",
-  //         linkURL: "https://preview.genwealth.app",
-  //     },
-  //     {
-  //         linkName: "View docs",
-  //         linkURL: "https://docs.genwealth.app",
-  //     },
-  //     ]}
-  // />
-  // );
 }
 
 export default CallToAction;
