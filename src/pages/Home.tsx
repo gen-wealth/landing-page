@@ -26,11 +26,8 @@ function Home() {
           title={"Our Service"}
           paragraphs={[
             <>
-              A crypto wallet is secure by design, only you can spend your wallet. But what happens when the unexpected happens, like when you cease to exist.
-              No one can access your wallet, not even your closest ones.
-            </>,
-            <>
-              Lost assets in the crypto world is a big problem, we offer a secure and trustless solution for you to be able to leave assets for your loved ones.
+              Locked assets in the crypto world is a big problem, we offer a <b>secure</b> and <b>trustless</b> solution for you to be able to leave assets for
+              your loved ones.
             </>,
           ]}
           links={[]}
@@ -42,13 +39,13 @@ function Home() {
           title={"How it Works"}
           paragraphs={[
             <>
-              We are utilizing the inherent security from the design of the blockchain. We start from the&nbsp;
+              We are utilizing the inherent security from the design of the blockchain. We start from the{" "}
               <a href="https://cardano.org" className="link link-hover style-link">
                 Cardano
-              </a>
-              &nbsp;network, later we're going to expand to other blockchains as well. We wrote a set of smart contracts to validate the transactions in a
-              trustless manner, so you can be rest assured that you're always in full control of your assets. Only the people selected by you can access the
-              assets with the rules you defined.
+              </a>{" "}
+              network, later we're going to expand to other blockchains as well. We wrote a set of smart contracts to validate the transactions in a trustless
+              manner, so you can be rest assured that you're always in full control of your assets. Only the people selected by you can access the assets with
+              the rules you defined.
             </>,
             <>
               The smart contract generates a unique vault for each user where you can <i>freeze</i> your assets and then it will <i>melt</i> when the time
@@ -59,7 +56,7 @@ function Home() {
               beneficiary, the vault owner is able to withdraw the assets from the vault at any time regardless of the deadline.
             </>,
             <>
-              For more details, read the smart contract documentations&nbsp;
+              For more details, read the smart contract documentations{" "}
               <a href="https://docs.genwealth.app" className="link link-hover style-link">
                 here
               </a>
