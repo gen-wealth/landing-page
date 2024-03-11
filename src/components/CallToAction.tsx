@@ -8,6 +8,7 @@ function CallToAction() {
 
       {/* Call to Action */}
       <div className="mockup-browser bg-base-content bg-opacity-90 m-2 shadow-xl hover:animate-wiggle">
+        {/* Toolbar */}
         <div className="flex bg-violet-950 shadow-xl">
           <div className="input border border-neutral border-opacity-25 bg-base-content bg-opacity-90 w-full h-fit m-4 truncate link-neutral">
             <a href="https://preview.genwealth.app" className="link link-hover leading-7">
@@ -18,7 +19,10 @@ function CallToAction() {
           <div className="btn btn-circle btn-xs btn-disabled !btn-warning mr-2 my-auto" />
           <div className="btn btn-circle btn-xs btn-disabled !btn-error mr-4 my-auto" />
         </div>
+
+        {/* Content */}
         <div className="flex flex-col gap-2 p-8 border-t border-neutral border-opacity-20">
+          {/* Title */}
           <h2 className="text-purple-950 my-2 style-h2 xl:tracking-tighter xl:font-thin lg:text-5xl lg:tracking-tight lg:font-light md:tracking-normal md:font-medium sm:text-4xl sm:tracking-wide sm:font-bold max-sm:text-3xl max-sm:tracking-wider max-sm:font-black">
             <a
               // href="#call-to-action"
@@ -27,6 +31,8 @@ function CallToAction() {
               Try the Prototype
             </a>
           </h2>
+
+          {/* Body */}
           <div className="w-full">
             <img src="/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-72px] sm:mt-4 max-sm:mt-4" />
             <div className="text-indigo-950">
@@ -37,6 +43,8 @@ function CallToAction() {
               </p>
             </div>
           </div>
+
+          {/* Actions */}
           <div className="flex gap-2">
             <a href="https://preview.genwealth.app" className="button-primary">
               Launch app

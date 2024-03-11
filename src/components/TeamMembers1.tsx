@@ -2,7 +2,7 @@ import { scrollToElement } from "../util";
 import Svg from "./Svg";
 
 // A grid of <Card/>s
-function TeamMembers() {
+function TeamMembers1() {
   type member = {
     id: string;
     name: string;
@@ -109,4 +109,4 @@ function TeamMembers() {
   );
 }
 
-export default TeamMembers;
+export default TeamMembers1;

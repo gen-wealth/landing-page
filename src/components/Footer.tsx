@@ -12,7 +12,7 @@ function Footer() {
             className="flex max-sm:flex-col gap-2 items-center mx-auto"
           >
             <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
-              <img alt="GenWealth" src="/GenWealth.ico" className="w-12 mask mask-squircle shadow-inner" />
+              <img alt="GenWealth" src="/GenWealth.ico" className="w-12 mask mask-squircle" />
             </div>
             <h5 className="max-sm:w-full font-bold text-center">GenWealth</h5>
           </a>

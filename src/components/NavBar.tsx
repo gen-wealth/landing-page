@@ -36,7 +36,7 @@ function NavBar() {
             className="flex gap-2 h-12"
           >
             <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
-              <img alt="GenWealth" src="/GenWealth.ico" className="mask mask-squircle shadow-inner" />
+              <img alt="GenWealth" src="/GenWealth.ico" className="mask mask-squircle" />
             </div>
             <span className="text-purple-950 xl:text-3xl lg:text-2xl md:text-xl max-sm:text-lg font-bold self-center max-md:hidden max-sm:flex">GenWealth</span>
           </a>

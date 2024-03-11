@@ -6,7 +6,8 @@ import ContainerTxtImg from "../components/ContainerTxtImg";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
-import TeamMembers from "../components/TeamMembers";
+// import TeamMembers1 from "../components/TeamMembers1";
+import TeamMembers2 from "../components/TeamMembers2";
 
 function Home() {
   return (
@@ -83,7 +84,8 @@ function Home() {
           ]}
           links={[]}
         />
-        <TeamMembers />
+        {/* <TeamMembers1 /> */}
+        <TeamMembers2 />
 
         {/* Testimonials */}
 
