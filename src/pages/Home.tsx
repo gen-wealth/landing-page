@@ -6,8 +6,7 @@ import ContainerTxtImg from "../components/ContainerTxtImg";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
-// import TeamMembers1 from "../components/TeamMembers1";
-import TeamMembers2 from "../components/TeamMembers2";
+import TeamMembers from "../components/TeamMembers";
 
 function Home() {
   return (
@@ -84,13 +83,12 @@ function Home() {
           ]}
           links={[]}
         />
-        {/* <TeamMembers1 /> */}
-        <TeamMembers2 />
+        <TeamMembers />
 
         {/* Testimonials */}
 
         {/* Partnerships & Sponsors */}
-        <div className="max-sm:bg-[url('/CardanoIcon.svg')] sm:bg-[url('/CardanoFull.svg')] bg-no-repeat bg-center max-sm:aspect-[1/2] sm:aspect-[3] mx-auto max-sm:w-1/2 sm:w-11/12" />
+        {/* <div className="max-sm:bg-[url('/CardanoIcon.svg')] sm:bg-[url('/CardanoFull.svg')] bg-no-repeat bg-center max-sm:aspect-[1/2] sm:aspect-[3] mx-auto max-sm:w-1/2 sm:w-11/12" /> */}
 
         <ContactUs />
         <CallToAction />

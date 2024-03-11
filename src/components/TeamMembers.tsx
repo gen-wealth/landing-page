@@ -1,8 +1,7 @@
 import { scrollToElement } from "../util";
 import Svg from "./Svg";
 
-// A grid of <Card/>s
-function TeamMembers2() {
+function TeamMembers() {
   type member = {
     name: string;
     title: string;
@@ -107,7 +106,7 @@ function TeamMembers2() {
     {
       name: "You",
       title: "",
-      bio: <>Let's join the Web3 revolution!</>,
+      bio: <p className="my-2 style-p">Let's join the Web3 revolution!</p>,
       image: "/svg/You.svg",
       chatPosition: "end",
       social: {
@@ -190,4 +189,4 @@ function TeamMembers2() {
   );
 }
 
-export default TeamMembers2;
+export default TeamMembers;
