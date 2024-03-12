@@ -24,15 +24,15 @@ function TeamMembers() {
       bio: (
         <>
           <p className="my-2 style-p">
-            Hello, I'm Rafael. I have more than 5 years of experience in Business Development, Marketing, and Product in Web2 startups.
+            Hello, I'm Rafael. I have more than 5 years of experience in business development, marketing and product in Web2 startups.
           </p>
           <div className="h-2" />
           <p className="my-2 style-p">
-            Experienced in managing teams, projects, and budgets. I'm also the founder of{" "}
+            Experienced in managing teams, projects, and budgets. I am also the founder of{" "}
             <a href="https://www.youtube.com/@decentralizednation" className="link">
               Decentralized Nation
             </a>
-            , a Youtube Channel. My previous experience includes working with{" "}
+            , a Cryptocurrency News Youtube Channel. My previous experience includes leading the marketing for the launch of{" "}
             <a href="https://www.willeasy.co.uk" className="link">
               Will Easy
             </a>
@@ -70,8 +70,8 @@ function TeamMembers() {
           </p>
           <div className="h-2" />
           <p className="my-2 style-p">
-            My role is to design and develop both the on-chain and off-chain part of the system. I also decide which tech we're using. Before GenWealth, I
-            developed the{" "}
+            I am responsible for the development of the DApp, both the on-chain and off-chain part of the system, as well as deciding the tech stack to use.
+            Before GenWealth, I developed the{" "}
             <a href="https://github.com/ariady-putra/morbid" className="link">
               morbid
             </a>{" "}
@@ -82,7 +82,7 @@ function TeamMembers() {
             >
               awesome-aiken
             </a>
-            , a simpler implementation of dead-man's switch contract.
+            , a simpler implementation of <i>dead-man's switch</i> contract.
           </p>
         </>
       ),
@@ -164,12 +164,12 @@ function TeamMembers() {
       <div className="mockup-browser bg-base-content bg-opacity-90 m-2 shadow-xl">
         {/* Toolbar */}
         <div className="flex bg-violet-950 shadow-xl">
-          <div className="w-full h-fit px-8 py-4 truncate font-bold text-[16px] leading-[30px]">
+          <div className="w-full h-fit px-8 py-4 truncate font-bold text-[1rem] leading-[30px]">
             <a
               // href="#team-members"
               onClick={(e) => scrollToElement(e, "#team-members")}
             >
-              Team Members
+              Meet the Team
             </a>
           </div>
           <div className="btn btn-circle btn-xs btn-disabled !btn-success mr-2 my-auto" />
