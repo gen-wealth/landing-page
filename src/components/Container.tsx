@@ -28,7 +28,7 @@ function Container(props: {
       {/* Card */}
       <div className="card sm:card-side bg-base-content bg-opacity-90 m-2 shadow-xl">
         <div className="card-body">
-          <h2 className="card-title text-purple-950 my-2 style-h2 xl:tracking-tighter xl:font-thin lg:text-5xl lg:tracking-tight lg:font-light md:tracking-normal md:font-medium sm:text-4xl sm:tracking-wide sm:font-bold max-sm:text-3xl max-sm:tracking-wider max-sm:font-black">
+          <h2 className="card-title text-purple-950 my-2 style-h2 xl:tracking-tighter lg:text-5xl max-lg:!font-bold lg:tracking-tight md:tracking-normal sm:text-4xl sm:tracking-wide max-sm:text-3xl max-sm:!font-black max-sm:tracking-wider">
             <a
               // href={`#${props.id}`}
               onClick={(e) => scrollToElement(e, `#${props.id}`)}

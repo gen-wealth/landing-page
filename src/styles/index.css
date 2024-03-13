@@ -208,6 +208,7 @@ p.style2 {
   letter-spacing: -0.175rem;
   font-size: 3em;
   line-height: 1.125;
+  font-weight: 500;
   -webkit-background-clip: text;
 }
 h1.style2 mark,
