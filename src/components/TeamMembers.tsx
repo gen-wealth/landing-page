@@ -3,6 +3,7 @@ import Svg from "./Svg";
 
 function TeamMembers() {
   type member = {
+    id: string;
     name: string;
     title: string;
     bio: JSX.Element;
@@ -19,6 +20,7 @@ function TeamMembers() {
 
   const members: member[] = [
     {
+      id: "rafael-cardoso",
       name: "Rafael Cardoso",
       title: "CEO",
       bio: (
@@ -57,6 +59,7 @@ function TeamMembers() {
       },
     },
     {
+      id: "ariady-putra",
       name: "Ariady Putra",
       title: "CTO",
       bio: (
@@ -104,6 +107,7 @@ function TeamMembers() {
     },
 
     {
+      id: "you",
       name: "You",
       title: "",
       bio: <p className="my-2 style-p">Let's join the Web3 revolution!</p>,
@@ -122,33 +126,41 @@ function TeamMembers() {
   ];
 
   const memberBubble = (member: member, index: number) => (
-    <div key={member.name} className={`chat text-purple-950 chat-${member.chatPosition} ${index < members.length - 1 ? "mb-4" : ""}`}>
-      <div className="chat-image avatar">
-        <div className="w-32 mask mask-hexagon bg-neutral bg-opacity-5">
-          <div className="h-[7.75rem] mask mask-hexagon m-0.5">
-            <img src={member.image} />
+    <div key={member.id}>
+      {/* Anchor Scroll Offset */}
+      <div id={member.id} className="relative -top-20" />
+
+      {/* Member Bubble */}
+      <div key={member.name} className={`chat text-purple-950 chat-${member.chatPosition} ${index < members.length - 1 ? "mb-4" : ""}`}>
+        <div className="chat-image avatar">
+          <div className="w-32 mask mask-hexagon bg-neutral bg-opacity-5">
+            <div className="h-[7.75rem] mask mask-hexagon m-0.5">
+              <img src={member.image} />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className={`flex flex-col w-full items-${member.chatPosition}`}>
-        <div className="chat-header">
-          <span className="ml-2 mr-1">{member.name}</span>
-          <span className="text-xs opacity-50 mr-2">{member.title}</span>
-        </div>
+        <div className={`flex flex-col w-full items-${member.chatPosition}`}>
+          <div className="chat-header">
+            <a className="ml-2 mr-1" onClick={(e) => scrollToElement(e, `#${member.id}`)}>
+              {member.name}
+            </a>
+            <span className="text-xs opacity-50 mr-2">{member.title}</span>
+          </div>
 
-        <div className={`chat-bubble ${member.chatPosition === "start" ? "bg-violet-950 text-neutral-content" : "bg-neutral-content text-indigo-950"}`}>
-          {member.bio}
-        </div>
+          <div className={`chat-bubble ${member.chatPosition === "start" ? "bg-violet-950 text-neutral-content" : "bg-neutral-content text-indigo-950"}`}>
+            {member.bio}
+          </div>
 
-        <div className="chat-footer text-indigo-950">
-          <div className="flex items-center">
-            <p className="style-p">{member.social.prefix}&nbsp;</p>
-            {member.social.links.map((link) => (
-              <a key={`${link.xlinkHref}.${member.name}`} href={link.linkURL} className="fill-violet-950 mr-2">
-                <Svg xlinkHref={link.xlinkHref} w={23} h={23} />
-              </a>
-            ))}
+          <div className="chat-footer text-indigo-950">
+            <div className="flex items-center">
+              <p className="style-p">{member.social.prefix}&nbsp;</p>
+              {member.social.links.map((link) => (
+                <a key={`${link.xlinkHref}.${member.name}`} href={link.linkURL} className="fill-violet-950 mr-2">
+                  <Svg xlinkHref={link.xlinkHref} w={23} h={23} />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -164,7 +176,7 @@ function TeamMembers() {
       <div className="mockup-browser bg-base-content bg-opacity-90 m-2 shadow-xl">
         {/* Toolbar */}
         <div className="flex bg-violet-950 shadow-xl">
-          <div className="w-full h-fit px-8 py-4 truncate font-bold text-[1rem] leading-[30px]">
+          <div className="w-full h-fit px-8 py-4 truncate font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base !leading-[30px]">
             <a
               // href="#team-members"
               onClick={(e) => scrollToElement(e, "#team-members")}
