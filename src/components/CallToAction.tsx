@@ -1,10 +1,10 @@
 import { scrollToElement } from "../util";
+import AnchorScrollOffset from "./AnchorScrollOffset";
 
 function CallToAction() {
   return (
     <div>
-      {/* Anchor Scroll Offset */}
-      <div id="call-to-action" className="relative -top-20" />
+      <AnchorScrollOffset id={"call-to-action"} />
 
       {/* Call to Action */}
       <div className="mockup-browser bg-base-content bg-opacity-90 m-2 shadow-xl hover:animate-wiggle">

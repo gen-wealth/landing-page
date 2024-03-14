@@ -1,30 +1,30 @@
 import { scrollToElement, scrollToTop } from "../util";
 
+type menu = {
+  linkName: string;
+  linkURL: string;
+};
+
+const menus: menu[] = [
+  {
+    linkName: "Our Service",
+    linkURL: "#our-service",
+  },
+  {
+    linkName: "How it Works",
+    linkURL: "#how-it-works",
+  },
+  {
+    linkName: "About Us",
+    linkURL: "#about-us",
+  },
+  {
+    linkName: "Contact Us",
+    linkURL: "#contact-us",
+  },
+];
+
 function NavBar() {
-  type menu = {
-    linkName: string;
-    linkURL: string;
-  };
-
-  const menus: menu[] = [
-    {
-      linkName: "Our Service",
-      linkURL: "#our-service",
-    },
-    {
-      linkName: "How it Works",
-      linkURL: "#how-it-works",
-    },
-    {
-      linkName: "About Us",
-      linkURL: "#about-us",
-    },
-    {
-      linkName: "Contact Us",
-      linkURL: "#contact-us",
-    },
-  ];
-
   return (
     <div className="fixed w-full max-w-screen-xl h-min mx-auto inset-0 z-50">
       <div className="flex justify-between navbar shadow-xl bg-base-content bg-opacity-100 rounded-box m-2 w-auto">

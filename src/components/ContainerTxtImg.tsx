@@ -1,4 +1,5 @@
 import { scrollToElement } from "../util";
+import AnchorScrollOffset from "./AnchorScrollOffset";
 
 /***************************************************
  *                                                 *
@@ -27,8 +28,8 @@ function ContainerTxtImg(props: {
 }) {
   return (
     <div>
-      {/* Anchor Scroll Offset */}
-      <div id={props.id} className="relative -top-20" />
+      <AnchorScrollOffset id={props.id} />
+
       {/* Card */}
       <div id={props.id} className="card sm:card-side bg-base-content bg-opacity-90 m-2 shadow-xl">
         {/* Content */}
