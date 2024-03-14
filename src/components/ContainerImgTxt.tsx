@@ -38,11 +38,11 @@ function ContainerImgTxt(props: {
         </figure>
 
         {/* Content */}
-        <div className="card-body">
+        <div className="card-body overflow-auto">
           <h2 className="card-title text-purple-950 my-2 style-h2 xl:tracking-tighter lg:text-5xl max-lg:!font-bold lg:tracking-tight md:tracking-normal sm:text-4xl sm:tracking-wide max-sm:text-3xl max-sm:!font-black max-sm:tracking-wider">
             <a
               // href={`#${props.id}`}
-              onClick={(e) => scrollToElement(e, `#${props.id}`)}
+              onClick={(e) => scrollToElement(e, props.id)}
             >
               {props.title}
             </a>
