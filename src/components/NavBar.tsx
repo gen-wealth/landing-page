@@ -2,25 +2,25 @@ import { scrollToElement, scrollToTop } from "../util";
 
 type menu = {
   linkName: string;
-  linkURL: string;
+  linkId: string;
 };
 
 const menus: menu[] = [
   {
     linkName: "Our Service",
-    linkURL: "#our-service",
+    linkId: "our-service",
   },
   {
-    linkName: "How it Works",
-    linkURL: "#how-it-works",
+    linkName: "Roadmap",
+    linkId: "roadmap",
   },
   {
     linkName: "About Us",
-    linkURL: "#about-us",
+    linkId: "about-us",
   },
   {
     linkName: "Contact Us",
-    linkURL: "#contact-us",
+    linkId: "contact-us",
   },
 ];
 
@@ -49,7 +49,7 @@ function NavBar() {
               <a
                 key={menu.linkName}
                 // href={menu.linkURL}
-                onClick={(e) => scrollToElement(e, menu.linkURL)}
+                onClick={(e) => scrollToElement(e, menu.linkId)}
                 className="link link-hover join-item style-link"
               >
                 {menu.linkName}

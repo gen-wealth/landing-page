@@ -142,7 +142,7 @@ function memberBubble(member: member, index: number) {
 
         <div className={`flex flex-col w-full items-${member.chatPosition}`}>
           <div className="chat-header">
-            <a className="ml-2 mr-1" onClick={(e) => scrollToElement(e, `#${member.id}`)}>
+            <a className="ml-2 mr-1" onClick={(e) => scrollToElement(e, member.id)}>
               {member.name}
             </a>
             <span className="text-xs opacity-50 mr-2">{member.title}</span>
@@ -180,7 +180,7 @@ function TeamMembers() {
           <div className="w-full h-fit px-8 py-4 truncate font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base !leading-[30px]">
             <a
               // href="#team-members"
-              onClick={(e) => scrollToElement(e, "#team-members")}
+              onClick={(e) => scrollToElement(e, "team-members")}
             >
               Meet the Team
             </a>

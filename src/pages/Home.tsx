@@ -7,9 +7,9 @@ import HomeContents from "../components/home/HomeContents";
 function Home() {
   // Scroll element into view from pathname as anchor on window load
   useEffect(() => {
-    const selector = location.pathname.slice(1);
-    if (selector) {
-      const element = document.querySelector("#" + selector);
+    const id = location.pathname.slice(1);
+    if (id) {
+      const element = document.getElementById(id);
       if (element) {
         const scrollElementIntoView = () =>
           element.scrollIntoView({

@@ -7,7 +7,7 @@ function HowItWorks() {
   const [videoIndex, setVideoIndex] = useState(0);
   const slideToVideo = (e: MouseEvent, index: number) => {
     e.preventDefault();
-    document.querySelector(`#slide-${index}`)?.scrollIntoView({
+    document.getElementById(`slide-${index}`)?.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
     });

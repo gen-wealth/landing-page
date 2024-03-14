@@ -8,9 +8,9 @@ export function scrollToTop(e: MouseEvent) {
   });
 }
 
-export function scrollToElement(e: MouseEvent, elementName: string) {
+export function scrollToElement(e: MouseEvent, elementId: string) {
   e.preventDefault();
-  document.querySelector(elementName)?.scrollIntoView({
+  document.getElementById(elementId)?.scrollIntoView({
     behavior: "smooth",
   });
 }

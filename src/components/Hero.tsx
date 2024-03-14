@@ -10,7 +10,7 @@ function Hero() {
           <p className="mb-5 style3">The Crypto Inheritance Protocol</p>
           <a
             // href="#our-service"
-            onClick={(e) => scrollToElement(e, "#our-service")}
+            onClick={(e) => scrollToElement(e, "our-service")}
             className="button-primary"
           >
             Learn more

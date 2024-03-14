@@ -26,7 +26,7 @@ function CallToAction() {
           <h2 className="text-purple-950 my-2 style-h2 xl:tracking-tighter lg:text-5xl max-lg:!font-bold lg:tracking-tight md:tracking-normal sm:text-4xl sm:tracking-wide max-sm:text-3xl max-sm:!font-black max-sm:tracking-wider">
             <a
               // href="#call-to-action"
-              onClick={(e) => scrollToElement(e, "#call-to-action")}
+              onClick={(e) => scrollToElement(e, "call-to-action")}
             >
               Try the Prototype
             </a>
