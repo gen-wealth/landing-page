@@ -4,13 +4,14 @@ import TeamMembers from "../TeamMembers";
 import AboutUs from "./AboutUs";
 import HowItWorks from "./HowItWorks";
 import OurService from "./OurService";
+import Roadmap from "./Roadmap";
 
 function HomeContents() {
   return (
     <>
       <OurService />
       <HowItWorks />
-      {/* TODO: Roadmap */}
+      <Roadmap />
       <AboutUs />
       <TeamMembers />
       {/* Testimonials */}
