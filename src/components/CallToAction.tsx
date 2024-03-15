@@ -45,11 +45,11 @@ function CallToAction() {
           </div>
 
           {/* Actions */}
-          <div className="flex gap-2">
-            <a href="https://preview.genwealth.app" className="button-primary">
+          <div className="join">
+            <a href="https://preview.genwealth.app" className="button-primary join-item">
               Launch app
             </a>
-            <a href="https://docs.genwealth.app" className="button-primary">
+            <a href="https://docs.genwealth.app" className="button-secondary join-item">
               View docs
             </a>
           </div>
