@@ -11,7 +11,7 @@ function Hero() {
           <a
             // href="#our-service"
             onClick={(e) => scrollToElement(e, "our-service")}
-            className="button-primary"
+            className="button-secondary"
           >
             Learn more
           </a>

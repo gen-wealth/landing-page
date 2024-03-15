@@ -36,10 +36,28 @@ a {
   }
   .button-primary {
     @apply button;
+
     @apply bg-violet-950;
     @apply border-indigo-950;
+
+    /* hover: */
     @apply hover:bg-violet-900;
     @apply hover:border-indigo-900;
+  }
+  .button-secondary {
+    @apply button;
+
+    @apply bg-white;
+    @apply bg-opacity-[0.412];
+    @apply text-violet-950;
+    @apply border-indigo-950;
+    @apply border-[1px];
+
+    /* hover: */
+    @apply hover:bg-white;
+    @apply hover:bg-opacity-[calc(2/3)];
+    @apply hover:border-indigo-900;
+    @apply hover:text-violet-900;
   }
 }
 
