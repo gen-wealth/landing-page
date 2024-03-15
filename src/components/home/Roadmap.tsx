@@ -10,8 +10,8 @@ type roadmap = {
 };
 
 const roadmapStatus = {
-  ["Completed"]: "✓",
-  ["In progress"]: "★",
+  ["Completed"]: "✔", // "✓",
+  ["In progress"]: "⚙", // "★",
   ["Planned"]: "",
 };
 
@@ -115,6 +115,7 @@ function Roadmap() {
               >
                 <div className="text-start text-indigo-950 place-self-start mb-10">
                   <AnchorScrollOffset id={"roadmap-" + i} />
+                  <AnchorScrollOffset id={"roadmap-" + i + "-portrait"} className="-top-20 -left-12" />
                   <time className="font-mono italic">{roadmap.time}</time>
                   <div className="text-lg text-purple-950 font-black">
                     <a
@@ -124,7 +125,7 @@ function Roadmap() {
                         const roadmap = roadmapRef.current;
                         if (roadmap) {
                           const isPortrait = roadmap.clientWidth < roadmap.clientHeight;
-                          document.getElementById("roadmap-" + i)?.scrollIntoView({
+                          document.getElementById(`roadmap-${i}${isPortrait ? "-portrait" : ""}`)?.scrollIntoView({
                             behavior: "smooth",
                             block: isPortrait ? "start" : "nearest",
                             inline:
