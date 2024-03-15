@@ -30,7 +30,7 @@ const members: member[] = [
         </p>
         <div className="h-2" />
         <p className="my-2 style-p">
-          Experienced in managing teams, projects, and budgets. I am also the founder of{" "}
+          Experienced in managing teams, projects and budgets. I am also the founder of{" "}
           <a href="https://www.youtube.com/@decentralizednation" className="link">
             Decentralized Nation
           </a>
