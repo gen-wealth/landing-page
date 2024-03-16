@@ -1,126 +1,125 @@
 {
-    "genWealth": "GenWealth",
-    "tagLine": "The Crypto Inheritance Protocol",
-  
-    "lang.en": "Inggris",
-    "lang.es": "Spanyol",
-    "lang.id": "Indonesia",
-    "lang.ja": "Jepang",
-    "lang.ko": "Korea",
-    "lang.ms": "Melayu",
-    "lang.nl": "Belanda",
-    "lang.pt": "Portugis",
-    "lang.zh": "Mandarin",
-  
-    "navBar.menu1": "Layanan Kami",
-    "navBar.menu2": "Peta Perjalanan",
-    "navBar.menu3": "Tentang Kami",
-    "navBar.menu4": "Kontak Kami",
-  
-    "navBar.action1": "Buka aplikasi",
-  
-    "hero.action1": "Pelajari lebih lanjut",
-  
-    "ourService.title": "Layanan Kami",
-    "ourService.p1": "Aset beku di dunia crypto karena terkunci di wallet selamanya adalah sebuah permasalahan besar. Kami menawarkan solusi yang {secure} dan {trustless} sehingga memungkinkan Anda mewariskan aset untuk orang yang Anda cintai.",
-  
-    "howItWorks.title": "Cara Kerja",
-    "howItWorks.p1": "DApp kami memungkinkan Anda untuk membuat {vaults}. Vault adalah sebuah alamat smart-contract, layaknya sebuah wallet di mana Anda memiliki manajemen mandiri dan kontrol penuh atas isinya. Selain itu, Anda dapat menentukan aturan tentang bagaimana Anda ingin asetnya didistribusikan. Ketika Anda membuat vault, Anda akan mendapatkan sebuah alamat yang unik, Anda juga akan mendapatkan sebuah {vaultKey}, dan Anda menentukan {deadline}. Deadline ini dapat diundur dari waktu ke waktu, kami menyebutnya {proofOfLife}. Sebagai pemilik vault, Anda dapat menarik aset dari vault kapanpun, tidak tergantung deadline. Anda dapat membagikan akses vault dengan me-minting token vault-key dan mengirimkannya ke wallet Anda yang lain.",
-    "howItWorks.p2": "Di dalam vault, Anda dapat membuat subdivisi yang disebut {pockets} tempat Anda mengalokasikan aset. Selanjutnya Anda dapat me-mint {pocketKeys} untuk dikirim ke ahli-waris. Token pocket-key inilah yang memungkinkan seseorang untuk mengklaim jatah aset mereka dari pocket yang ditentukan hanya setelah deadline vault berlalu.",
-    "howItWorks.p3": "Dengan DApp ini, Anda dapat mencegah aset crypto Anda hilang selamanya, terkunci di wallet jika Anda kehilangan seedphrase, atau jika terjadi hal yang tak terduga dan Anda belum memiliki perencanaan untuk meninggalkan aset crypto Anda. Sekarang Anda dapat menyimpan aset crypto lebih aman karena tidak perlu lagi mempercayakan seedphrase Anda ke pihak ketiga.",
-    "howItWorks.p4": "GenWealth adalah protokol pewarisan pertama di {cardano}, kami berencana untuk memperluas layanan kami ke jaringan blockchain lainnya di masa depan. Untuk informasi lebih lanjut terkait cara kerja smart-contract kami, Anda dapat membaca dokumentasi teknisnya {here}.",
-  
-    "roadmap.title": "Peta Perjalanan",
-  
-    "roadmap1.time": "2023 Q3",
-    "roadmap1.title": "On-Chain Proof-of-Concept",
-  
-    "roadmap2.time": "2023 Q4",
-    "roadmap2.title": "Off-Chain untuk Testing Internal",
-  
-    "roadmap3.time": "2024 Q1",
-    "roadmap3.title": "UI/UX-Design untuk Testnet Publik",
-  
-    "roadmap4.time": "2024 Q2",
-    "roadmap4.title": "Pengembangan Frontend dan Backend",
-  
-    "roadmap5.time": "2024 Q3",
-    "roadmap5.title": "Testnet Publik dan Bug-Bounty",
-  
-    "roadmap6.time": "2024 Q4",
-    "roadmap6.title": "Audit dan Peningkatan Produk",
-  
-    "roadmap7.time": "2025",
-    "roadmap7.title": "Rilis Cardano-Mainnet",
-  
-    "roadmap8.time": "2026",
-    "roadmap8.title": "Eksplorasi Blockchain Lain (TBD)",
-  
-    "roadmap9.time": "2030an",
-    "roadmap9.title": "Melayani 4-5 Blockchain (TBD)",
-  
-    "aboutUs.title": "Tentang Kami",
-    "aboutUs.p1": "Kami adalah tim dengan kemampuan yang saling melengkapi, kami sangat tertarik dengan Teknologi Web3 dan potensinya. Kami ingin membangun platform yang dapat memandirikan orang secara finansial, memberikan opsi, keamanan serta kontrol atas aset yang mereka miliki.",
-  
-    "teamMembers.title": "Bertemu dengan Tim",
-    "teamMembers.you": "Kamu",
-    "teamMembers.you.p1": "Ayo bergabung di revolusi Web3!",
-    "teamMembers.talkToUs": "Hubungi kami",
-  
-    "teamMembers.rafaelCardoso": "Rafael Cardoso",
-    "teamMembers.rafaelCardoso.p1": "Halo, saya Rafael. Saya memiliki lebih dari 5 tahun pengalaman di bidang pengembangan bisnis, marketing dan produk di beberapa startup Web2.",
-    "teamMembers.rafaelCardoso.p2": "Berpengalaman mengelola tim, proyek dan anggaran. Saya juga merintis {decentralizedNation}, sebuah kanal YouTube tentang berita Cryptocurrency. Pengalaman saya sebelumnya mencakup memimpin marketing untuk peluncuran {willEasy}, sebuah platform pembuatan wasiat online di Inggris.",
-  
-    "teamMembers.ariadyPutra": "Ariady Putra",
-    "teamMembers.ariadyPutra.p1": "Hai, saya Ariady. Saya memiliki lebih dari 10 tahun pengalaman bekerja penuh waktu sebagai seorang software-developer. Pada tahun 2022, saya memperoleh {cardanoDeveloperProfessionalBadge}.",
-    "teamMembers.ariadyPutra.p2": "Saya bertanggung-jawab dalam pengembangan DApp ini, baik on-chain dan off-chain serta menentukan tech-stack yang digunakan. Sebelum GenWealth saya pernah mengembangkan {morbid}, sebuah smart-contract {deadMansSwitch} dengan implementasi yang lebih sederhana, yang masuk di daftar {awesomeAiken}.",
-  
-    "contactUs.title": "Kontak Kami",
-    "contactUs.p1": "Anda dapat menghubungi kami melalui email {email}",
-    "contactUs.action1": "Kirim email",
-  
-    "callToAction.title": "Coba Prototype",
-    "callToAction.p1": "Anda sudah dapat mencoba demo aplikasi sekarang! Pastikan jaringan wallet di-set ke Preview.",
-    "callToAction.p2": "{note} Tampilan aplikasi sedang dalam pengembangan, tidak mencerminkan tampilan saat rilis Testnet publik dan Mainnet nanti.",
-    "callToAction.action1": "Buka aplikasi",
-    "callToAction.action2": "Lihat dokumentasi",
-  
-    "secure": "secure",
-    "trustless": "trustless",
-  
-    "vault": "vault",
-    "vaults": "vaults",
-    "vaultKey": "vault key",
-    "vaultKeys": "vault keys",
-  
-    "pocket": "pocket",
-    "pockets": "pockets",
-    "pocketKey": "pocket key",
-    "pocketKeys": "pocket keys",
-  
-    "deadline": "deadline",
-    "proofOfLife": "Proof of Life",
-  
-    "cardano": "Cardano",
-    "cardanoDeveloperProfessionalBadge": "Cardano Developer Professional Badge",
-  
-    "decentralizedNation": "Decentralized Nation",
-    "willEasy": "Will Easy",
-  
-    "deadMansSwitch": "dead-man's switch",
-    "awesomeAiken": "awesome-aiken",
-    "morbid": "morbid",
-  
-    "here": "di sini",
-    "note": "catatan",
-  
-    "completed": "Selesai",
-    "inProgress": "Dalam proses",
-    "planned": "Direncanakan",
-  
-    "ceo": "CEO",
-    "cto": "CTO",
-  
-    "copyright": "Hak Cipta © 2024 - Dilindungi undang-undang"
-  }
-  
+  "genWealth": "GenWealth",
+  "tagLine": "The Crypto Inheritance Protocol",
+
+  "lang.en": "Inggris",
+  "lang.es": "Spanyol",
+  "lang.id": "Indonesia",
+  "lang.ja": "Jepang",
+  "lang.ko": "Korea",
+  "lang.ms": "Melayu",
+  "lang.nl": "Belanda",
+  "lang.pt": "Portugis",
+  "lang.zh": "Mandarin",
+
+  "navBar.menu1": "Layanan Kami",
+  "navBar.menu2": "Peta Perjalanan",
+  "navBar.menu3": "Tentang Kami",
+  "navBar.menu4": "Kontak Kami",
+
+  "navBar.action1": "Buka aplikasi",
+
+  "hero.action1": "Pelajari lebih lanjut",
+
+  "ourService.title": "Layanan Kami",
+  "ourService.p1": "Aset beku di dunia crypto karena terkunci di wallet selamanya adalah sebuah permasalahan besar. Kami menawarkan solusi yang {secure} dan {trustless} sehingga memungkinkan Anda mewariskan aset untuk orang yang Anda cintai.",
+
+  "howItWorks.title": "Cara Kerja",
+  "howItWorks.p1": "DApp kami memungkinkan Anda untuk membuat {vaults}. Vault adalah sebuah alamat smart-contract, layaknya sebuah wallet di mana Anda memiliki manajemen mandiri dan kontrol penuh atas isinya. Selain itu, Anda dapat menentukan aturan tentang bagaimana Anda ingin asetnya didistribusikan. Ketika Anda membuat vault, Anda akan mendapatkan sebuah alamat yang unik, Anda juga akan mendapatkan sebuah {vaultKey}, dan Anda menentukan {deadline}. Deadline ini dapat diundur dari waktu ke waktu, kami menyebutnya {proofOfLife}. Sebagai pemilik vault, Anda dapat menarik aset dari vault kapanpun, tidak tergantung deadline. Anda dapat membagikan akses vault dengan me-minting token vault-key dan mengirimkannya ke wallet Anda yang lain.",
+  "howItWorks.p2": "Di dalam vault, Anda dapat membuat subdivisi yang disebut {pockets} tempat Anda mengalokasikan aset. Selanjutnya Anda dapat me-mint {pocketKeys} untuk dikirim ke ahli-waris. Token pocket-key inilah yang memungkinkan seseorang untuk mengklaim jatah aset mereka dari pocket yang ditentukan hanya setelah deadline vault berlalu.",
+  "howItWorks.p3": "Dengan DApp ini, Anda dapat mencegah aset crypto Anda hilang selamanya, terkunci di wallet jika Anda kehilangan seedphrase, atau jika terjadi hal yang tak terduga dan Anda belum memiliki perencanaan untuk meninggalkan aset crypto Anda. Sekarang Anda dapat menyimpan aset crypto lebih aman karena tidak perlu lagi mempercayakan seedphrase Anda ke pihak ketiga.",
+  "howItWorks.p4": "GenWealth adalah protokol pewarisan pertama di {cardano}, kami berencana untuk memperluas layanan kami ke jaringan blockchain lainnya di masa depan. Untuk informasi lebih lanjut terkait cara kerja smart-contract kami, Anda dapat membaca dokumentasi teknisnya {here}.",
+
+  "roadmap.title": "Peta Perjalanan",
+
+  "roadmap1.time": "2023 Q3",
+  "roadmap1.title": "On-Chain Proof-of-Concept",
+
+  "roadmap2.time": "2023 Q4",
+  "roadmap2.title": "Off-Chain untuk Testing Internal",
+
+  "roadmap3.time": "2024 Q1",
+  "roadmap3.title": "UI/UX-Design untuk Testnet Publik",
+
+  "roadmap4.time": "2024 Q2",
+  "roadmap4.title": "Pengembangan Frontend dan Backend",
+
+  "roadmap5.time": "2024 Q3",
+  "roadmap5.title": "Testnet Publik dan Bug-Bounty",
+
+  "roadmap6.time": "2024 Q4",
+  "roadmap6.title": "Audit dan Peningkatan Produk",
+
+  "roadmap7.time": "2025",
+  "roadmap7.title": "Rilis Cardano-Mainnet",
+
+  "roadmap8.time": "2026",
+  "roadmap8.title": "Eksplorasi Blockchain Lain (TBD)",
+
+  "roadmap9.time": "2030an",
+  "roadmap9.title": "Melayani 4-5 Blockchain (TBD)",
+
+  "aboutUs.title": "Tentang Kami",
+  "aboutUs.p1": "Kami adalah tim dengan kemampuan yang saling melengkapi, kami sangat tertarik dengan Teknologi Web3 dan potensinya. Kami ingin membangun platform yang dapat memandirikan orang secara finansial, memberikan opsi, keamanan serta kontrol atas aset yang mereka miliki.",
+
+  "teamMembers.title": "Bertemu dengan Tim",
+  "teamMembers.you": "Kamu",
+  "teamMembers.you.p1": "Ayo bergabung di revolusi Web3!",
+  "teamMembers.talkToUs": "Hubungi kami",
+
+  "teamMembers.rafaelCardoso": "Rafael Cardoso",
+  "teamMembers.rafaelCardoso.p1": "Halo, saya Rafael. Saya memiliki lebih dari 5 tahun pengalaman di bidang pengembangan bisnis, marketing dan produk di beberapa startup Web2.",
+  "teamMembers.rafaelCardoso.p2": "Berpengalaman mengelola tim, proyek dan anggaran. Saya juga merintis {decentralizedNation}, sebuah kanal YouTube tentang berita Cryptocurrency. Pengalaman saya sebelumnya mencakup memimpin marketing untuk peluncuran {willEasy}, sebuah platform pembuatan wasiat online di Inggris.",
+
+  "teamMembers.ariadyPutra": "Ariady Putra",
+  "teamMembers.ariadyPutra.p1": "Hai, saya Ariady. Saya memiliki lebih dari 10 tahun pengalaman bekerja penuh waktu sebagai seorang software-developer. Pada tahun 2022, saya memperoleh {cardanoDeveloperProfessionalBadge}.",
+  "teamMembers.ariadyPutra.p2": "Saya bertanggung-jawab dalam pengembangan DApp ini, baik on-chain dan off-chain serta menentukan tech-stack yang digunakan. Sebelum GenWealth saya pernah mengembangkan {morbid}, sebuah smart-contract {deadMansSwitch} dengan implementasi yang lebih sederhana, yang masuk di daftar {awesomeAiken}.",
+
+  "contactUs.title": "Kontak Kami",
+  "contactUs.p1": "Anda dapat menghubungi kami melalui email {email}",
+  "contactUs.action1": "Kirim email",
+
+  "callToAction.title": "Coba Prototype",
+  "callToAction.p1": "Anda sudah dapat mencoba demo aplikasi sekarang! Pastikan jaringan wallet di-set ke Preview.",
+  "callToAction.p2": "{note} Tampilan aplikasi sedang dalam pengembangan, tidak mencerminkan tampilan saat rilis Testnet publik dan Mainnet nanti.",
+  "callToAction.action1": "Buka aplikasi",
+  "callToAction.action2": "Lihat dokumentasi",
+
+  "secure": "secure",
+  "trustless": "trustless",
+
+  "vault": "vault",
+  "vaults": "vaults",
+  "vaultKey": "vault key",
+  "vaultKeys": "vault keys",
+
+  "pocket": "pocket",
+  "pockets": "pockets",
+  "pocketKey": "pocket key",
+  "pocketKeys": "pocket keys",
+
+  "deadline": "deadline",
+  "proofOfLife": "Proof of Life",
+
+  "cardano": "Cardano",
+  "cardanoDeveloperProfessionalBadge": "Cardano Developer Professional Badge",
+
+  "decentralizedNation": "Decentralized Nation",
+  "willEasy": "Will Easy",
+
+  "deadMansSwitch": "dead-man's switch",
+  "awesomeAiken": "awesome-aiken",
+  "morbid": "morbid",
+
+  "here": "di sini",
+  "note": "catatan",
+
+  "completed": "Selesai",
+  "inProgress": "Dalam proses",
+  "planned": "Direncanakan",
+
+  "ceo": "CEO",
+  "cto": "CTO",
+
+  "copyright": "Hak Cipta © 2024 - Dilindungi undang-undang"
+}
