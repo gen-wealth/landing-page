@@ -22,11 +22,11 @@
   "hero.action1": "Pelajari lebih lanjut",
 
   "ourService.title": "Layanan Kami",
-  "ourService.p1": "Hilangnya aset di dunia kripto karena terkunci di dalam dompet selamanya adalah sebuah masalah besar. Kami menawarkan solusi yang {secure} dan {trustless} sehingga memungkinkan Anda mewariskan aset untuk orang yang Anda cintai.",
+  "ourService.p1": "Aset beku di dunia crypto karena terkunci di wallet selamanya adalah sebuah permasalahan besar. Kami menawarkan solusi yang {secure} dan {trustless} sehingga memungkinkan Anda mewariskan aset untuk orang yang Anda cintai.",
 
   "howItWorks.title": "Cara Kerja",
-  "howItWorks.p1": "DApp kami memungkinkan Anda untuk membuat {vaults}. Vault adalah sebuah alamat smart-contract, layaknya sebuah wallet di mana Anda memiliki manajemen mandiri dan kontrol penuh atas isinya. Selain itu, Anda dapat menentukan aturan tentang bagaimana Anda ingin asetnya didistribusikan. Ketika Anda membuat vault, Anda akan mendapatkan sebuah alamat yang unik, Anda juga akan mendapatkan sebuah {vaultKey}, dan Anda menentukan {deadline}. Deadline ini dapat diundur dari waktu ke waktu, kami menyebutnya {proofOfLife}. Sebagai pemilik vault, Anda dapat menarik aset dari vault kapanpun, tidak tergantung deadline. Anda dapat membagikan akses vault dengan minting token vault-key dan mengirimkannya ke wallet Anda yang lain.",
-  "howItWorks.p2": "Di dalam vault, Anda dapat membuat subdivisi yang disebut {pockets} tempat Anda mengalokasikan aset. Selanjutnya Anda dapat mint {pocketKeys} untuk dikirim ke ahli-waris. Token pocket-key inilah yang memungkinkan seseorang untuk mengklaim jatah aset mereka dari pocket yang ditentukan setelah deadline vault berlalu.",
+  "howItWorks.p1": "DApp kami memungkinkan Anda untuk membuat {vaults}. Vault adalah sebuah alamat smart-contract, layaknya sebuah wallet di mana Anda memiliki manajemen mandiri dan kontrol penuh atas isinya. Selain itu, Anda dapat menentukan aturan tentang bagaimana Anda ingin asetnya didistribusikan. Ketika Anda membuat vault, Anda akan mendapatkan sebuah alamat yang unik, Anda juga akan mendapatkan sebuah {vaultKey}, dan Anda menentukan {deadline}. Deadline ini dapat diundur dari waktu ke waktu, kami menyebutnya {proofOfLife}. Sebagai pemilik vault, Anda dapat menarik aset dari vault kapanpun, tidak tergantung deadline. Anda dapat membagikan akses vault dengan me-minting token vault-key dan mengirimkannya ke wallet Anda yang lain.",
+  "howItWorks.p2": "Di dalam vault, Anda dapat membuat subdivisi yang disebut {pockets} tempat Anda mengalokasikan aset. Selanjutnya Anda dapat me-mint {pocketKeys} untuk dikirim ke ahli-waris. Token pocket-key inilah yang memungkinkan seseorang untuk mengklaim jatah aset mereka dari pocket yang ditentukan hanya setelah deadline vault berlalu.",
   "howItWorks.p3": "Dengan DApp ini, Anda dapat mencegah aset crypto Anda hilang selamanya, terkunci di wallet jika Anda kehilangan seedphrase, atau jika terjadi hal yang tak terduga dan Anda belum memiliki perencanaan untuk meninggalkan aset crypto Anda. Sekarang Anda dapat menyimpan aset crypto lebih aman karena tidak perlu lagi mempercayakan seedphrase Anda ke pihak ketiga.",
   "howItWorks.p4": "GenWealth adalah protokol pewarisan pertama di {cardano}, kami berencana untuk memperluas layanan kami ke jaringan blockchain lainnya di masa depan. Untuk informasi lebih lanjut terkait cara kerja smart-contract kami, Anda dapat membaca dokumentasi teknisnya {here}.",
 
@@ -48,7 +48,7 @@
   "roadmap5.title": "Testnet Publik dan Bug-Bounty",
 
   "roadmap6.time": "2024 Q4",
-  "roadmap6.title": "Audit and Optimasi Produk",
+  "roadmap6.title": "Audit dan Peningkatan Produk",
 
   "roadmap7.time": "2025",
   "roadmap7.title": "Rilis Cardano-Mainnet",
