@@ -126,7 +126,7 @@ function NavBar() {
             {intl.formatMessage({ id: "navBar.action1" })}
           </a>
 
-          {/* Language Selector */}
+          {/* Language dropdown */}
           <div className="dropdown dropdown-hover -ml-2">
             <div tabIndex={0} role="button" className="p-2 style-text-shadow">
               {flag[locale]}
@@ -141,7 +141,7 @@ function NavBar() {
                 .map((lang) => (
                   <li key={lang.code}>
                     <a
-                      className="style-text-shadow tooltip tooltip-left"
+                      className="style-text-shadow tooltip tooltip-left before:bg-indigo-950 before:text-base-content"
                       data-tip={lang.name}
                       onClick={() => {
                         setLocale(lang.code);

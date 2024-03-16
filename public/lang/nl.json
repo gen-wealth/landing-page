@@ -24,7 +24,7 @@
   "ourService.title": "Onze Service",
   "ourService.p1": "Verloren activa in de cryptowereld als gevolg van het voor altijd opgesloten zitten in een portemonnee is een groot probleem. Wij bieden u een {secure} en {trustless} oplossing waarmee u activa kunt achterlaten voor uw dierbaren.",
 
-  "howItWorks.title": "How it Works",
+  "howItWorks.title": "Hoe het Werkt",
   "howItWorks.p1": "Met onze DApp kunt u {vaults} instellen. Een vault is een slim contractadres, het is net een portemonnee waarin u zelfbewaring en volledige controle over de inhoud ervan heeft. Daarnaast kunt u regels definiëren over hoe u wilt dat de activa worden gedistribueerd. Wanneer u een vault maakt, krijgt u een uniek adres, ook een {vaultKey} en stelt u een {deadline} in. De deadline kan van tijd tot tijd worden uitgesteld, dit noemen we {proofOfLife}. Als vaulteigenaar kunt u de activa op elk moment uit de vault halen, ongeacht de deadline. U kunt de vaultoegang delen door meer vault-key tokens te maken en deze naar uw andere portefeuilles te sturen.",
   "howItWorks.p2": "Binnen uw vault kunt u onderverdelingen maken, genaamd {pockets}, waarin u uw geërfde bezittingen erover verdeelt. U kunt vervolgens de bijbehorende {pocketKeys} slaan en naar de begunstigden sturen. Met deze pocket-key tokens kunnen ze hun deel van de activa pas uit de overeenkomstige pocket claimen nadat de deadline van de vault volledig is verstreken.",
   "howItWorks.p3": "Met deze DApp kunt u voorkomen dat uw crypto-activa voor altijd verloren gaan, in een portemonnee worden opgesloten als u uw startzin kwijtraakt, of als er iets onverwachts gebeurt en u weg bent zonder dat u al een erfenisplan gereed heeft. Nu kunt u uw crypto-activa veiliger houden, omdat u geen zaadzinnen meer hoeft te delen.",
