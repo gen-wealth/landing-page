@@ -241,8 +241,8 @@ function memberBubble(member: member, index: number, total: number) {
       {/* Member Bubble */}
       <div key={member.name} className={`chat text-purple-950 chat-${member.chatPosition} ${index < total - 1 ? "mb-4" : ""}`}>
         <div className="chat-image avatar">
-          <div className="w-32 mask mask-hexagon bg-neutral bg-opacity-5">
-            <div className="h-[7.75rem] mask mask-hexagon m-0.5">
+          <div className="w-32 mask mask-hexagon bg-neutral bg-opacity-25">
+            <div className="h-[7.875rem] mask mask-hexagon m-px">
               <img src={member.image} />
             </div>
           </div>
