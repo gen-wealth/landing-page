@@ -1,7 +1,11 @@
+import { FormattedMessage, useIntl } from "react-intl";
 import { scrollToElement } from "../util";
 import AnchorScrollOffset from "./AnchorScrollOffset";
 
 function CallToAction() {
+  const intl = useIntl();
+  const title = intl.formatMessage({ id: "callToAction.title" });
+
   return (
     <div>
       <AnchorScrollOffset id={"call-to-action"} />
@@ -28,7 +32,7 @@ function CallToAction() {
               // href="#call-to-action"
               onClick={(e) => scrollToElement(e, "call-to-action")}
             >
-              Try the Prototype
+              {title}
             </a>
           </h2>
 
@@ -36,21 +40,37 @@ function CallToAction() {
           <div className="w-full">
             <img src="/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-72px] sm:mt-4 max-sm:mt-4" />
             <div className="text-indigo-950">
-              <p className="my-2 style-p">You can already try the demo right now! Make sure to set your wallet network to Preview.</p>
-              <div className="h-2" />
+              {/* p1 */}
               <p className="my-2 style-p">
-                <b>NOTE:</b> The current look and feel of the app does not represent the actual public Testnet and Mainnet release later.
+                <FormattedMessage id="callToAction.p1" />
               </p>
+              {/* <p className="my-2 style-p">You can already try the demo right now! Make sure to set your wallet network to Preview.</p> */}
+
+              {/* gap-2 */}
+              <div className="h-2" />
+
+              {/* p2 */}
+              <p className="my-2 style-p">
+                <FormattedMessage
+                  id="callToAction.p2"
+                  values={{
+                    note: <b>{intl.formatMessage({ id: "note" }).toUpperCase()}:</b>,
+                  }}
+                />
+              </p>
+              {/* <p className="my-2 style-p">
+                <b>NOTE:</b> The current look and feel of the app does not represent the actual public Testnet and Mainnet release later.
+              </p> */}
             </div>
           </div>
 
           {/* Actions */}
           <div className="join">
             <a href="https://preview.genwealth.app" className="button-primary join-item">
-              Launch app
+              {intl.formatMessage({ id: "callToAction.action1" })}
             </a>
             <a href="https://docs.genwealth.app" className="button-secondary join-item">
-              View docs
+              {intl.formatMessage({ id: "callToAction.action2" })}
             </a>
           </div>
         </div>

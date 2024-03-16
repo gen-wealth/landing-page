@@ -1,7 +1,11 @@
+import { useIntl } from "react-intl";
 import { scrollToTop } from "../util";
 import Svg from "./Svg";
 
 function Footer() {
+  const intl = useIntl();
+  const title = intl.formatMessage({ id: "genWealth" });
+
   return (
     <div className="max-w-screen-xl mx-auto">
       <footer className="footer max-sm:flex max-sm:flex-col items-center p-4 bg-neutral text-neutral-content rounded-box m-2 w-auto">
@@ -12,17 +16,17 @@ function Footer() {
             className="flex max-sm:flex-col gap-2 items-center mx-auto"
           >
             <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
-              <img alt="GenWealth" src="/GenWealth.ico" className="w-12 mask mask-squircle" />
+              <img alt={title} src="/GenWealth.ico" className="w-12 mask mask-squircle" />
             </div>
-            <h5 className="max-sm:w-full font-bold text-center">GenWealth</h5>
+            <h5 className="max-sm:w-full font-bold text-center">{title}</h5>
           </a>
           {/* <img src="/CardanoWhite.svg" width={20} className="max-sm:hidden" /> */}
           <span className="max-sm:hidden">&laquo;</span>
-          <h6 className="max-sm:w-full font-bold text-center">The Crypto Inheritance Protocol</h6>
+          <h6 className="max-sm:w-full font-bold text-center">{intl.formatMessage({ id: "tagLine" })}</h6>
           {/* <span className="md:hidden">&bull;</span> */}
           {/* <img src="/CardanoWhite.svg" width={20} className="max-sm:hidden" /> */}
           <span className="max-sm:hidden">&raquo;</span>
-          <p className="max-sm:w-full text-center">Copyright © 2024 - All rights reserved</p>
+          <p className="max-sm:w-full text-center">{intl.formatMessage({ id: "copyright" })}</p>
         </aside>
         <nav className="grid-flow-col gap-4 max-sm:place-self-center sm:justify-self-end">
           <a href="https://twitter.com/genwealth_app" aria-label="Twitter">

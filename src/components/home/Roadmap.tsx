@@ -1,12 +1,14 @@
 import { useEffect, useRef } from "react";
 import AnchorScrollOffset from "../AnchorScrollOffset";
 import Container from "../Container";
+import { FormattedMessage, useIntl } from "react-intl";
 
+type status = "Completed" | "In progress" | "Planned";
 type roadmap = {
   time: string;
   title: string;
-  paragraphs: JSX.Element[];
-  status: "Completed" | "In progress" | "Planned";
+  // paragraphs: JSX.Element[];
+  status: status;
 };
 
 const roadmapStatus = {
@@ -15,64 +17,81 @@ const roadmapStatus = {
   ["Planned"]: "",
 };
 
-const roadmaps: roadmap[] = [
-  {
-    time: "2023 Q3",
-    title: "On Chain Proof of Concept",
-    paragraphs: [<></>],
-    status: "Completed",
-  },
-  {
-    time: "2023 Q4",
-    title: "Off Chain for Internal Testing",
-    paragraphs: [<></>],
-    status: "Completed",
-  },
-  {
-    time: "2024 Q1",
-    title: "UI/UX Design for Public Testnet",
-    paragraphs: [<></>],
-    status: "Completed",
-  },
-  {
-    time: "2024 Q2",
-    title: "Frontend and Backend Development",
-    paragraphs: [<></>],
-    status: "In progress",
-  },
-  {
-    time: "2024 Q3",
-    title: "Public Testnet and Bug Bounty",
-    paragraphs: [<></>],
-    status: "Planned",
-  },
-  {
-    time: "2024 Q4",
-    title: "Audit and Product Improvements",
-    paragraphs: [<></>],
-    status: "Planned",
-  },
-  {
-    time: "2025",
-    title: "Cardano Mainnet Release",
-    paragraphs: [<></>],
-    status: "Planned",
-  },
-  {
-    time: "2026",
-    title: "Explore Another Blockchain (TBD)",
-    paragraphs: [<></>],
-    status: "Planned",
-  },
-  {
-    time: "2030s",
-    title: "Served 4-5 Blockchains (TBD)",
-    paragraphs: [<></>],
-    status: "Planned",
-  },
-];
+const roadmapStatusLangKey = {
+  ["Completed"]: "completed",
+  ["In progress"]: "inProgress",
+  ["Planned"]: "planned",
+};
 
 function Roadmap() {
+  const intl = useIntl();
+  const title = intl.formatMessage({ id: "roadmap.title" });
+  const roadmaps: roadmap[] = [
+    {
+      // 2023 Q3
+      time: intl.formatMessage({ id: "roadmap1.time" }),
+      // On Chain Proof of Concept
+      title: intl.formatMessage({ id: "roadmap1.title" }),
+      status: "Completed",
+    },
+    {
+      // 2023 Q4
+      time: intl.formatMessage({ id: "roadmap2.time" }),
+      // Off Chain for Internal Testing
+      title: intl.formatMessage({ id: "roadmap2.title" }),
+      status: "Completed",
+    },
+    {
+      // 2024 Q1
+      time: intl.formatMessage({ id: "roadmap3.time" }),
+      // UI/UX Design for Public Testnet
+      title: intl.formatMessage({ id: "roadmap3.title" }),
+      status: "Completed",
+    },
+    {
+      // 2024 Q2
+      time: intl.formatMessage({ id: "roadmap4.time" }),
+      // Frontend and Backend Development
+      title: intl.formatMessage({ id: "roadmap4.title" }),
+      status: "In progress",
+    },
+    {
+      // 2024 Q3
+      time: intl.formatMessage({ id: "roadmap5.time" }),
+      // Public Testnet and Bug Bounty
+      title: intl.formatMessage({ id: "roadmap5.title" }),
+      status: "Planned",
+    },
+    {
+      // 2024 Q4
+      time: intl.formatMessage({ id: "roadmap6.time" }),
+      // Audit and Product Improvements
+      title: intl.formatMessage({ id: "roadmap6.title" }),
+      status: "Planned",
+    },
+    {
+      // 2025
+      time: intl.formatMessage({ id: "roadmap7.time" }),
+      // Cardano Mainnet Release
+      title: intl.formatMessage({ id: "roadmap7.title" }),
+      status: "Planned",
+    },
+    {
+      // 2026
+      time: intl.formatMessage({ id: "roadmap8.time" }),
+      // Explore Another Blockchain (TBD)
+      title: intl.formatMessage({ id: "roadmap8.title" }),
+      status: "Planned",
+    },
+    {
+      // 2030s
+      time: intl.formatMessage({ id: "roadmap9.time" }),
+      // Served 4-5 Blockchains (TBD)
+      title: intl.formatMessage({ id: "roadmap9.title" }),
+      status: "Planned",
+    },
+  ];
+
   const roadmapRef = useRef<HTMLDivElement>(null);
 
   const indexOfInProgress = () => roadmaps.findIndex((roadmap) => roadmap.status === "In progress");
@@ -96,7 +115,7 @@ function Roadmap() {
   return (
     <Container
       id={"roadmap"}
-      title={"Roadmap"}
+      title={title}
       paragraphs={[
         <div ref={roadmapRef} className="overflow-x-auto">
           <ul className="steps max-sm:steps-vertical">
@@ -144,7 +163,7 @@ function Roadmap() {
                       {paragraph}
                     </div>
                   ))} */}
-                  {roadmap.status}
+                  <FormattedMessage id={roadmapStatusLangKey[roadmap.status]} />
                 </div>
               </li>
             ))}

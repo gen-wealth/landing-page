@@ -1,19 +1,22 @@
+import { useIntl } from "react-intl";
 import { scrollToElement } from "../util";
 
 function Hero() {
+  const intl = useIntl();
+
   return (
-    <div className="hero min-h-screen style-hero bg-[url('/HeroBg.jpg')]">
+    <div className="hero min-h-screen style-hero bg-[url('/hero/Bg.jpg')]">
       <div className="hero-overlay bg-opacity-60" />
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mt-10 text-5xl font-bold style1">GenWealth</h1>
-          <p className="mb-5 style3">The Crypto Inheritance Protocol</p>
+          <h1 className="mt-10 text-5xl font-bold style1">{intl.formatMessage({ id: "genWealth" })}</h1>
+          <p className="mb-5 style3">{intl.formatMessage({ id: "tagLine" })}</p>
           <a
             // href="#our-service"
             onClick={(e) => scrollToElement(e, "our-service")}
             className="button-secondary"
           >
-            Learn more
+            {intl.formatMessage({ id: "hero.action1" })}
           </a>
         </div>
       </div>

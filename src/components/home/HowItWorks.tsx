@@ -1,8 +1,12 @@
 import { MouseEvent, useState } from "react";
 import Container from "../Container";
 import VideoCarousel, { VideoCarouselIndicator } from "./VideoCarousel";
+import { FormattedMessage, useIntl } from "react-intl";
 
 function HowItWorks() {
+  const intl = useIntl();
+  const title = intl.formatMessage({ id: "howItWorks.title" });
+
   // Video Carousel
   const [videoIndex, setVideoIndex] = useState(0);
   const slideToVideo = (e: MouseEvent, index: number) => {
@@ -17,7 +21,7 @@ function HowItWorks() {
   return (
     <Container
       id={"how-it-works"}
-      title={"How it Works"}
+      title={title}
       paragraphs={[
         // <>
         //   We are utilizing the inherent security from the design of the blockchain. We start from the{" "}
@@ -36,37 +40,87 @@ function HowItWorks() {
         //   Then the beneficiary, which is a person who holds a key token, will be able to redeem the assets after the vault has melted. Unlike the
         //   beneficiary, the vault owner is able to withdraw the assets from the vault at any time regardless of the deadline.
         // </>,
+
+        // p1
         <>
-          Our DApp allows you to setup <b>vaults</b>. A vault is a smart contract address, it's just like a wallet where you have self custody and total control
-          of its contents. In addition to that, you're able to define rules on how you want the assets to be distributed. When you create a vault, you'll get a
-          unique address, you'll also get a <b>vault key</b>, and you set a <b>deadline</b>. The deadline can be postponed from time to time, we call this{" "}
-          <i>Proof of Life</i>. As the vault owner, you can withdraw from the vault at any time regardless of the deadline. You can share the vault access by
-          minting more vault key tokens and send them to your other wallets.
+          <FormattedMessage
+            id="howItWorks.p1"
+            values={{
+              vaults: <b>{<FormattedMessage id="vaults" />}</b>,
+              vaultKey: <b>{<FormattedMessage id="vaultKey" />}</b>,
+              deadline: <b>{<FormattedMessage id="deadline" />}</b>,
+              proofOfLife: <i>{<FormattedMessage id="proofOfLife" />}</i>,
+            }}
+          />
         </>,
+        // <>
+        //   Our DApp allows you to setup <b>vaults</b>. A vault is a smart contract address, it's just like a wallet where you have self custody and total control
+        //   of its contents. In addition to that, you're able to define rules on how you want the assets to be distributed. When you create a vault, you'll get a
+        //   unique address, you'll also get a <b>vault key</b>, and you set a <b>deadline</b>. The deadline can be postponed from time to time, we call this{" "}
+        //   <i>Proof of Life</i>. As the vault owner, you can withdraw from the vault at any time regardless of the deadline. You can share the vault access by
+        //   minting more vault key tokens and send them to your other wallets.
+        // </>,
+
+        // p2
         <>
-          Within your vault, you can create subdivisions called <b>pockets</b> where you allocate your inheritance assets across them. You're then able to mint
-          the associated <b>pocket keys</b> to be sent to the beneficiaries. These pocket key tokens allow them to claim their share of the assets from the
-          corresponding pockets only after the vault's deadline has completely elapsed.
+          <FormattedMessage
+            id="howItWorks.p2"
+            values={{
+              pockets: <b>{<FormattedMessage id="pockets" />}</b>,
+              pocketKeys: <b>{<FormattedMessage id="pocketKeys" />}</b>,
+            }}
+          />
         </>,
+        // <>
+        //   Within your vault, you can create subdivisions called <b>pockets</b> where you allocate your inheritance assets across them. You're then able to mint
+        //   the associated <b>pocket keys</b> to be sent to the beneficiaries. These pocket key tokens allow them to claim their share of the assets from the
+        //   corresponding pockets only after the vault's deadline has completely elapsed.
+        // </>,
+
+        // video-carousel
         <VideoCarousel videoIndex={videoIndex} slideToVideo={slideToVideo} />,
         // <VideoCarouselIndicator videoIndex={videoIndex} slideToVideo={slideToVideo} />, // Doesn't sync when swiped
+
+        // p3
         <>
-          With this DApp, you can avoid the issue of your crypto assets being lost forever, locked in a wallet if you lose your seedphrase, or if something
-          unexpected happens and you're gone without having an inheritance plan ready yet. Now you can keep your crypto assets safer as there's no need to share
-          seedphrases anymore.
+          <FormattedMessage id="howItWorks.p3" />
         </>,
+        // <>
+        //   With this DApp, you can avoid the issue of your crypto assets being lost forever, locked in a wallet if you lose your seedphrase, or if something
+        //   unexpected happens and you're gone without having an inheritance plan ready yet. Now you can keep your crypto assets safer as there's no need to share
+        //   seedphrases anymore.
+        // </>,
+
+        // p4
         <>
-          GenWealth is the first inheritance protocol on{" "}
-          <a href="https://cardano.org" className="link link-hover style-link">
-            Cardano
-          </a>
-          , we're planning to expand our service to other blockchains in the future. For more technical details on how the smart contract works, you can take a
-          look at the code documentations{" "}
-          <a href="https://docs.genwealth.app" className="link link-hover style-link">
-            here
-          </a>
-          .
+          <FormattedMessage
+            id="howItWorks.p4"
+            values={{
+              cardano: (
+                <a href="https://cardano.org" className="link link-hover style-link">
+                  {<FormattedMessage id="cardano" />}
+                </a>
+              ),
+              here: (
+                <a href="https://docs.genwealth.app" className="link link-hover style-link">
+                  {<FormattedMessage id="here" />}
+                </a>
+              ),
+            }}
+          />
         </>,
+        // <>
+        //   GenWealth is the first inheritance protocol on{" "}
+        //   <a href="https://cardano.org" className="link link-hover style-link">
+        //     Cardano
+        //   </a>
+        //   , we're planning to expand our service to other blockchains in the future. For more technical details on how the smart contract works, you can take a
+        //   look at the code documentations{" "}
+        //   <a href="https://docs.genwealth.app" className="link link-hover style-link">
+        //     here
+        //   </a>
+        //   .
+        // </>,
       ]}
       links={[]}
     />

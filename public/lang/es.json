@@ -1,0 +1,125 @@
+{
+  "genWealth": "GenWealth",
+  "tagLine": "The Crypto Inheritance Protocol",
+
+  "lang.en": "Inglés",
+  "lang.es": "Español",
+  "lang.id": "Indonesio",
+  "lang.ja": "Japonés",
+  "lang.ko": "Coreano",
+  "lang.ms": "Malayo",
+  "lang.nl": "Holandés",
+  "lang.pt": "Portugués",
+  "lang.zh": "Chino",
+
+  "navBar.menu1": "Nuestro Servicio",
+  "navBar.menu2": "Mapa Vial",
+  "navBar.menu3": "Sobre Nosotros",
+  "navBar.menu4": "Contacta con Nosotros",
+
+  "navBar.action1": "Ejecutar aplicación",
+
+  "hero.action1": "Aprende más",
+
+  "ourService.title": "Nuestro Servicio",
+  "ourService.p1": "La pérdida de activos en el mundo de las criptomonedas debido a estar encerrado en una billetera para siempre es un gran problema, ofrecemos una solución {secure} y {trustless} para que pueda dejar activos a sus seres queridos.",
+
+  "howItWorks.title": "Cómo Funciona",
+  "howItWorks.p1": "Nuestra DApp le permite configurar {vaults}. Una vault es una dirección de contrato inteligente, es como una billetera donde tienes autocustodia y control total de su contenido. Además de eso, puede definir reglas sobre cómo desea que se distribuyan los activos. Cuando crea una vault, obtendrá una dirección única, también obtendrá una {vaultKey}, y establecerá una {deadline}. La fecha límite puede posponerse de vez en cuando, a esto lo llamamos {proofOfLife}. Como propietario de la vault, puede retirarse de la vault en cualquier momento, independientemente de la fecha límite. Puede compartir el acceso a la vault acuñando más tokens de vault-key y enviándolos a sus otras billeteras.",
+  "howItWorks.p2": "Dentro de su vault, puede crear subdivisiones llamadas {pockets} donde asigna sus activos de herencia entre ellas. Luego podrá acuñar las {pocketKeys} asociadas para enviarlas a los beneficiarios. Estos tokens de pocket-key les permiten reclamar su parte de los activos de los pockets correspondientes sólo después de que haya transcurrido por completo el plazo de la vault.",
+  "howItWorks.p3": "Con esta DApp, puedes evitar el problema de que tus criptoactivos se pierdan para siempre, queden encerrados en una billetera si pierdes tu frase inicial o si sucede algo inesperado y te vas sin tener un plan de herencia listo todavía. Ahora puede mantener sus criptoactivos más seguros ya que ya no es necesario compartir frases iniciales.",
+  "howItWorks.p4": "GenWealth es el primer protocolo de herencia en {cardano}, estamos planeando expandir nuestro servicio a otras cadenas de bloques en el futuro. Para obtener más detalles técnicos sobre cómo funciona el contrato inteligente, puede consultar la documentación del código {here}.",
+
+  "roadmap.title": "Mapa Vial",
+
+  "roadmap1.time": "2023 Q3",
+  "roadmap1.title": "On Chain Proof of Concept",
+
+  "roadmap2.time": "2023 Q4",
+  "roadmap2.title": "Off Chain for Internal Testing",
+
+  "roadmap3.time": "2024 Q1",
+  "roadmap3.title": "UI/UX Design for Public Testnet",
+
+  "roadmap4.time": "2024 Q2",
+  "roadmap4.title": "Desarrollo de Frontend y Backend",
+
+  "roadmap5.time": "2024 Q3",
+  "roadmap5.title": "Public Testnet y Bug Bounty",
+
+  "roadmap6.time": "2024 Q4",
+  "roadmap6.title": "Auditoría y Mejoras de Productos",
+
+  "roadmap7.time": "2025",
+  "roadmap7.title": "Lanzamiento de Cardano Mainnet",
+
+  "roadmap8.time": "2026",
+  "roadmap8.title": "Explora Otra Blockchain (TBD)",
+
+  "roadmap9.time": "2030s",
+  "roadmap9.title": "Served 4-5 Blockchains (TBD)",
+
+  "aboutUs.title": "Sobre Nosotros",
+  "aboutUs.p1": "Somos un equipo con habilidades complementarias, apasionados por Web3 Tech y sus potencialidades. Nuestro objetivo es crear herramientas que empoderen financieramente a las personas, brindándoles más opciones, seguridad y control sobre sus activos.",
+
+  "teamMembers.title": "Meet the Team",
+  "teamMembers.you": "You",
+  "teamMembers.you.p1": "¡Únase a la revolución Web3!",
+  "teamMembers.talkToUs": "Habla con nosotros",
+
+  "teamMembers.rafaelCardoso": "Rafael Cardoso",
+  "teamMembers.rafaelCardoso.p1": "Hola, soy rafael. Tengo más de 5 años de experiencia en desarrollo de negocio, marketing y producto en startups Web2.",
+  "teamMembers.rafaelCardoso.p2": "Experiencia en gestión de equipos, proyectos y presupuestos. También soy el fundador de {decentralizedNation}, un canal de YouTube de noticias sobre Criptomonedas. Mi experiencia previa incluye liderar el marketing para el lanzamiento de {willEasy}, una plataforma de creación de testamentos en línea en el Reino Unido.",
+
+  "teamMembers.ariadyPutra": "Ariady Putra",
+  "teamMembers.ariadyPutra.p1": "Hola, soy Ariady. Tengo más de una década de experiencia trabajando como desarrollador de software a tiempo completo. En 2022, adquirí mi {cardanoDeveloperProfessionalBadge}.",
+  "teamMembers.ariadyPutra.p2": "Soy responsable del desarrollo de la DApp, tanto la parte dentro como fuera de la cadena del sistema, además de decidir la pila tecnológica a utilizar. Antes de GenWealth, desarrollé el contrato inteligente {morbid} que aparece en {awesomeAiken}, una implementación más simple del contrato {deadMansSwitch}.",
+
+  "contactUs.title": "Contacta con Nosotros",
+  "contactUs.p1": "Contáctenos en {email}",
+  "contactUs.action1": "Enviar email",
+
+  "callToAction.title": "Try the Prototype",
+  "callToAction.p1": "¡Ya puedes probar la demo ahora mismo! Make sure to set your wallet network to Preview.",
+  "callToAction.p2": "{note} La apariencia actual de la aplicación no representa la versión pública real de Testnet y Mainnet posterior.",
+  "callToAction.action1": "Ejecutar aplicación",
+  "callToAction.action2": "Ver las documentaciones",
+
+  "secure": "segura",
+  "trustless": "sin confianza",
+
+  "vault": "vault",
+  "vaults": "vaults",
+  "vaultKey": "vault key",
+  "vaultKeys": "vault keys",
+
+  "pocket": "pocket",
+  "pockets": "pockets",
+  "pocketKey": "pocket key",
+  "pocketKeys": "pocket keys",
+
+  "deadline": "deadline",
+  "proofOfLife": "Proof of Life",
+
+  "cardano": "Cardano",
+  "cardanoDeveloperProfessionalBadge": "Cardano Developer Professional Badge",
+
+  "decentralizedNation": "Decentralized Nation",
+  "willEasy": "Will Easy",
+
+  "deadMansSwitch": "dead-man's switch",
+  "awesomeAiken": "awesome-aiken",
+  "morbid": "morbid",
+
+  "here": "aquí",
+  "note": "nota",
+
+  "completed": "Terminado",
+  "inProgress": "In progress",
+  "planned": "Planificado",
+
+  "ceo": "Director Ejecutivo",
+  "cto": "Director de Tecnología",
+
+  "copyright": "Derecho de Autor © 2024 - Todos los derechos reservados"
+}
