@@ -122,7 +122,7 @@ function Roadmap() {
             {roadmaps.map((roadmap, i) => (
               <li
                 key={roadmap.title}
-                className={`step !min-w-96
+                className={`step !min-w-96 before:!shadow-xl after:!shadow-xl
                 max-sm:before:!-translate-y-full max-sm:before:scale-x-150 max-sm:before:mt-28 after:!place-self-start max-sm:after:mt-7 after:mx-auto
                 sm:before:!-translate-x-full sm:before:scale-y-150 sm:before:!ml-10 sm:after:!justify-self-start sm:after:!m-1
                 ${
