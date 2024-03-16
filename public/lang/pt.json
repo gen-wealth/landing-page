@@ -22,13 +22,13 @@
   "hero.action1": "Saiba mais",
 
   "ourService.title": "Nosso Serviço",
-  "ourService.p1": "Ativos perdidos no mundo criptográfico por ficarem trancados em uma carteira para sempre é um grande problema. Oferecemos uma solução {secure} e {trustless} para você poder deixar ativos para seus entes queridos.",
+  "ourService.p1": "Ativos congelados no mundo criptográfico porque ficam trancados em uma carteira para sempre é um grande problema. Oferecemos uma solução {secure} e {trustless} que permite que você deixe ativos para seus entes queridos.",
 
   "howItWorks.title": "Como Funciona",
-  "howItWorks.p1": "Nosso DApp permite que você configure {vaults}. Um vault é um endereço de contrato inteligente, é como uma carteira onde você tem autocustódia e controle total de seu conteúdo. Além disso, você pode definir regras sobre como deseja que os ativos sejam distribuídos. Ao criar um vault, você receberá um endereço exclusivo, também receberá um {vaultKey}, e definirá um {deadline}. O prazo pode ser adiado de tempos em tempos, chamamos isso de {proofOfLife}. Como proprietário do vault, você pode retirar-se do vault a qualquer momento, independentemente do prazo. Você pode compartilhar o acesso ao vault criando mais tokens do vault-key e enviando-os para outras carteiras.",
-  "howItWorks.p2": "Dentro do seu vault, você pode criar subdivisões chamadas {pockets} onde você aloca seus ativos de herança entre elas. Você poderá então cunhar os {pocketKeys} associados para serem enviados aos beneficiários. Esses tokens de pocket-key permitem que eles reivindiquem sua parte dos ativos dos pockets correspondentes somente após o prazo do vault ter decorrido completamente.",
-  "howItWorks.p3": "Com este DApp, você pode evitar o problema de seus ativos criptográficos serem perdidos para sempre, trancados em uma carteira se você perder sua frase-semente ou se algo inesperado acontecer e você partir sem ter um plano de herança pronto ainda. Agora você pode manter seus ativos criptográficos mais seguros, pois não há mais necessidade de compartilhar frases-semente.",
-  "howItWorks.p4": "GenWealth é o primeiro protocolo de herança em {cardano}, estamos planejando expandir nosso serviço para outras blockchains no futuro. Para obter mais detalhes técnicos sobre como funciona o contrato inteligente, você pode dar uma olhada na documentação do código {here}.",
+  "howItWorks.p1": "Nosso DApp permite que você crie {vaults}. Um vault é um endereço de contrato inteligente, é como uma carteira onde você tem autocustódia e controle total sobre seu conteúdo. Além disso, você pode definir regras sobre como deseja que os ativos sejam distribuídos. Ao criar um vault, você receberá um endereço exclusivo, também receberá um {vaultKey} e definirá um {deadline}. O prazo pode ser adiado de tempos em tempos, chamamos isso de {proofOfLife}. Como proprietário do vault, você pode retirar-se do vault a qualquer momento, independentemente do prazo. Você pode compartilhar o acesso ao vault cunhando mais tokens do vault-key e enviando-os para outras carteiras.",
+  "howItWorks.p2": "Dentro do seu vault, você pode criar subdivisões chamadas {pockets} onde você aloca seus ativos herdados entre elas. Em seguida, você pode solicitar o envio dos {pocketKeys} associados aos beneficiários. São esses tokens de pocket-key que lhes permitem reivindicar sua parte dos ativos dos pockets designados somente depois que o prazo do vault tiver decorrido completamente.",
+  "howItWorks.p3": "Com este DApp, você pode evitar que seus ativos criptográficos sejam perdidos para sempre, bloqueados em sua carteira se você perder sua frase-semente ou se algo inesperado acontecer e você ainda não tiver planos de deixar seus ativos criptográficos para trás. Agora você pode armazenar seus ativos criptográficos com mais segurança porque não precisa mais confiar sua frase-semente a terceiros.",
+  "howItWorks.p4": "GenWealth é o primeiro protocolo de herança em {cardano}, estamos planejando expandir nosso serviço para outras blockchains no futuro. Para obter mais informações sobre como funcionam nossos contratos inteligentes, você pode ler a documentação do código {here}.",
 
   "roadmap.title": "Roteiro",
 
@@ -60,7 +60,7 @@
   "roadmap9.title": "Served 4-5 Blockchains (TBD)",
 
   "aboutUs.title": "Quem Somos",
-  "aboutUs.p1": "Somos uma equipa com competências complementares, apaixonada pela Web3 Tech e pelas suas potencialidades. Nosso objetivo é construir ferramentas que capacitem financeiramente os indivíduos, dando-lhes mais opções, segurança e controle sobre seus ativos.",
+  "aboutUs.p1": "Somos uma equipa com competências complementares, somos apaixonados pela Web3 Tech e pelas suas potencialidades. Nosso objetivo é uma plataforma que possa capacitar financeiramente os indivíduos, dando-lhes mais opções, segurança e controle sobre os ativos que possuem.",
 
   "teamMembers.title": "Meet the Team",
   "teamMembers.you": "You",
@@ -68,12 +68,12 @@
   "teamMembers.talkToUs": "Fale conosco",
 
   "teamMembers.rafaelCardoso": "Rafael Cardoso",
-  "teamMembers.rafaelCardoso.p1": "Olá, meu nome é Rafael. Tenho mais de 5 anos de experiência em desenvolvimento de negócios, marketing e produto em startups Web2.",
+  "teamMembers.rafaelCardoso.p1": "Olá, meu nome é Rafael. Tenho mais de 5 anos de experiência em desenvolvimento de negócios, marketing e produto em diversas startups de Web2.",
   "teamMembers.rafaelCardoso.p2": "Experiência em gestão de equipes, projetos e orçamentos. Também sou o fundador do {decentralizedNation}, um canal de notícias sobre Criptomoedas no Youtube. Minha experiência anterior inclui liderar o marketing para o lançamento de {willEasy}, uma plataforma de Criação de Testamento online no Reino Unido.",
 
   "teamMembers.ariadyPutra": "Ariady Putra",
-  "teamMembers.ariadyPutra.p1": "Olá, meu nome é Ariady. Tenho mais de uma década de experiência trabalhando como desenvolvedor de software em tempo integral. Em 2022, adquiri meu {cardanoDeveloperProfessionalBadge}.",
-  "teamMembers.ariadyPutra.p2": "Sou responsável pelo desenvolvimento do DApp, tanto na parte on-chain quanto off-chain do sistema, bem como por decidir qual pilha de tecnologia usar. Antes da GenWealth, desenvolvi o contrato inteligente {morbid} conforme apresentado em {awesomeAiken}, uma implementação mais simples do contrato {deadMansSwitch}.",
+  "teamMembers.ariadyPutra.p1": "Olá, sou Ariady. Tenho mais de uma década de experiência trabalhando como desenvolvedor de software em tempo integral. Em 2022, adquiri meu {cardanoDeveloperProfessionalBadge}.",
+  "teamMembers.ariadyPutra.p2": "Sou responsável pelo desenvolvimento do DApp, tanto pelas partes on-chain quanto off-chain do sistema, bem como por decidir qual conjunto de tecnologia usar. Antes da GenWealth, desenvolvi o contrato inteligente {mórbido} conforme apresentado em {awesomeAiken}, uma implementação mais simples do contrato {deadMansSwitch}.",
 
   "contactUs.title": "Nos Contate",
   "contactUs.p1": "Sinta-se à vontade para nos contatar em {email}",
