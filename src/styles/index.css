@@ -41,6 +41,7 @@ a {
     @apply button;
 
     @apply bg-violet-950;
+    @apply text-[rgb(228,219,235)];
     @apply border-indigo-950;
 
     /* hover: */
@@ -50,7 +51,7 @@ a {
   .button-secondary {
     @apply button;
 
-    @apply bg-white;
+    @apply bg-[rgb(241,237,245)];
     @apply bg-opacity-[0.412];
     @apply text-violet-950;
     /* @apply border-indigo-950; */
@@ -58,7 +59,7 @@ a {
     @apply border-none;
 
     /* hover: */
-    @apply hover:bg-white;
+    @apply hover:bg-[rgb(248,246,250)];
     @apply hover:bg-opacity-[calc(2/3)];
     /* @apply hover:border-indigo-900; */
     @apply hover:text-violet-900;
