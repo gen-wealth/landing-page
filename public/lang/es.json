@@ -22,7 +22,7 @@
   "hero.action1": "Aprende más",
 
   "ourService.title": "Nuestro Servicio",
-  "ourService.p1": "La pérdida de activos en el mundo de las criptomonedas debido a estar encerrado en una billetera para siempre es un gran problema, ofrecemos una solución {secure} y {trustless} para que pueda dejar activos a sus seres queridos.",
+  "ourService.p1": "Los activos congelados en el mundo de las criptomonedas debido a que están encerrados en billeteras para siempre es un gran problema. Ofrecemos una solución {secure} y {trustless} que le permite transmitir sus activos a sus seres queridos.",
 
   "howItWorks.title": "Cómo Funciona",
   "howItWorks.p1": "Nuestra DApp le permite configurar {vaults}. Una vault es una dirección de contrato inteligente, es como una billetera donde tienes autocustodia y control total de su contenido. Además de eso, puede definir reglas sobre cómo desea que se distribuyan los activos. Cuando crea una vault, obtendrá una dirección única, también obtendrá una {vaultKey}, y establecerá una {deadline}. La fecha límite puede posponerse de vez en cuando, a esto lo llamamos {proofOfLife}. Como propietario de la vault, puede retirarse de la vault en cualquier momento, independientemente de la fecha límite. Puede compartir el acceso a la vault acuñando más tokens de vault-key y enviándolos a sus otras billeteras.",
@@ -85,8 +85,8 @@
   "callToAction.action1": "Ejecutar aplicación",
   "callToAction.action2": "Ver las documentaciones",
 
-  "secure": "segura",
-  "trustless": "sin confianza",
+  "secure": "secure",
+  "trustless": "trustless",
 
   "vault": "vault",
   "vaults": "vaults",

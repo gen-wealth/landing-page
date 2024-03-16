@@ -85,8 +85,8 @@
   "callToAction.action1": "Abrir o aplicativo",
   "callToAction.action2": "Veja as documentações",
 
-  "secure": "segura",
-  "trustless": "sem confiança",
+  "secure": "secure",
+  "trustless": "trustless",
 
   "vault": "vault",
   "vaults": "vaults",

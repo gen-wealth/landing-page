@@ -85,8 +85,8 @@
   "callToAction.action1": "Open de app",
   "callToAction.action2": "Bekijk de docs",
 
-  "secure": "veilige",
-  "trustless": "betrouwbare",
+  "secure": "secure",
+  "trustless": "trustless",
 
   "vault": "vault",
   "vaults": "vaults",
