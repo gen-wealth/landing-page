@@ -22,7 +22,7 @@
   "hero.action1": "Meer informatie",
 
   "ourService.title": "Onze Service",
-  "ourService.p1": "Verloren activa in de cryptowereld als gevolg van het voor altijd opgesloten zitten in een portemonnee is een groot probleem. Wij bieden u een {secure} en {trustless} oplossing waarmee u activa kunt achterlaten voor uw dierbaren.",
+  "ourService.p1": "Bevroren activa in de cryptowereld als gevolg van het voor altijd opsluiten in portemonnees zijn een groot probleem. We bieden een {secure} en {trustless} oplossing waarmee u uw bezittingen kunt doorgeven aan uw dierbaren.",
 
   "howItWorks.title": "Hoe het Werkt",
   "howItWorks.p1": "Met onze DApp kunt u {vaults} instellen. Een vault is een slim contractadres, het is net een portemonnee waarin u zelfbewaring en volledige controle over de inhoud ervan heeft. Daarnaast kunt u regels definiëren over hoe u wilt dat de activa worden gedistribueerd. Wanneer u een vault maakt, krijgt u een uniek adres, ook een {vaultKey} en stelt u een {deadline} in. De deadline kan van tijd tot tijd worden uitgesteld, dit noemen we {proofOfLife}. Als vaulteigenaar kunt u de activa op elk moment uit de vault halen, ongeacht de deadline. U kunt de vaultoegang delen door meer vault-key tokens te maken en deze naar uw andere portefeuilles te sturen.",
