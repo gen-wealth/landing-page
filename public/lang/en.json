@@ -22,7 +22,7 @@
   "hero.action1": "Learn more",
 
   "ourService.title": "Our Service",
-  "ourService.p1": "Lost assets in the crypto world due to being locked in a wallet forever is a big problem, we offer a {secure} and {trustless} solution for you to be able to leave assets for your loved ones.",
+  "ourService.p1": "Frozen assets in the crypto world due to being locked in wallets forever is a big problem. We offer a {secure} and {trustless} solution that allows you to pass on your assets to your loved ones.",
 
   "howItWorks.title": "How it Works",
   "howItWorks.p1": "Our DApp allows you to setup {vaults}. A vault is a smart contract address, it's just like a wallet where you have self custody and total control of its contents. In addition to that, you're able to define rules on how you want the assets to be distributed. When you create a vault, you'll get a unique address, you'll also get a {vaultKey}, and you set a {deadline}. The deadline can be postponed from time to time, we call this {proofOfLife}. As the vault owner, you can withdraw from the vault at any time regardless of the deadline. You can share the vault access by minting more vault key tokens and send them to your other wallets.",
