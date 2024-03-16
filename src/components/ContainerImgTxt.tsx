@@ -36,7 +36,7 @@ function ContainerImgTxt(props: {
       <AnchorScrollOffset id={props.id} />
 
       {/* Card */}
-      <div className="card sm:card-side bg-base-content bg-opacity-90 m-2 shadow-xl">
+      <div className="card sm:card-side bg-base-content bg-opacity-50 m-2 shadow-xl">
         {/* Image */}
         <figure>
           <img src={props.image.imageSource} alt={props.image.alternateText} className={`object-cover w-full h-full ${props.image.className}`} />

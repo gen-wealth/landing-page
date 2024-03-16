@@ -11,10 +11,10 @@ function CallToAction() {
       <AnchorScrollOffset id={"call-to-action"} />
 
       {/* Call to Action */}
-      <div className="mockup-browser bg-base-content bg-opacity-90 m-2 shadow-xl hover:animate-wiggle">
+      <div className="mockup-browser bg-base-content bg-opacity-50 m-2 shadow-xl hover:animate-wiggle">
         {/* Toolbar */}
         <div className="flex bg-violet-950 shadow-xl">
-          <div className="input border border-neutral border-opacity-25 bg-base-content bg-opacity-90 w-full h-fit m-4 truncate link-neutral">
+          <div className="input border border-neutral border-opacity-25 bg-base-content bg-opacity-75 w-full h-fit m-4 truncate link-neutral">
             <a href="https://preview.genwealth.app" className="link link-hover leading-7">
               https://preview.genwealth.app
             </a>

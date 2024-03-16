@@ -18,6 +18,8 @@
 }
 
 html {
+  background-image: radial-gradient(ellipse at bottom, #d4f9c03f, transparent), radial-gradient(ellipse at top, #6e46563f, transparent),
+    radial-gradient(farthest-corner at 64px 64px, #ff33553f 0%, #4433ee3f 100%);
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
@@ -51,14 +53,14 @@ a {
     @apply bg-white;
     @apply bg-opacity-[0.412];
     @apply text-violet-950;
-    @apply border-indigo-950;
-    @apply border-[1px];
-    /* @apply border-none; */
+    /* @apply border-indigo-950; */
+    /* @apply border-[1px]; */
+    @apply border-none;
 
     /* hover: */
     @apply hover:bg-white;
     @apply hover:bg-opacity-[calc(2/3)];
-    @apply hover:border-indigo-900;
+    /* @apply hover:border-indigo-900; */
     @apply hover:text-violet-900;
   }
 }

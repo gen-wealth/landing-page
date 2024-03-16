@@ -205,9 +205,9 @@ function TeamMembers() {
       <AnchorScrollOffset id={"team-members"} />
 
       {/* Team Members */}
-      <div className="mockup-browser bg-base-content bg-opacity-90 m-2 shadow-xl">
+      <div className="mockup-browser bg-base-content bg-opacity-50 m-2 shadow-xl">
         {/* Toolbar */}
-        <div className="flex bg-violet-950 shadow-xl">
+        <div className="flex bg-violet-950 text-[rgb(228,219,235)] shadow-xl">
           <div className="w-full h-fit px-8 py-4 truncate font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base !leading-[30px]">
             <a
               // href="#team-members"
@@ -256,7 +256,11 @@ function memberBubble(member: member, index: number, total: number) {
             <span className="text-xs opacity-50 mr-2">{member.title}</span>
           </div>
 
-          <div className={`chat-bubble ${member.chatPosition === "start" ? "bg-violet-950 text-neutral-content" : "bg-neutral-content text-indigo-950"}`}>
+          <div
+            className={`chat-bubble bg-opacity-50 ${
+              member.chatPosition === "start" ? "bg-violet-950 text-[rgb(241,237,245)]" : "bg-[rgb(248,246,250)] text-indigo-950"
+            }`}
+          >
             {member.bio}
           </div>
 

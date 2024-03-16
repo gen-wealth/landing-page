@@ -88,7 +88,7 @@ function NavBar() {
 
   return (
     <div className="fixed w-full max-w-screen-xl h-min mx-auto inset-0 z-10">
-      <div className="flex justify-between navbar shadow-xl bg-base-content bg-opacity-100 rounded-box m-2 w-auto">
+      <div className="flex justify-between navbar shadow-xl bg-base-content bg-opacity-50 backdrop-blur rounded-box m-2 w-auto">
         <div>
           {/* GenWealth logo */}
           <a
@@ -131,7 +131,7 @@ function NavBar() {
             <div tabIndex={0} role="button" className="p-2 style-text-shadow">
               {flag[locale]}
             </div>
-            <ul tabIndex={0} className="dropdown-content flex flex-col gap-2 p-2 z-20 top-0 shadow-xl drop-shadow-xl bg-base-content rounded-box">
+            <ul tabIndex={0} className="dropdown-content flex flex-col gap-2 p-2 z-20 top-0 shadow-xl drop-shadow-xl bg-base-content bg-opacity-75 rounded-box">
               <li>
                 <a className="style-text-shadow">{flag[locale]}</a>
               </li>
