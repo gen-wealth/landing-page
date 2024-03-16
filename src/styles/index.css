@@ -32,6 +32,7 @@ a {
     @apply shadow-xl;
     @apply border-t-0;
     @apply border-l-0;
+    /* @apply border-none; */
     @apply normal-case;
   }
   .button-primary {
@@ -52,6 +53,7 @@ a {
     @apply text-violet-950;
     @apply border-indigo-950;
     @apply border-[1px];
+    /* @apply border-none; */
 
     /* hover: */
     @apply hover:bg-white;
@@ -66,6 +68,10 @@ a {
     @apply text-purple-950;
     @apply font-bold;
   }
+}
+
+.style-text-shadow {
+  text-shadow: 0px 0px 8px #0000007f;
 }
 
 .style-hero {
