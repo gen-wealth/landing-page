@@ -33,13 +33,13 @@ function Footer() {
           <ThemeController
             className="m-auto"
             sun={{
-              w: 21,
-              h: 21,
+              w: 20,
+              h: 20,
               className: "fill-current",
             }}
             moon={{
-              w: 21,
-              h: 21,
+              w: 20,
+              h: 20,
               className: "fill-current",
             }}
           />

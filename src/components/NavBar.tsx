@@ -123,15 +123,15 @@ function NavBar() {
 
             {/* Mood */}
             <ThemeController
-              className="mb-1"
+              className="mb-px"
               sun={{
-                w: 22,
-                h: 22,
+                w: 23,
+                h: 23,
                 className: "fill-purple-950",
               }}
               moon={{
-                w: 22,
-                h: 22,
+                w: 23,
+                h: 23,
                 className: "fill-purple-950",
               }}
             />
