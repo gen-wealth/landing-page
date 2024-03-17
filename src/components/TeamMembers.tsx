@@ -281,7 +281,7 @@ function memberBubble(member: member, index: number, total: number) {
             }`}
           >
             {/* lines... */}
-            <div id={`${member.id}.${index}`} className="xl:line-clamp-6 lg:line-clamp-5 md:line-clamp-4 sm:line-clamp-3 max-sm:line-clamp-2">
+            <div id={`${member.id}.${index}`} className="line-clamp-4 xl:line-clamp-none lg:line-clamp-6 md:line-clamp-5">
               {member.bio}
             </div>
 
