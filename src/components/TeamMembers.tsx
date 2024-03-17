@@ -281,36 +281,36 @@ function memberBubble(member: member, index: number, total: number) {
             }`}
           >
             {/* lines... */}
-            <div id={`${member.id}.${index}`} className="line-clamp-4">
+            <div id={`${member.id}.${index}`} className="xl:line-clamp-6 lg:line-clamp-5 md:line-clamp-4 sm:line-clamp-3 max-sm:line-clamp-2">
               {member.bio}
             </div>
 
             {/* show more */}
-            <div id={`${member.id}.show-more`} className="text-center font-bold hidden">
+            <div id={`${member.id}.show-more`} className="text-center font-bold hidden hover:bg-[rgb(248,246,250)] hover:bg-opacity-25">
               <div
                 className="link no-underline"
                 onClick={() => {
-                  document.getElementById(`${member.id}.${index}`)?.classList.add("line-clamp-none");
+                  document.getElementById(`${member.id}.${index}`)?.classList.add("!line-clamp-none");
                   document.getElementById(`${member.id}.show-more`)?.classList.add("hidden");
                   document.getElementById(`${member.id}.show-less`)?.classList.remove("hidden");
                 }}
               >
                 <sub className="link-hover">show more</sub>
-                <br />︾
+                <div className="animate-bounce mt-2 -mb-2">︾</div>
               </div>
             </div>
 
             {/* show less */}
-            <div id={`${member.id}.show-less`} className="text-center font-bold hidden">
+            <div id={`${member.id}.show-less`} className="text-center font-bold hidden hover:bg-[rgb(248,246,250)] hover:bg-opacity-25">
               <div
                 className="link no-underline"
                 onClick={() => {
-                  document.getElementById(`${member.id}.${index}`)?.classList.remove("line-clamp-none");
+                  document.getElementById(`${member.id}.${index}`)?.classList.remove("!line-clamp-none");
                   document.getElementById(`${member.id}.show-more`)?.classList.remove("hidden");
                   document.getElementById(`${member.id}.show-less`)?.classList.add("hidden");
                 }}
               >
-                ︽<br />
+                <div className="animate-bounce">︽</div>
                 <sup className="link-hover">show less</sup>
               </div>
             </div>
