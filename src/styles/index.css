@@ -54,14 +54,14 @@ a {
     @apply bg-[rgb(241,237,245)];
     @apply bg-opacity-[0.412];
     @apply text-violet-950;
-    /* @apply border-indigo-950; */
-    /* @apply border-[1px]; */
-    @apply border-none;
+    @apply border-indigo-950;
+    @apply border-[1px];
+    /* @apply border-none; */
 
     /* hover: */
     @apply hover:bg-[rgb(248,246,250)];
     @apply hover:bg-opacity-[calc(2/3)];
-    /* @apply hover:border-indigo-900; */
+    @apply hover:border-indigo-900;
     @apply hover:text-violet-900;
   }
 }
