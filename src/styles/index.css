@@ -40,35 +40,35 @@ a {
   .button-primary {
     @apply button;
 
-    @apply bg-violet-950;
-    @apply text-[rgb(228,219,235)];
-    @apply border-indigo-950;
+    @apply bg-primary-focus;
+    @apply text-base-content;
+    @apply border-secondary-focus;
 
     /* hover: */
-    @apply hover:bg-violet-900;
-    @apply hover:border-indigo-900;
+    @apply hover:bg-primary;
+    @apply hover:border-secondary;
   }
   .button-secondary {
     @apply button;
 
-    @apply bg-[rgb(241,237,245)];
-    @apply bg-opacity-[0.412];
-    @apply text-violet-950;
-    @apply border-indigo-950;
+    @apply bg-base-content;
+    @apply bg-opacity-75;
+    @apply text-primary-focus;
+    @apply border-secondary-focus;
     @apply border-[1px];
     /* @apply border-none; */
 
     /* hover: */
-    @apply hover:bg-[rgb(248,246,250)];
-    @apply hover:bg-opacity-[calc(2/3)];
-    @apply hover:border-indigo-900;
-    @apply hover:text-violet-900;
+    @apply hover:bg-base-content;
+    @apply hover:bg-opacity-80;
+    @apply hover:border-secondary;
+    @apply hover:text-primary;
   }
 }
 
 @layer utilities {
   .style-link {
-    @apply text-purple-950;
+    @apply text-primary;
     @apply font-bold;
   }
 }

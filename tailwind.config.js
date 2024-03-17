@@ -16,7 +16,22 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["synthwave"],
-    darkTheme: "synthwave",
+    themes: [
+      // "synthwave",
+      {
+        moon: {
+          primary: "#3b0764",
+          secondary: "#1e1b4b",
+          accent: "#f9c3ff",
+          neutral: "#180733",
+          "base-100": "#1a103d",
+          info: "#10a9fe",
+          success: "#a9fe10",
+          warning: "#fea910",
+          error: "#fe3210",
+        },
+      },
+    ],
+    darkTheme: "moon", // "synthwave",
   },
 };

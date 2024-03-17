@@ -89,7 +89,7 @@ function NavBar() {
 
   return (
     <div className="fixed w-full max-w-screen-xl h-min mx-auto inset-0 z-10">
-      <div className="flex justify-between navbar shadow-xl bg-base-content bg-opacity-50 backdrop-blur rounded-box m-2 w-auto">
+      <div className="flex justify-between navbar shadow-xl bg-base-content bg-opacity-75 backdrop-blur-sm rounded-box m-2 w-auto">
         <div>
           {/* GenWealth logo */}
           <a
@@ -100,7 +100,7 @@ function NavBar() {
             <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
               <img alt={title} src="/GenWealth.ico" className="mask mask-squircle" />
             </div>
-            <span className="text-purple-950 xl:text-3xl lg:text-2xl md:text-xl max-sm:text-lg font-bold self-center max-md:hidden max-sm:flex">{title}</span>
+            <span className="text-primary xl:text-3xl lg:text-2xl md:text-xl max-sm:text-lg font-bold self-center max-md:hidden max-sm:flex">{title}</span>
           </a>
         </div>
 
@@ -127,12 +127,12 @@ function NavBar() {
               sun={{
                 w: 23,
                 h: 23,
-                className: "fill-purple-950",
+                className: "fill-primary",
               }}
               moon={{
                 w: 23,
                 h: 23,
-                className: "fill-purple-950",
+                className: "fill-primary",
               }}
             />
           </div>
@@ -147,7 +147,7 @@ function NavBar() {
             <div tabIndex={0} role="button" className="p-2 style-text-shadow">
               {flag[locale]}
             </div>
-            <ul tabIndex={0} className="dropdown-content flex flex-col gap-2 p-2 z-20 top-0 shadow-xl drop-shadow-xl bg-base-content bg-opacity-75 rounded-box">
+            <ul tabIndex={0} className="dropdown-content flex flex-col gap-2 p-2 z-20 top-0 shadow-xl drop-shadow-xl bg-base-content bg-opacity-80 rounded-box">
               <li>
                 <a className="style-text-shadow">{flag[locale]}</a>
               </li>
@@ -157,7 +157,7 @@ function NavBar() {
                 .map((lang) => (
                   <li key={lang.code}>
                     <a
-                      className="style-text-shadow tooltip tooltip-left 2xl:tooltip-right before:bg-indigo-950 before:text-base-content"
+                      className="style-text-shadow tooltip tooltip-left 2xl:tooltip-right before:bg-secondary before:text-base-content"
                       data-tip={lang.name}
                       onClick={() => {
                         setLocale(lang.code);
