@@ -2,6 +2,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 import { scrollToElement } from "../util";
 import AnchorScrollOffset from "./AnchorScrollOffset";
 import Svg from "./Svg";
+import { useEffect } from "react";
 
 type member = {
   id: string;
@@ -133,7 +134,6 @@ function TeamMembers() {
                     href="https://github.com/aiken-lang/awesome-aiken?tab=readme-ov-file#Dapps:~:text=morbid%20%2D%20A%20dead%2Dman%27s%20switch%20contract"
                     className="link"
                   >
-                    {" "}
                     {<FormattedMessage id="awesomeAiken" />}
                   </a>
                 ),
@@ -200,6 +200,23 @@ function TeamMembers() {
     },
   ];
 
+  useEffect(() => {
+    const manageShowMoreVisibility = () =>
+      members.forEach((member, index) => {
+        const bio = document.getElementById(`${member.id}.${index}`);
+        const more = document.getElementById(`${member.id}.show-more`);
+        if (bio && bio.clientHeight == bio.scrollHeight) {
+          more?.classList.add("hidden");
+        } else {
+          more?.classList.remove("hidden");
+        }
+      });
+    manageShowMoreVisibility();
+
+    window.addEventListener("resize", manageShowMoreVisibility);
+    return () => window.removeEventListener("resize", manageShowMoreVisibility);
+  }, []);
+
   return (
     <div>
       <AnchorScrollOffset id={"team-members"} />
@@ -249,21 +266,57 @@ function memberBubble(member: member, index: number, total: number) {
         </div>
 
         <div className={`flex flex-col w-full items-${member.chatPosition}`}>
-          <div className="chat-header">
+          {/* chat-header */}
+          <div className="chat-header whitespace-nowrap">
             <a className="ml-2 mr-1" onClick={(e) => scrollToElement(e, member.id)}>
               {member.name}
             </a>
             <span className="text-xs opacity-50 mr-2">{member.title}</span>
           </div>
 
+          {/* chat-bubble */}
           <div
-            className={`chat-bubble bg-opacity-50 shadow-xl ${
+            className={`chat-bubble flex flex-col gap-2 bg-opacity-50 shadow-xl ${
               member.chatPosition === "start" ? "bg-violet-950 text-[rgb(241,237,245)]" : "bg-[rgb(248,246,250)] text-indigo-950"
             }`}
           >
-            {member.bio}
+            {/* lines... */}
+            <div id={`${member.id}.${index}`} className="line-clamp-4">
+              {member.bio}
+            </div>
+
+            {/* show more */}
+            <div id={`${member.id}.show-more`} className="text-center font-bold hidden">
+              <div
+                className="link no-underline"
+                onClick={() => {
+                  document.getElementById(`${member.id}.${index}`)?.classList.add("line-clamp-none");
+                  document.getElementById(`${member.id}.show-more`)?.classList.add("hidden");
+                  document.getElementById(`${member.id}.show-less`)?.classList.remove("hidden");
+                }}
+              >
+                <sub className="link-hover">show more</sub>
+                <br />︾
+              </div>
+            </div>
+
+            {/* show less */}
+            <div id={`${member.id}.show-less`} className="text-center font-bold hidden">
+              <div
+                className="link no-underline"
+                onClick={() => {
+                  document.getElementById(`${member.id}.${index}`)?.classList.remove("line-clamp-none");
+                  document.getElementById(`${member.id}.show-more`)?.classList.remove("hidden");
+                  document.getElementById(`${member.id}.show-less`)?.classList.add("hidden");
+                }}
+              >
+                ︽<br />
+                <sup className="link-hover">show less</sup>
+              </div>
+            </div>
           </div>
 
+          {/* chat-footer */}
           <div className="chat-footer text-indigo-950">
             <div className="flex items-center">
               <p className="style-p">{member.social.prefix}&nbsp;</p>
