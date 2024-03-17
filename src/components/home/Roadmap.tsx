@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import AnchorScrollOffset from "../AnchorScrollOffset";
 import Container from "../Container";
 import { FormattedMessage, useIntl } from "react-intl";
+import { getTheme } from "../ThemeController";
 
 type status = "Completed" | "In progress" | "Planned";
 type roadmap = {
@@ -112,6 +113,8 @@ function Roadmap() {
     scrollToInProgress();
   }, []);
 
+  const theme = getTheme();
+
   return (
     <Container
       id={"roadmap"}
@@ -122,14 +125,15 @@ function Roadmap() {
             {roadmaps.map((roadmap, i) => (
               <li
                 key={roadmap.title}
-                className={`step !min-w-96 before:!shadow-xl after:!shadow-xl
+                className={`step sm:!min-w-96 before:!shadow-xl after:!shadow-xl before:contrast-150 after:contrast-150
                 max-sm:before:!-translate-y-full max-sm:before:scale-x-150 max-sm:before:mt-28 after:!place-self-start max-sm:after:mt-7 after:mx-auto
                 sm:before:!-translate-x-full sm:before:scale-y-150 sm:before:!ml-10 sm:after:!justify-self-start sm:after:!m-1
                 ${
                   roadmap.status === "Completed"
                     ? "before:!bg-[#340b64] before:!saturate-50 after:!bg-[#340b64] after:!saturate-50 after:!text-[rgb(196,181,202)]"
-                    : "step-primary before:!bg-[rgb(196,181,202)] before:!saturate-150 after:!bg-[rgb(196,181,202)] after:!saturate-150 after:!text-[#340b64]"
-                }`}
+                    : "step-primary before:!bg-[rgb(196,181,202)] before:saturate-150 after:!bg-[rgb(196,181,202)] after:saturate-150 after:!text-[#340b64]"
+                }
+                ${theme === "sun" ? "before:brightness-150 after:brightness-150" : ""}`}
                 data-content={roadmapStatus[roadmap.status]}
               >
                 <div className="text-start text-indigo-950 place-self-start mb-10">

@@ -19,7 +19,7 @@
 
 html {
   background-image: radial-gradient(ellipse at bottom, #d4f9c03f, transparent), radial-gradient(ellipse at top, #6e46563f, transparent),
-    radial-gradient(farthest-corner at 64px 64px, #ff33553f 0%, #4433ee3f 100%);
+    radial-gradient(farthest-corner at top right, #ff33553f 0%, #4433ee3f 100%);
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }

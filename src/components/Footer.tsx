@@ -1,6 +1,7 @@
 import { useIntl } from "react-intl";
 import { scrollToTop } from "../util";
 import Svg from "./Svg";
+import ThemeController from "./ThemeController";
 
 function Footer() {
   const intl = useIntl();
@@ -29,6 +30,19 @@ function Footer() {
           <p className="max-sm:w-full text-center">{intl.formatMessage({ id: "copyright" })}</p>
         </aside>
         <nav className="grid-flow-col gap-4 max-sm:place-self-center sm:justify-self-end">
+          <ThemeController
+            className="m-auto"
+            sun={{
+              w: 21,
+              h: 21,
+              className: "fill-current",
+            }}
+            moon={{
+              w: 21,
+              h: 21,
+              className: "fill-current",
+            }}
+          />
           <a href="https://twitter.com/genwealth_app" aria-label="Twitter">
             <Svg xlinkHref="#social-twitter" w={23} h={23} className="fill-current" />
           </a>

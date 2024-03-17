@@ -1,5 +1,6 @@
 import { useIntl } from "react-intl";
 import { getLocale, scrollToElement, scrollToTop, setLocale } from "../util";
+import ThemeController from "./ThemeController";
 
 type menu = {
   linkId: string;
@@ -107,8 +108,8 @@ function NavBar() {
         <div className="w-2" />
 
         <div className="gap-4">
-          {/* Menu */}
           <div className="join gap-4 max-sm:hidden">
+            {/* Menu */}
             {menus.map((menu) => (
               <a
                 key={menu.linkName}
@@ -119,6 +120,21 @@ function NavBar() {
                 {menu.linkName}
               </a>
             ))}
+
+            {/* Mood */}
+            <ThemeController
+              className="mb-1"
+              sun={{
+                w: 22,
+                h: 22,
+                className: "fill-purple-950",
+              }}
+              moon={{
+                w: 22,
+                h: 22,
+                className: "fill-purple-950",
+              }}
+            />
           </div>
 
           {/* Launch App button */}
