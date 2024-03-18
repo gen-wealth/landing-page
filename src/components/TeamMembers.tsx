@@ -49,12 +49,12 @@ function TeamMembers() {
               values={{
                 decentralizedNation: (
                   <a href="https://www.youtube.com/@decentralizednation" className="link">
-                    {<FormattedMessage id="decentralizedNation" />}
+                    {intl.formatMessage({ id: "decentralizedNation" })}
                   </a>
                 ),
                 willEasy: (
                   <a href="https://www.willeasy.co.uk" className="link">
-                    {<FormattedMessage id="willEasy" />}
+                    {intl.formatMessage({ id: "willEasy" })}
                   </a>
                 ),
               }}
@@ -102,7 +102,7 @@ function TeamMembers() {
               values={{
                 cardanoDeveloperProfessionalBadge: (
                   <a href="https://www.credly.com/badges/d40bc004-8d8d-4249-9cd3-cfd79c55f5ac" className="link">
-                    {<FormattedMessage id="cardanoDeveloperProfessionalBadge" />}
+                    {intl.formatMessage({ id: "cardanoDeveloperProfessionalBadge" })}
                   </a>
                 ),
               }}
@@ -126,7 +126,7 @@ function TeamMembers() {
               values={{
                 morbid: (
                   <a href="https://github.com/ariady-putra/morbid" className="link">
-                    {<FormattedMessage id="morbid" />}
+                    {intl.formatMessage({ id: "morbid" })}
                   </a>
                 ),
                 awesomeAiken: (
@@ -134,10 +134,10 @@ function TeamMembers() {
                     href="https://github.com/aiken-lang/awesome-aiken?tab=readme-ov-file#Dapps:~:text=morbid%20%2D%20A%20dead%2Dman%27s%20switch%20contract"
                     className="link"
                   >
-                    {<FormattedMessage id="awesomeAiken" />}
+                    {intl.formatMessage({ id: "awesomeAiken" })}
                   </a>
                 ),
-                deadMansSwitch: <i>{<FormattedMessage id="deadMansSwitch" />}</i>,
+                deadMansSwitch: <i>{intl.formatMessage({ id: "deadMansSwitch" })}</i>,
               }}
             />
           </p>
@@ -222,9 +222,9 @@ function TeamMembers() {
       <AnchorScrollOffset id={"team-members"} />
 
       {/* Team Members */}
-      <div className="mockup-browser bg-base-content bg-opacity-50 m-2 shadow-xl">
+      <div className="mockup-browser bg-base-content bg-opacity-75 m-2 shadow-xl">
         {/* Toolbar */}
-        <div className="flex bg-violet-950 text-[rgb(228,219,235)] shadow-xl">
+        <div className="flex toolbar">
           <div className="w-full h-fit px-8 py-4 truncate font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base !leading-[30px]">
             <a
               // href="#team-members"
@@ -256,9 +256,9 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
       <AnchorScrollOffset id={member.id} />
 
       {/* Member Bubble */}
-      <div key={member.name} className={`chat text-purple-950 chat-${member.chatPosition} ${index < total - 1 ? "mb-4" : ""}`}>
+      <div key={member.name} className={`chat text-primary chat-${member.chatPosition} ${index < total - 1 ? "mb-4" : ""}`}>
         <div className="chat-image avatar">
-          <div className="w-32 mask mask-hexagon bg-neutral bg-opacity-25">
+          <div className="w-32 mask mask-hexagon bg-info bg-opacity-50">
             <div className="h-[7.75rem] mask mask-hexagon m-0.5">
               <img src={member.image} />
             </div>
@@ -277,7 +277,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
           {/* chat-bubble */}
           <div
             className={`chat-bubble flex flex-col gap-2 bg-opacity-50 shadow-xl ${
-              member.chatPosition === "start" ? "bg-violet-950 text-[rgb(241,237,245)]" : "bg-[rgb(248,246,250)] text-indigo-950"
+              member.chatPosition === "start" ? "bg-primary-focus text-primary-content" : "bg-secondary-content text-secondary"
             }`}
           >
             {/* lines... */}
@@ -286,7 +286,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
             </div>
 
             {/* show more */}
-            <div id={`${member.id}.show-more`} className="text-center font-bold hidden hover:bg-[rgb(248,246,250)] hover:bg-opacity-25">
+            <div id={`${member.id}.show-more`} className="text-center font-bold hidden hover:bg-base-content hover:bg-opacity-25">
               <div
                 className="link no-underline"
                 onClick={() => {
@@ -304,7 +304,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
             </div>
 
             {/* show less */}
-            <div id={`${member.id}.show-less`} className="text-center font-bold hidden hover:bg-[rgb(248,246,250)] hover:bg-opacity-25">
+            <div id={`${member.id}.show-less`} className="text-center font-bold hidden hover:bg-base-content hover:bg-opacity-25">
               <div
                 className="link no-underline"
                 onClick={() => {
@@ -323,11 +323,11 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
           </div>
 
           {/* chat-footer */}
-          <div className="chat-footer text-indigo-950">
+          <div className="chat-footer text-primary">
             <div className="flex items-center">
               <p className="style-p">{member.social.prefix}&nbsp;</p>
               {member.social.links.map((link) => (
-                <a key={`${link.xlinkHref}.${member.name}`} href={link.linkURL} className="fill-violet-950 mr-2">
+                <a key={`${link.xlinkHref}.${member.name}`} href={link.linkURL} className="fill-primary mr-2">
                   <Svg xlinkHref={link.xlinkHref} w={23} h={23} />
                 </a>
               ))}
