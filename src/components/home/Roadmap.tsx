@@ -135,7 +135,7 @@ function Roadmap() {
                 ${theme === "sun" ? "before:brightness-150 after:brightness-150" : ""}`}
                 data-content={roadmapStatus[roadmap.status]}
               >
-                <div className="text-start text-secondary place-self-start mb-10">
+                <div className="text-start text-secondary-content place-self-start mb-10">
                   <AnchorScrollOffset id={"roadmap-" + i} />
                   <AnchorScrollOffset id={"roadmap-" + i + "-portrait"} className="-top-20 -left-12" />
                   <time className="font-mono italic">{roadmap.time}</time>

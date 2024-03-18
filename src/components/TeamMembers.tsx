@@ -222,7 +222,7 @@ function TeamMembers() {
       <AnchorScrollOffset id={"team-members"} />
 
       {/* Team Members */}
-      <div className="mockup-browser bg-base-content bg-opacity-75 m-2 shadow-xl">
+      <div className="mockup-browser bg-base-content bg-opacity-[calc(2/3)] m-2 shadow-xl">
         {/* Toolbar */}
         <div className="flex toolbar">
           <div className="w-full h-fit px-8 py-4 truncate font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base !leading-[30px]">
@@ -258,7 +258,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
       {/* Member Bubble */}
       <div key={member.name} className={`chat text-primary chat-${member.chatPosition} ${index < total - 1 ? "mb-4" : ""}`}>
         <div className="chat-image avatar">
-          <div className="w-32 mask mask-hexagon bg-info bg-opacity-50">
+          <div className="w-32 mask mask-hexagon bg-primary bg-opacity-[calc(1/3)]">
             <div className="h-[7.75rem] mask mask-hexagon m-0.5">
               <img src={member.image} />
             </div>
@@ -276,8 +276,8 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
 
           {/* chat-bubble */}
           <div
-            className={`chat-bubble flex flex-col gap-2 bg-opacity-50 shadow-xl ${
-              member.chatPosition === "start" ? "bg-primary-focus text-primary-content" : "bg-secondary-content text-secondary"
+            className={`chat-bubble flex flex-col gap-2 bg-opacity-[calc(2/3)] shadow-xl ${
+              member.chatPosition === "start" ? "bg-primary-focus text-primary-content" : "bg-secondary text-secondary-content"
             }`}
           >
             {/* lines... */}

@@ -18,8 +18,8 @@
 }
 
 html {
-  background-image: radial-gradient(ellipse at bottom, #d4f9c03f, transparent), radial-gradient(ellipse at top, #6e46563f, transparent),
-    radial-gradient(farthest-corner at top right, #ff33553f 0%, #4433ee3f 100%);
+  background-image: radial-gradient(ellipse at bottom, #d4f9c05f, transparent), radial-gradient(ellipse at top, #6e46565f, transparent),
+    radial-gradient(farthest-corner at top right, #ff33555f 0%, #4433ee5f 100%);
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
@@ -40,34 +40,37 @@ a {
   .button-primary {
     @apply button;
 
-    @apply bg-primary-focus;
+    @apply border-secondary-content;
     @apply text-base-content;
-    @apply border-secondary-focus;
+    @apply bg-primary-focus;
+    @apply bg-opacity-90;
 
     /* hover: */
     @apply hover:bg-primary;
-    @apply hover:border-secondary;
+    @apply hover:bg-opacity-95;
+    @apply hover:border-secondary-content;
   }
   .button-secondary {
     @apply button;
 
     @apply bg-base-content;
-    @apply bg-opacity-75;
+    @apply bg-opacity-[calc(2/3)];
     @apply text-primary-focus;
-    @apply border-secondary-focus;
-    @apply border-[1px];
-    /* @apply border-none; */
+    /* @apply border-secondary-focus; */
+    /* @apply border-[1px]; */
+    @apply border-none;
 
     /* hover: */
     @apply hover:bg-base-content;
-    @apply hover:bg-opacity-80;
-    @apply hover:border-secondary;
+    @apply hover:bg-opacity-[calc(5/6)];
+    /* @apply hover:border-secondary; */
     @apply hover:text-primary;
   }
 
   .toolbar {
     @apply text-primary-content;
     @apply bg-primary-focus;
+    @apply bg-opacity-90;
     @apply shadow-xl;
   }
 }

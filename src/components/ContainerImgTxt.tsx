@@ -36,7 +36,7 @@ function ContainerImgTxt(props: {
       <AnchorScrollOffset id={props.id} />
 
       {/* Card */}
-      <div className="card sm:card-side bg-base-content bg-opacity-75 m-2 shadow-xl">
+      <div className="card sm:card-side bg-base-content bg-opacity-[calc(2/3)] m-2 shadow-xl">
         {/* Image */}
         <figure>
           <img src={props.image.imageSource} alt={props.image.alternateText} className={`object-cover w-full h-full ${props.image.className}`} />
@@ -53,7 +53,7 @@ function ContainerImgTxt(props: {
             </a>
           </h2>
           {props.paragraphs.map((paragraph, i) => (
-            <div key={`${props.title}.${i}`} className="text-secondary my-2 style-p">
+            <div key={`${props.title}.${i}`} className="text-secondary-content my-2 style-p">
               {paragraph}
             </div>
           ))}

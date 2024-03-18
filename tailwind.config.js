@@ -18,26 +18,30 @@ module.exports = {
   daisyui: {
     themes: [
       // "synthwave",
+
       {
         moon: {
           primary: "#3b0764", // purple-950
-          secondary: "#1e1b4b", // indigo-950
+          secondary: "#fef",
           accent: "#f9c3ff",
           neutral: "#180733",
           "base-100": "#1a103d",
+
           info: "#9a65b1",
           success: "#9ad52b",
           warning: "#f1a20f",
           error: "#fe3210",
         },
       },
+
       {
         sun: {
           primary: "#3b0764", // purple-950
-          secondary: "#1e1b4b", // indigo-950
+          secondary: "#fef",
           accent: "#fff",
           neutral: "#220b4a",
-          "base-100": "#1a103d",
+          "base-100": "#707693",
+
           info: "#9a65b1",
           success: "#9ad52b",
           warning: "#f1a20f",
@@ -45,6 +49,7 @@ module.exports = {
         },
       },
     ],
+
     darkTheme: "moon", // "synthwave",
   },
 };

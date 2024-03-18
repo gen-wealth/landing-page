@@ -33,7 +33,7 @@ export function setTheme(theme: Theme) {
   switch (theme) {
     case "sun":
       document.documentElement.style.background =
-        "radial-gradient(ellipse at bottom, #d4f9c0f3, transparent), radial-gradient(ellipse at top, #6e4656f3, transparent), radial-gradient(farthest-corner at top right, #ff3355f3 0%, #4433eef3 100%)";
+        "radial-gradient(ellipse at bottom, #d4f9c0, transparent), radial-gradient(ellipse at top, #6e4656, transparent), radial-gradient(farthest-corner at top right, #ff3355 0%, #4433eef3 100%)";
       break;
 
     default:

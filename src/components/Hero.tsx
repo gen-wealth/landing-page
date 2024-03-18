@@ -6,7 +6,7 @@ function Hero() {
 
   return (
     <div className="hero min-h-screen style-hero bg-[url('/hero/Bg.jpg')]">
-      <div className="hero-overlay bg-opacity-60" />
+      <div className="hero-overlay bg-opacity-[calc(2/3)]" />
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
           <h1 className="mt-10 text-5xl font-bold style1">{intl.formatMessage({ id: "genWealth" })}</h1>
