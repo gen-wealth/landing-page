@@ -157,7 +157,7 @@ function NavBar() {
                 .map((lang) => (
                   <li key={lang.code}>
                     <a
-                      className="style-text-shadow tooltip tooltip-left 2xl:tooltip-right before:bg-secondary before:text-base-content"
+                      className="style-text-shadow tooltip tooltip-left 2xl:tooltip-right before:bg-info before:text-info-content"
                       data-tip={lang.name}
                       onClick={() => {
                         setLocale(lang.code);
