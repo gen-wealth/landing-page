@@ -11,10 +11,10 @@ function CallToAction() {
       <AnchorScrollOffset id={"call-to-action"} />
 
       {/* Call to Action */}
-      <div className="mockup-browser bg-base-content bg-opacity-50 m-2 shadow-xl hover:animate-wiggle">
+      <div className="mockup-browser bg-base-content bg-opacity-75 m-2 shadow-xl hover:animate-wiggle">
         {/* Toolbar */}
-        <div className="flex bg-violet-950 shadow-xl">
-          <div className="input border border-neutral border-opacity-25 bg-base-content bg-opacity-75 w-full h-fit m-4 truncate link-neutral">
+        <div className="flex toolbar">
+          <div className="input border border-neutral border-opacity-25 bg-base-content bg-opacity-75 w-full h-fit m-4 truncate link-neutral text-primary-focus">
             <a href="https://preview.genwealth.app" className="link link-hover leading-7">
               https://preview.genwealth.app
             </a>
@@ -27,7 +27,7 @@ function CallToAction() {
         {/* Content */}
         <div className="flex flex-col gap-2 p-8 border-t border-neutral border-opacity-20">
           {/* Title */}
-          <h2 className="text-purple-950 my-2 style-h2 xl:tracking-tighter lg:text-5xl max-lg:!font-bold lg:tracking-tight md:tracking-normal sm:text-4xl sm:tracking-wide max-sm:text-3xl max-sm:!font-black max-sm:tracking-wider">
+          <h2 className="text-primary my-2 style-h2 xl:tracking-tighter lg:text-5xl max-lg:font-bold lg:tracking-tight md:tracking-normal sm:text-4xl sm:tracking-wide max-sm:text-3xl max-sm:font-black max-sm:tracking-wider">
             <a
               // href="#call-to-action"
               onClick={(e) => scrollToElement(e, "call-to-action")}
@@ -39,7 +39,7 @@ function CallToAction() {
           {/* Body */}
           <div className="w-full">
             <img src="/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-72px] sm:mt-4 max-sm:mt-4" />
-            <div className="text-indigo-950">
+            <div className="text-secondary">
               {/* p1 */}
               <p className="my-2 style-p">
                 <FormattedMessage id="callToAction.p1" />
