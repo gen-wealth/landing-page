@@ -64,6 +64,12 @@ a {
     @apply hover:border-secondary;
     @apply hover:text-primary;
   }
+
+  .toolbar {
+    @apply text-primary-content;
+    @apply bg-primary-focus;
+    @apply shadow-xl;
+  }
 }
 
 @layer utilities {
