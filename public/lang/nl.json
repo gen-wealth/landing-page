@@ -111,12 +111,14 @@
   "awesomeAiken": "awesome-aiken",
   "morbid": "morbid",
 
-  "here": "hier",
-  "note": "opmerking",
-
   "completed": "Klaar",
   "inProgress": "In het proces",
   "planned": "Gepland",
+
+  "here": "hier",
+  "showMore": "laat meer zien",
+  "showLess": "minder laten zien",
+  "note": "opmerking",
 
   "ceo": "CEO",
   "cto": "CTO",

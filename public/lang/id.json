@@ -111,12 +111,14 @@
   "awesomeAiken": "awesome-aiken",
   "morbid": "morbid",
 
-  "here": "di sini",
-  "note": "catatan",
-
   "completed": "Selesai",
   "inProgress": "Dalam proses",
   "planned": "Direncanakan",
+
+  "here": "di sini",
+  "showMore": "tampilkan lebih banyak",
+  "showLess": "tampilkan lebih sedikit",
+  "note": "catatan",
 
   "ceo": "CEO",
   "cto": "CTO",

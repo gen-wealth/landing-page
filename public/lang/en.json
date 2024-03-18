@@ -111,12 +111,14 @@
   "awesomeAiken": "awesome-aiken",
   "morbid": "morbid",
 
-  "here": "here",
-  "note": "note",
-
   "completed": "Completed",
   "inProgress": "In progress",
   "planned": "Planned",
+
+  "here": "here",
+  "showMore": "show more",
+  "showLess": "show less",
+  "note": "note",
 
   "ceo": "CEO",
   "cto": "CTO",

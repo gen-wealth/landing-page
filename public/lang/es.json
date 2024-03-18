@@ -111,12 +111,14 @@
   "awesomeAiken": "awesome-aiken",
   "morbid": "morbid",
 
-  "here": "aquí",
-  "note": "nota",
-
   "completed": "Terminado",
   "inProgress": "In progress",
   "planned": "Planificado",
+
+  "here": "aquí",
+  "showMore": "ver más",
+  "showLess": "ver menos",
+  "note": "nota",
 
   "ceo": "Director Ejecutivo",
   "cto": "Director de Tecnología",

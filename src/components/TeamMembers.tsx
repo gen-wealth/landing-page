@@ -1,4 +1,4 @@
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage, IntlShape, useIntl } from "react-intl";
 import { scrollToElement } from "../util";
 import AnchorScrollOffset from "./AnchorScrollOffset";
 import Svg from "./Svg";
@@ -243,14 +243,14 @@ function TeamMembers() {
           <div className="chat-start chat-end" />
           <div className="items-start" />
           <div className="items-end" />
-          {members.map((member, i) => memberBubble(member, i, members.length))}
+          {members.map((member, i) => memberBubble(member, i, members.length, intl))}
         </div>
       </div>
     </div>
   );
 }
 
-function memberBubble(member: member, index: number, total: number) {
+function memberBubble(member: member, index: number, total: number, intl: IntlShape) {
   return (
     <div key={member.id}>
       <AnchorScrollOffset id={member.id} />
@@ -295,7 +295,10 @@ function memberBubble(member: member, index: number, total: number) {
                   document.getElementById(`${member.id}.show-less`)?.classList.remove("hidden");
                 }}
               >
-                <sub className="link-hover">show more</sub>
+                <sub className="link-hover">
+                  {/* show more */}
+                  {intl.formatMessage({ id: "showMore" }).toLowerCase()}
+                </sub>
                 <div className="animate-bounce mt-2 -mb-2">︾</div>
               </div>
             </div>
@@ -311,7 +314,10 @@ function memberBubble(member: member, index: number, total: number) {
                 }}
               >
                 <div className="animate-bounce">︽</div>
-                <sup className="link-hover">show less</sup>
+                <sup className="link-hover">
+                  {/* show less */}
+                  {intl.formatMessage({ id: "showLess" }).toLowerCase()}
+                </sup>
               </div>
             </div>
           </div>
