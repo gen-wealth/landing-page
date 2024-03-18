@@ -36,10 +36,10 @@ function ContainerTxtImg(props: {
       <AnchorScrollOffset id={props.id} />
 
       {/* Card */}
-      <div id={props.id} className="card sm:card-side bg-base-content bg-opacity-50 m-2 shadow-xl">
-        {/* Content */}
+      <div id={props.id} className="card sm:card-side bg-base-content bg-opacity-75 m-2 shadow-xl">
+        {/* Contents */}
         <div className="card-body overflow-auto">
-          <h2 className="card-title text-purple-950 my-2 style-h2 xl:tracking-tighter lg:text-5xl max-lg:!font-bold lg:tracking-tight md:tracking-normal sm:text-4xl sm:tracking-wide max-sm:text-3xl max-sm:!font-black max-sm:tracking-wider">
+          <h2 className="card-title text-primary my-2 style-h2 xl:tracking-tighter lg:text-5xl max-lg:font-bold lg:tracking-tight md:tracking-normal sm:text-4xl sm:tracking-wide max-sm:text-3xl max-sm:font-black max-sm:tracking-wider">
             <a
               // href={`#${props.id}`}
               onClick={(e) => scrollToElement(e, props.id)}
@@ -48,7 +48,7 @@ function ContainerTxtImg(props: {
             </a>
           </h2>
           {props.paragraphs.map((paragraph, i) => (
-            <div key={`${props.title}.${i}`} className="text-indigo-950 my-2 style-p">
+            <div key={`${props.title}.${i}`} className="text-secondary my-2 style-p">
               {paragraph}
             </div>
           ))}
