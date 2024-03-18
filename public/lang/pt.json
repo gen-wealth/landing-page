@@ -73,7 +73,7 @@
 
   "teamMembers.ariadyPutra": "Ariady Putra",
   "teamMembers.ariadyPutra.p1": "Olá, sou Ariady. Tenho mais de uma década de experiência trabalhando como desenvolvedor de software em tempo integral. Em 2022, adquiri meu {cardanoDeveloperProfessionalBadge}.",
-  "teamMembers.ariadyPutra.p2": "Sou responsável pelo desenvolvimento do DApp, tanto pelas partes on-chain quanto off-chain do sistema, bem como por decidir qual conjunto de tecnologia usar. Antes da GenWealth, desenvolvi o contrato inteligente {mórbido} conforme apresentado em {awesomeAiken}, uma implementação mais simples do contrato {deadMansSwitch}.",
+  "teamMembers.ariadyPutra.p2": "Sou responsável pelo desenvolvimento do DApp, tanto pelas partes on-chain quanto off-chain do sistema, bem como por decidir qual conjunto de tecnologia usar. Antes da GenWealth, desenvolvi o contrato inteligente {morbid} conforme apresentado em {awesomeAiken}, uma implementação mais simples do contrato {deadMansSwitch}.",
 
   "contactUs.title": "Nos Contate",
   "contactUs.p1": "Sinta-se à vontade para nos contatar em {email}",
