@@ -46,10 +46,10 @@ function HowItWorks() {
           <FormattedMessage
             id="howItWorks.p1"
             values={{
-              vaults: <b>{<FormattedMessage id="vaults" />}</b>,
-              vaultKey: <b>{<FormattedMessage id="vaultKey" />}</b>,
-              deadline: <b>{<FormattedMessage id="deadline" />}</b>,
-              proofOfLife: <i>{<FormattedMessage id="proofOfLife" />}</i>,
+              vaults: <b>{intl.formatMessage({ id: "vaults" })}</b>,
+              vaultKey: <b>{intl.formatMessage({ id: "vaultKey" })}</b>,
+              deadline: <b>{intl.formatMessage({ id: "deadline" })}</b>,
+              proofOfLife: <i>{intl.formatMessage({ id: "proofOfLife" })}</i>,
             }}
           />
         </>,
@@ -66,8 +66,8 @@ function HowItWorks() {
           <FormattedMessage
             id="howItWorks.p2"
             values={{
-              pockets: <b>{<FormattedMessage id="pockets" />}</b>,
-              pocketKeys: <b>{<FormattedMessage id="pocketKeys" />}</b>,
+              pockets: <b>{intl.formatMessage({ id: "pockets" })}</b>,
+              pocketKeys: <b>{intl.formatMessage({ id: "pocketKeys" })}</b>,
             }}
           />
         </>,
@@ -98,12 +98,12 @@ function HowItWorks() {
             values={{
               cardano: (
                 <a href="https://cardano.org" className="link link-hover style-link">
-                  {<FormattedMessage id="cardano" />}
+                  {intl.formatMessage({ id: "cardano" })}
                 </a>
               ),
               here: (
                 <a href="https://docs.genwealth.app" className="link link-hover style-link">
-                  {<FormattedMessage id="here" />}
+                  {intl.formatMessage({ id: "here" })}
                 </a>
               ),
             }}

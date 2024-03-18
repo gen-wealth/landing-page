@@ -18,7 +18,10 @@ function OurService() {
         <>
           <FormattedMessage
             id="ourService.p1"
-            values={{ secure: <b>{<FormattedMessage id="secure" />}</b>, trustless: <b>{<FormattedMessage id="trustless" />}</b> }}
+            values={{
+              secure: <b>{intl.formatMessage({ id: "secure" })}</b>, // <b>secure</b>
+              trustless: <b>{intl.formatMessage({ id: "trustless" })}</b>, // <b>trustless</b>
+            }}
           />
         </>,
       ]}
