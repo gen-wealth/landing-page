@@ -31,8 +31,8 @@ function Home(props: { locale: string; messages: Record<string, string> }) {
       <NavBar />
       <Hero />
 
-      {/* In the future when we have subpages,
-      use <BrowserRouter> from "react-router-dom" instead */}
+      {/* In the future when we have subpages...
+      use <BrowserRouter> from "react-router-dom" */}
       <div className="w-full max-w-screen-xl h-min mx-auto">
         <HomeContents />
       </div>

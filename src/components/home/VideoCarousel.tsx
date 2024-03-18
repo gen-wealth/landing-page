@@ -50,7 +50,7 @@ export function VideoCarousel(props: PropState) {
               } btn btn-circle border-none bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)] pointer-events-auto shadow-xl`}
               onClick={(e) => props.slideToVideo(e, (index - 1 + videos.length) % videos.length)}
             >
-              &#10094;
+              {/* ❮ */} &#10094;
             </a>
             <a
               // href={`#slide-${(index + 1) % videos.length}`}
@@ -59,7 +59,7 @@ export function VideoCarousel(props: PropState) {
               } btn btn-circle  border-none bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)] pointer-events-auto shadow-xl`}
               onClick={(e) => props.slideToVideo(e, (index + 1) % videos.length)}
             >
-              &#10095;
+              &#10095; {/* ❯ */}
             </a>
           </div>
         </div>
@@ -77,8 +77,8 @@ export function VideoCarouselIndicator(props: PropState) {
           // href={`#slide-${index}`}
           className={`button-primary !btn-circle !btn-xs border-none ${
             index == props.videoIndex
-              ? "!bg-violet-950 !bg-opacity-100 hover:!bg-violet-950 hover:!bg-opacity-100"
-              : "!bg-violet-950 hover:!bg-violet-900 !bg-opacity-[calc(1/3)] hover:!bg-opacity-[calc(2/3)]"
+              ? "!bg-primary-focus btn-disabled" // it's current index
+              : "bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)]"
           }`}
           onClick={(e) => props.slideToVideo(e, index)}
         />
