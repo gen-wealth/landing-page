@@ -6,16 +6,47 @@ type lang = {
   code: Lang;
 };
 
-const flag: Record<string, JSX.Element> = {
-  en: <>&#127482;&#127480;</>, // 🇺🇸
-  es: <>&#127466;&#127480;</>, // 🇪🇸
-  id: <>&#127470;&#127465;</>, // 🇮🇩
-  ja: <>&#127471;&#127477;</>, // 🇯🇵
-  ko: <>&#127472;&#127479;</>, // 🇰🇷
-  ms: <>&#127474;&#127486;</>, // 🇲🇾
-  nl: <>&#127475;&#127473;</>, // 🇳🇱
-  pt: <>&#127477;&#127481;</>, // 🇵🇹
-  zh: <>&#127464;&#127475;</>, // 🇨🇳
+type locale = {
+  localName: string;
+  localFlag: JSX.Element;
+};
+const info: Record<string, locale> = {
+  en: {
+    localName: "English",
+    localFlag: <>&#127482;&#127480;</>, // 🇺🇸
+  },
+  es: {
+    localName: "Español",
+    localFlag: <>&#127466;&#127480;</>, // 🇪🇸
+  },
+  id: {
+    localName: "Indonesia",
+    localFlag: <>&#127470;&#127465;</>, // 🇮🇩
+  },
+  ja: {
+    localName: "日本語",
+    localFlag: <>&#127471;&#127477;</>, // 🇯🇵
+  },
+  ko: {
+    localName: "한국어",
+    localFlag: <>&#127472;&#127479;</>, // 🇰🇷
+  },
+  ms: {
+    localName: "Melayu",
+    localFlag: <>&#127474;&#127486;</>, // 🇲🇾
+  },
+  nl: {
+    localName: "Nederlands",
+    localFlag: <>&#127475;&#127473;</>, // 🇳🇱
+  },
+  pt: {
+    localName: "Português",
+    localFlag: <>&#127477;&#127481;</>, // 🇵🇹
+  },
+  zh: {
+    localName: "中文",
+    localFlag: <>&#127464;&#127475;</>, // 🇨🇳
+  },
 };
 
 function LanguageSelector(props: {
@@ -71,7 +102,7 @@ function LanguageSelector(props: {
   return (
     <div className={`dropdown dropdown-hover ${props.dropdownClassName}`}>
       <div tabIndex={0} role="button" className={`style-text-shadow ${props.buttonClassName}`}>
-        {flag[language]}
+        {info[language].localFlag}
       </div>
       <ul
         tabIndex={0}
@@ -80,10 +111,10 @@ function LanguageSelector(props: {
         ${props.contentClassName}`}
       >
         <li>
-          <a className="style-text-shadow">{flag[language]}</a>
+          <a className="style-text-shadow">{info[language].localFlag}</a>
         </li>
         {langs
-          .sort((l, r) => (l.name < r.name ? -1 : 1))
+          .sort((l, r) => (info[l.code].localName < info[r.code].localName ? -1 : 1))
           .filter((lang) => lang.code !== language)
           .map((lang) => (
             <li key={lang.code}>
@@ -91,12 +122,12 @@ function LanguageSelector(props: {
                 className={`style-text-shadow
                 before:bg-info before:text-info-content
                 tooltip ${props.tooltipClassName}`}
-                data-tip={lang.name}
+                data-tip={`${info[lang.code].localName} | ${lang.name}`}
                 onClick={() => {
                   setLanguage(lang.code, props.onLanguageChanged, props.onError);
                 }}
               >
-                {flag[lang.code]}
+                {info[lang.code].localFlag}
               </a>
             </li>
           ))}
