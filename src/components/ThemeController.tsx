@@ -16,7 +16,7 @@ function ThemeController(props: { className?: string; sun: SvgProps; moon: SvgPr
         type="checkbox"
         onChange={() => {
           setCurrTheme(currTheme === "sun" ? "moon" : "sun");
-          location.reload(); // TODO: Use a proper theming system!
+          location.reload(); // TODO: ThemeProvider!
         }}
         checked={currTheme === "sun"}
       />
@@ -30,14 +30,18 @@ function ThemeController(props: { className?: string; sun: SvgProps; moon: SvgPr
 
 export const getTheme = () => (localStorage.getItem("genwealth.theme") || "moon") as Theme;
 export function setTheme(theme: Theme) {
+  const html = document.documentElement;
+  html.setAttribute("data-theme", theme);
+
+  const style = html.style;
   switch (theme) {
     case "sun":
-      document.documentElement.style.background =
+      style.background =
         "radial-gradient(ellipse at bottom, #d4f9c0, transparent), radial-gradient(ellipse at top, #6e4656, transparent), radial-gradient(farthest-corner at top right, #ff3355 0%, #4433eef3 100%)";
       break;
 
     default:
-      document.documentElement.style.background = "";
+      style.background = "";
       break;
   }
 

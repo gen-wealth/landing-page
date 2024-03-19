@@ -17,35 +17,36 @@ module.exports = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
+      // "business",
       // "synthwave",
 
       {
         moon: {
-          primary: "#3b0764", // purple-950
-          secondary: "#fef",
+          primary: "#2e1065", // violet-950
+          secondary: "#edf",
           accent: "#f9c3ff",
           neutral: "#180733",
           "base-100": "#1a103d",
 
           info: "#9a65b1",
-          success: "#9ad52b",
-          warning: "#f1a20f",
-          error: "#fe3210",
+          success: "#71ead2",
+          warning: "#eacc30",
+          error: "#e24056",
         },
       },
 
       {
         sun: {
-          primary: "#3b0764", // purple-950
-          secondary: "#fef",
+          primary: "#2e1065", // violet-950
+          secondary: "#edf",
           accent: "#fff",
           neutral: "#220b4a",
           "base-100": "#707693",
 
           info: "#9a65b1",
-          success: "#9ad52b",
-          warning: "#f1a20f",
-          error: "#fe3210",
+          success: "#71ead2",
+          warning: "#eacc30",
+          error: "#e24056",
         },
       },
     ],

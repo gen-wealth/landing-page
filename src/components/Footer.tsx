@@ -9,7 +9,7 @@ function Footer() {
 
   return (
     <div className="max-w-screen-xl mx-auto">
-      <footer className="footer max-sm:flex max-sm:flex-col items-center p-4 bg-neutral bg-opacity-50 text-neutral-content rounded-box m-2 w-auto">
+      <footer className="footer max-sm:flex max-sm:flex-col items-center p-4 bg-neutral bg-opacity-50 text-neutral-content rounded-box m-2 w-auto shadow-xl">
         <aside className="items-center flex flex-wrap sm:flex-nowrap">
           <a
             // href="#"

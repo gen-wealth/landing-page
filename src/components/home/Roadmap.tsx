@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import AnchorScrollOffset from "../AnchorScrollOffset";
 import Container from "../Container";
 import { FormattedMessage, useIntl } from "react-intl";
-import { getTheme } from "../ThemeController";
 
 type status = "Completed" | "In progress" | "Planned";
 type roadmap = {
@@ -112,8 +111,6 @@ function Roadmap() {
     scrollToInProgress();
   }, []);
 
-  const theme = getTheme();
-
   return (
     <Container
       id={"roadmap"}
@@ -131,11 +128,10 @@ function Roadmap() {
                   roadmap.status === "Completed"
                     ? "before:!bg-neutral after:!bg-neutral after:!text-neutral-content"
                     : "step-primary before:!bg-accent after:!bg-accent after:!text-accent-content"
-                }
-                ${theme === "sun" ? "before:brightness-150 after:brightness-150" : ""}`}
+                }`}
                 data-content={roadmapStatus[roadmap.status]}
               >
-                <div className="text-start text-secondary-content place-self-start mb-10">
+                <div className="text-start text-neutral place-self-start mb-10">
                   <AnchorScrollOffset id={"roadmap-" + i} />
                   <AnchorScrollOffset id={"roadmap-" + i + "-portrait"} className="-top-20 -left-12" />
                   <time className="font-mono italic">{roadmap.time}</time>

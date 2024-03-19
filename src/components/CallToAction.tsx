@@ -14,7 +14,7 @@ function CallToAction() {
       <div className="mockup-browser bg-base-content bg-opacity-[calc(2/3)] m-2 shadow-xl hover:animate-wiggle">
         {/* Toolbar */}
         <div className="flex toolbar">
-          <div className="input border border-neutral border-opacity-25 bg-base-content bg-opacity-75 w-full h-fit m-4 truncate link-neutral text-primary-focus">
+          <div className="input border border-neutral border-opacity-25 bg-base-content bg-opacity-75 w-full h-fit m-4 truncate link-neutral">
             <a href="https://preview.genwealth.app" className="link link-hover leading-7">
               https://preview.genwealth.app
             </a>
@@ -39,7 +39,7 @@ function CallToAction() {
           {/* Body */}
           <div className="w-full">
             <img src="/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-72px] sm:mt-4 max-sm:mt-4" />
-            <div className="text-secondary-content">
+            <div className="text-neutral">
               {/* p1 */}
               <p className="my-2 style-p">
                 <FormattedMessage id="callToAction.p1" />

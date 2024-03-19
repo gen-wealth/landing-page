@@ -48,7 +48,7 @@ function ContainerTxtImg(props: {
             </a>
           </h2>
           {props.paragraphs.map((paragraph, i) => (
-            <div key={`${props.title}.${i}`} className="text-secondary-content my-2 style-p">
+            <div key={`${props.title}.${i}`} className="text-neutral my-2 style-p">
               {paragraph}
             </div>
           ))}

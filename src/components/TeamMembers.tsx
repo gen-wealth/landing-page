@@ -277,7 +277,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
           {/* chat-bubble */}
           <div
             className={`chat-bubble flex flex-col gap-2 bg-opacity-[calc(2/3)] shadow-xl ${
-              member.chatPosition === "start" ? "bg-primary-focus text-primary-content" : "bg-secondary text-secondary-content"
+              member.chatPosition === "start" ? "bg-primary-focus text-primary-content" : "bg-secondary text-neutral"
             }`}
           >
             {/* lines... */}
