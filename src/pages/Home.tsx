@@ -5,19 +5,11 @@ import HomeContents from "../components/pages/HomeContents";
 import Footer from "../components/Footer";
 
 function Home() {
-  // Scroll element into view from pathname as anchor on window load
+  // Scroll element into view from pathname as anchor on page load
   useEffect(() => {
-    const id = location.pathname.slice(1);
-    if (id) {
-      const element = document.getElementById(id);
-      if (element) {
-        const scrollElementIntoView = () =>
-          element.scrollIntoView({
-            behavior: "smooth",
-          });
-        window.addEventListener("load", scrollElementIntoView);
-        return () => window.removeEventListener("load", scrollElementIntoView);
-      }
+    const anchor = location.pathname.slice(1);
+    if (anchor) {
+      document.getElementById(anchor)?.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
 
