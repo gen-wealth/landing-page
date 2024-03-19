@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
-import HomeContents from "../components/home/HomeContents";
+import Hero from "../components/Hero";
+import HomeContents from "../components/pages/HomeContents";
+import Footer from "../components/Footer";
 
 function Home() {
   // Scroll element into view from pathname as anchor on window load

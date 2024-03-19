@@ -1,21 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./pages/Home.tsx";
+import Home from "./pages/Home";
 import "./styles/index.css";
-import { getLocale } from "./util.ts";
-import ThemeProvider from "./components/ThemeProvider.tsx";
-import { IntlProvider } from "react-intl";
+import LanguageProvider, { getLocale } from "./contexts/language/LanguageProvider";
+import ThemeProvider from "./contexts/theme/ThemeProvider";
 
 const locale = getLocale();
 fetch(`/lang/${locale}.json`).then((lang) => {
   lang.json().then((messages) => {
     ReactDOM.createRoot(document.getElementById("root")!).render(
       <React.StrictMode>
-        <IntlProvider locale={locale} messages={messages}>
+        <LanguageProvider defaultLocale={locale} defaultMessages={messages}>
           <ThemeProvider>
             <Home />
           </ThemeProvider>
-        </IntlProvider>
+        </LanguageProvider>
       </React.StrictMode>
     );
   });

@@ -1,5 +1,5 @@
-import ContainerImgTxt from "../ContainerImgTxt";
 import { FormattedMessage, useIntl } from "react-intl";
+import ContainerImgTxt from "../../ContainerImgTxt";
 
 function OurService() {
   const intl = useIntl();

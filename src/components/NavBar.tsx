@@ -1,27 +1,11 @@
 import { useIntl } from "react-intl";
-import { getLocale, scrollToElement, scrollToTop, setLocale } from "../util";
-import ThemeController from "./ThemeController";
+import { scrollToElement, scrollToTop } from "../util";
+import ThemeController from "../contexts/theme/ThemeController";
+import LanguageSelector from "../contexts/language/LanguageSelector";
 
 type menu = {
   linkId: string;
   linkName: string;
-};
-
-type lang = {
-  name: string;
-  code: string;
-};
-
-const flag: Record<string, JSX.Element> = {
-  en: <>&#127482;&#127480;</>, // 🇺🇸
-  es: <>&#127466;&#127480;</>, // 🇪🇸
-  id: <>&#127470;&#127465;</>, // 🇮🇩
-  ja: <>&#127471;&#127477;</>, // 🇯🇵
-  ko: <>&#127472;&#127479;</>, // 🇰🇷
-  ms: <>&#127474;&#127486;</>, // 🇲🇾
-  nl: <>&#127475;&#127473;</>, // 🇳🇱
-  pt: <>&#127477;&#127481;</>, // 🇵🇹
-  zh: <>&#127464;&#127475;</>, // 🇨🇳
 };
 
 function NavBar() {
@@ -46,46 +30,6 @@ function NavBar() {
       linkName: intl.formatMessage({ id: "navBar.menu4" }),
     },
   ];
-
-  const langs: lang[] = [
-    {
-      name: intl.formatMessage({ id: "lang.en" }),
-      code: "en",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.es" }),
-      code: "es",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.id" }),
-      code: "id",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.ja" }),
-      code: "ja",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.ko" }),
-      code: "ko",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.ms" }),
-      code: "ms",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.nl" }),
-      code: "nl",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.pt" }),
-      code: "pt",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.zh" }),
-      code: "zh",
-    },
-  ];
-  const locale = getLocale();
 
   return (
     <div className="fixed w-full max-w-screen-xl h-min mx-auto inset-0 z-10">
@@ -143,33 +87,12 @@ function NavBar() {
           </a>
 
           {/* Language dropdown */}
-          <div className="dropdown dropdown-hover -ml-2">
-            <div tabIndex={0} role="button" className="p-2 style-text-shadow">
-              {flag[locale]}
-            </div>
-            <ul tabIndex={0} className="dropdown-content flex flex-col gap-2 p-2 z-20 top-0 shadow-xl drop-shadow-xl bg-base-content bg-opacity-[calc(5/6)] rounded-box">
-              <li>
-                <a className="style-text-shadow">{flag[locale]}</a>
-              </li>
-              {langs
-                .sort((l, r) => (l.name < r.name ? -1 : 1))
-                .filter((lang) => lang.code !== locale)
-                .map((lang) => (
-                  <li key={lang.code}>
-                    <a
-                      className="style-text-shadow tooltip tooltip-left 2xl:tooltip-right before:bg-info before:text-info-content"
-                      data-tip={lang.name}
-                      onClick={() => {
-                        setLocale(lang.code);
-                        location.reload();
-                      }}
-                    >
-                      {flag[lang.code]}
-                    </a>
-                  </li>
-                ))}
-            </ul>
-          </div>
+          <LanguageSelector
+            dropdownClassName="-ml-2"
+            buttonClassName="p-2"
+            contentClassName="bg-base-content bg-opacity-[calc(5/6)] gap-2 p-2 top-0"
+            tooltipClassName="tooltip-left 2xl:tooltip-right"
+          />
         </div>
       </div>
     </div>

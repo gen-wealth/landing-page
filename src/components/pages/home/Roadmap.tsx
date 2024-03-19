@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
-import AnchorScrollOffset from "../AnchorScrollOffset";
-import Container from "../Container";
 import { FormattedMessage, useIntl } from "react-intl";
+import Container from "../../Container";
+import AnchorScrollOffset from "../../AnchorScrollOffset";
 
-type status = "Completed" | "In progress" | "Planned";
+type Status = "Completed" | "In progress" | "Planned";
 type roadmap = {
   time: string;
   title: string;
-  status: status;
+  status: Status;
 };
 
 const roadmapStatus = {

@@ -24,7 +24,6 @@ const videos = [
 ];
 
 type PropState = { videoIndex: number; slideToVideo: (e: MouseEvent, index: number) => void };
-
 export function VideoCarousel(props: PropState) {
   return (
     <div className="carousel w-full shadow-xl">

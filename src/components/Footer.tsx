@@ -1,7 +1,7 @@
 import { useIntl } from "react-intl";
 import { scrollToTop } from "../util";
 import Svg from "./Svg";
-import ThemeController from "./ThemeController";
+import ThemeController from "../contexts/theme/ThemeController";
 
 function Footer() {
   const intl = useIntl();

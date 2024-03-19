@@ -1,7 +1,7 @@
 import { MouseEvent, useState } from "react";
-import Container from "../Container";
 import VideoCarousel, { VideoCarouselIndicator } from "./VideoCarousel";
 import { FormattedMessage, useIntl } from "react-intl";
+import Container from "../../Container";
 
 function HowItWorks() {
   const intl = useIntl();

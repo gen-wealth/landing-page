@@ -1,4 +1,4 @@
-import Svg from "./Svg";
+import Svg from "../../components/Svg";
 import { useTheme } from "./ThemeProvider";
 
 type SvgProps = { w?: number; h?: number; className?: string; filter?: string };

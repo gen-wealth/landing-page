@@ -14,11 +14,3 @@ export function scrollToElement(e: MouseEvent, elementId: string) {
     behavior: "smooth",
   });
 }
-
-export function getLocale() {
-  return localStorage.getItem("genwealth.locale") || "en";
-}
-
-export function setLocale(locale: string) {
-  localStorage.setItem("genwealth.locale", locale);
-}
