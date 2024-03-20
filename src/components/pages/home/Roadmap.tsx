@@ -95,8 +95,8 @@ function Roadmap() {
 
   const indexOfInProgress = () => roadmaps.findIndex((roadmap) => roadmap.status === "In progress");
   const scrollToInProgress = async () => {
-    const roadmap = roadmapRef.current;
-    if (roadmap) {
+    const roadmap = roadmapRef.current; // is roadmap landscape?
+    if (roadmap && roadmap.clientWidth > roadmap.clientHeight) {
       const lastIndexOfCompleted = indexOfInProgress() - 1;
       const margin = document.getElementById("roadmap-0")!.offsetLeft; // margin is always calculated using roadmap-0
       const target = document.getElementById("roadmap-" + lastIndexOfCompleted)!;
