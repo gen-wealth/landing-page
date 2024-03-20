@@ -267,11 +267,9 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
 
         <div className={`flex flex-col w-full items-${member.chatPosition}`}>
           {/* chat-header */}
-          <div className="chat-header whitespace-nowrap">
-            <a className="ml-2 mr-1" onClick={(e) => scrollToElement(e, member.id)}>
-              {member.name}
-            </a>
-            <span className="text-xs opacity-50 mr-2">{member.title}</span>
+          <div className="chat-header flex flex-wrap gap-1 ml-2 items-baseline whitespace-nowrap">
+            <a onClick={(e) => scrollToElement(e, member.id)}>{member.name}</a>
+            <span className="text-xs opacity-50 mr-2 -mt-2">{member.title}</span>
           </div>
 
           {/* chat-bubble */}
