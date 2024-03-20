@@ -1,9 +1,9 @@
 import { useIntl } from "react-intl";
-import { Lang, useLanguage } from "./LanguageProvider";
+import { useLanguage } from "./LanguageProvider";
 
 type lang = {
   name: string;
-  code: Lang;
+  code: string;
 };
 
 type locale = {

@@ -1,19 +1,25 @@
 import { createContext, useContext, useState } from "react";
 import { IntlProvider } from "react-intl";
 
-export type Lang =
-  | "en" // "English"
-  | "es" // "Spanish"
-  | "id" // "Indonesian"
-  | "ja" // "Japanese"
-  | "ko" // "Korean"
-  | "ms" // "Malay"
-  | "nl" // "Dutch"
-  | "pt" // "Portuguese"
-  | "zh"; // "Chinese"
+const langs = [
+  "en", // "English"
+  "es", // "Spanish"
+  "id", // "Indonesian"
+  "ja", // "Japanese"
+  "ko", // "Korean"
+  "ms", // "Malay"
+  "nl", // "Dutch"
+  "pt", // "Portuguese"
+  "zh", // "Chinese"
+];
 
 export function getLocale() {
-  return (localStorage.getItem("genwealth.locale") || "en") as Lang;
+  const browserLang = navigator.language.slice(0, 2);
+  return (
+    localStorage.getItem("genwealth.locale") || // 1st preference
+    langs.find((lang) => lang === browserLang) || // 2nd preference
+    "en" // fallback
+  );
 }
 export function setLocale(locale: string) {
   localStorage.setItem("genwealth.locale", locale);
@@ -24,7 +30,7 @@ const LanguageContext = createContext<
     string, // locale
     (
       // to change language:
-      language: Lang,
+      language: string,
       callback?: () => void, // on_language_changed()
       onError?: (error: any) => void // on_exception!
     ) => void
@@ -41,7 +47,7 @@ function LanguageProvider(props: {
   const [messages, setMessages] = useState(props.defaultMessages);
 
   const updateLanguage = (
-    locale: Lang,
+    locale: string,
     callback?: () => void, // onFulfilled
     onError?: (error: any) => void // onRejected
   ) => {

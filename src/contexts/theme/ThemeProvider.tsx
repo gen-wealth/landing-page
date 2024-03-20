@@ -3,7 +3,10 @@ import { createContext, useContext, useEffect, useState } from "react";
 type Theme = "sun" | "moon";
 
 function getStoredTheme() {
-  return (localStorage.getItem("genwealth.theme") || "moon") as Theme;
+  return (localStorage.getItem("genwealth.theme") || // matches preference?
+    (window.matchMedia("(prefers-color-scheme: light)").matches
+      ? "sun" // fallback:
+      : "moon")) as Theme;
 }
 function setStoredTheme(theme: Theme) {
   const html = document.documentElement;
