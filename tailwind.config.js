@@ -23,12 +23,13 @@ module.exports = {
       {
         moon: {
           primary: "#2e1065", // violet-950
-          secondary: "#edf",
-          accent: "#f9c3ff",
+          secondary: "#e0d0f0",
+          accent: "#e8b2ee",
           neutral: "#180733",
+
           "base-100": "#1a103d",
 
-          info: "#9a65b1",
+          info: "#9964b0",
           success: "#71ead2",
           warning: "#eacc30",
           error: "#e24056",
@@ -38,12 +39,13 @@ module.exports = {
       {
         sun: {
           primary: "#2e1065", // violet-950
-          secondary: "#edf",
-          accent: "#fff",
+          secondary: "#efdfff",
+          accent: "#f1f0f2",
           neutral: "#220b4a",
+
           "base-100": "#707693",
 
-          info: "#9a65b1",
+          info: "#9b66b2",
           success: "#71ead2",
           warning: "#eacc30",
           error: "#e24056",
