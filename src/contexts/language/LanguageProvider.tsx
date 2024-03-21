@@ -56,6 +56,7 @@ function LanguageProvider(props: {
         lang
           .json()
           .then((messages) => {
+            document.documentElement.setAttribute("lang", locale);
             setLocale(locale);
             setCurrLang(locale);
             setMessages(messages);
