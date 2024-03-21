@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { IntlProvider } from "react-intl";
 
 const langs = [
@@ -46,6 +46,8 @@ function LanguageProvider(props: {
   const [currLang, setCurrLang] = useState(props.defaultLocale);
   const [messages, setMessages] = useState(props.defaultMessages);
 
+  useEffect(() => document.documentElement.setAttribute("lang", currLang), [currLang]);
+
   const updateLanguage = (
     locale: string,
     callback?: () => void, // onFulfilled
@@ -56,7 +58,6 @@ function LanguageProvider(props: {
         lang
           .json()
           .then((messages) => {
-            document.documentElement.setAttribute("lang", locale);
             setLocale(locale);
             setCurrLang(locale);
             setMessages(messages);
