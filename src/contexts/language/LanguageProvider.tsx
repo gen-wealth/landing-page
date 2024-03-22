@@ -13,12 +13,22 @@ const langs = [
   "zh", // "Chinese"
 ];
 
+/**
+ * 1st preference: `genwealth.locale` from `localStorage`
+ *
+ * 2nd preference: `navigator.language`
+ *
+ * Fallback: `en`
+ *
+ * @returns ISO 639-1 two-letter language code
+ */
 export function getLocale() {
-  const browserLang = navigator.language.slice(0, 2);
   return (
-    localStorage.getItem("genwealth.locale") || // 1st preference
-    langs.find((lang) => lang === browserLang) || // 2nd preference
-    "en" // fallback
+    localStorage.getItem("genwealth.locale") ||
+    langs.find((lang) => {
+      return navigator.language.startsWith(lang);
+    }) ||
+    "en"
   );
 }
 export function setLocale(locale: string) {
