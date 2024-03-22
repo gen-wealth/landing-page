@@ -44,7 +44,7 @@ function NavBar() {
             <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
               <img alt={title} src="/GenWealth.ico" className="mask mask-squircle" />
             </div>
-            <span className="text-primary xl:text-3xl lg:text-2xl md:text-xl max-sm:text-lg font-bold self-center max-md:hidden max-sm:flex">{title}</span>
+            <span className="text-primary text-xl lg:text-2xl font-bold self-center max-md:hidden max-sm:flex">{title}</span>
           </a>
         </div>
 

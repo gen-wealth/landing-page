@@ -21,12 +21,15 @@ function Footer() {
             </div>
             <h5 className="max-sm:w-full font-bold text-center">{title}</h5>
           </a>
+
           {/* <img src="/CardanoWhite.svg" width={20} className="max-sm:hidden" /> */}
-          <span className="max-sm:hidden">《</span>
+          <span className="max-sm:hidden">&bull;</span>
+
           <h6 className="max-sm:w-full font-bold text-center">{intl.formatMessage({ id: "tagLine" })}</h6>
-          {/* <span className="md:hidden">&bull;</span> */}
+
           {/* <img src="/CardanoWhite.svg" width={20} className="max-sm:hidden" /> */}
-          <span className="max-sm:hidden">》</span>
+          <span className="max-sm:hidden">&bull;</span>
+
           <p className="max-sm:w-full text-center">{intl.formatMessage({ id: "copyright" })}</p>
         </aside>
         <nav className="grid-flow-col gap-4 max-sm:place-self-center sm:justify-self-end">
