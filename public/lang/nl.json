@@ -22,39 +22,39 @@
   "hero.action1": "Meer informatie",
 
   "ourService.title": "Onze Service",
-  "ourService.p1": "Bevroren activa in de cryptowereld als gevolg van het voor altijd opsluiten in portemonnees zijn een groot probleem. We bieden een {secure} en {trustless} oplossing waarmee u uw bezittingen kunt doorgeven aan uw dierbaren.",
+  "ourService.p1": "Miljarden dollars aan crypto-activa zijn verloren gegaan door het gebrek aan oplossingen om activa die in portemonnees zijn opgesloten terug te vorderen nadat hun eigenaren zijn verdwenen. We bieden een {secure} en {trustless} oplossing waarmee u uw bezittingen kunt doorgeven aan uw dierbaren.",
 
   "howItWorks.title": "Hoe het Werkt",
-  "howItWorks.p1": "Met onze DApp kunt u {vaults} instellen. Een vault is een slim contractadres, het is net een portemonnee waarin u zelfbewaring en volledige controle over de inhoud ervan heeft. Daarnaast kunt u regels definiëren over hoe u wilt dat de activa worden gedistribueerd. Wanneer u een vault maakt, krijgt u een uniek adres, ook een {vaultKey} en stelt u een {deadline} in. De deadline kan van tijd tot tijd worden uitgesteld, dit noemen we {proofOfLife}. Als vaulteigenaar kunt u de activa op elk moment uit de vault halen, ongeacht de deadline. U kunt de vaultoegang delen door meer vault-key tokens te maken en deze naar uw andere portefeuilles te sturen.",
-  "howItWorks.p2": "Binnen uw vault kunt u onderverdelingen maken, genaamd {pockets}, waarin u uw geërfde bezittingen erover verdeelt. U kunt vervolgens de bijbehorende {pocketKeys} slaan en naar de begunstigden sturen. Met deze pocket-key tokens kunnen ze hun deel van de activa pas uit de overeenkomstige pocket claimen nadat de deadline van de vault volledig is verstreken.",
-  "howItWorks.p3": "Met deze DApp kunt u voorkomen dat uw crypto-activa voor altijd verloren gaan, in een portemonnee worden opgesloten als u uw startzin kwijtraakt, of als er iets onverwachts gebeurt en u weg bent zonder dat u al een erfenisplan gereed heeft. Nu kunt u uw crypto-activa veiliger houden, omdat u geen zaadzinnen meer hoeft te delen.",
-  "howItWorks.p4": "GenWealth is het eerste overervingsprotocol op {cardano}. We zijn van plan onze service in de toekomst uit te breiden naar andere blockchains. Voor meer technische details over hoe het slimme contract werkt, kunt u de codedocumentatie {here} bekijken.",
+  "howItWorks.p1": "Met onze DApp kunt u {vaults} maken. Een vault is een reeks slimme contracten, waarbij u volledige controle heeft over de inhoud ervan, net zoals u zou doen met een portemonnee die u zelf beheert. Maar daarnaast kunt u met de vault regels definiëren voor de manier waarop u wilt dat de bezittingen worden verdeeld als u weg bent. Wanneer u een vault maakt, krijgt u een uniek adres, ook een {vaultKey} en stelt u een {deadline} in. Deze deadline kan van tijd tot tijd worden uitgesteld om te bewijzen dat je nog leeft, we noemen dit {proofOfLife}. Als eigenaar van de vault kunt u op elk moment de activa uit de vault halen, ongeacht de deadline. U kunt de toegang tot de vault delen door meer vault-key tokens te maken en deze naar uw andere portemonnees te sturen.",
+  "howItWorks.p2": "Binnen uw vault kunt u onderverdelingen maken, genaamd {pockets}, waarin u uw geërfde bezittingen erover verdeelt. Vervolgens kunt u de bijbehorende {pocketKeys} aan de pocket laten binden en naar de begunstigden sturen. Het zijn deze pocket-key tokens waarmee ze hun deel van de activa uit de respectieve pocket kunnen claimen zodra je niet langer kunt bewijzen dat je nog leeft, wat pas gebeurt nadat de deadline van de vault volledig is verstreken.",
+  "howItWorks.p3": "Met deze DApp kunnen uw crypto-activa op een betrouwbare manier worden teruggevorderd door de mensen die u kiest nadat u weg bent. Nu kunt u uw crypto-activa met meer gemoedsrust opslaan, omdat u uw startzin niet langer aan een derde partij hoeft toe te vertrouwen.",
+  "howItWorks.p4": "GenWealth is het eerste overnameprotocol op {cardano}, we zijn van plan onze service in de toekomst uit te breiden naar andere blockchains. Voor meer informatie over hoe onze slimme contracten werken, kunt u {here} de codedocumentatie lezen.",
 
   "roadmap.title": "Routekaart",
 
-  "roadmap1.time": "2023 Q3",
+  "roadmap1.time": "2023 K3",
   "roadmap1.title": "On Chain Proof of Concept",
 
-  "roadmap2.time": "2023 Q4",
-  "roadmap2.title": "Off Chain for Internal Testing",
+  "roadmap2.time": "2023 K4",
+  "roadmap2.title": "Off Chain voor Interne Tests",
 
-  "roadmap3.time": "2024 Q1",
-  "roadmap3.title": "UI/UX Design for Public Testnet",
+  "roadmap3.time": "2024 K1",
+  "roadmap3.title": "UI/UX-Ontwerp voor Publiek Testnet",
 
-  "roadmap4.time": "2024 Q2",
+  "roadmap4.time": "2024 K2",
   "roadmap4.title": "Frontend en Backend Ontwikkeling",
 
-  "roadmap5.time": "2024 Q3",
-  "roadmap5.title": "Public Testnet en Bug Bounty",
+  "roadmap5.time": "2024 K3",
+  "roadmap5.title": "Publiek Testnet en Bug Bounty",
 
-  "roadmap6.time": "2024 Q4",
+  "roadmap6.time": "2024 K4",
   "roadmap6.title": "Audit en Productverbeteringen",
 
   "roadmap7.time": "2025",
-  "roadmap7.title": "Cardano Mainnet Release",
+  "roadmap7.title": "Cardano Mainnet Uitgave",
 
   "roadmap8.time": "2026",
-  "roadmap8.title": "Explore Another Blockchain (nader-te-beslissen)",
+  "roadmap8.title": "Verken een Andere Blockchain (nader-te-beslissen)",
 
   "roadmap9.time": "Jaren 2030",
   "roadmap9.title": "Gediend 4-5 Blockchains (nader-te-beslissen)",

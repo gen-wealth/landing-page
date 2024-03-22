@@ -22,32 +22,32 @@
   "hero.action1": "Aprende más",
 
   "ourService.title": "Nuestro Servicio",
-  "ourService.p1": "Los activos congelados en el mundo de las criptomonedas debido a que están encerrados en billeteras para siempre es un gran problema. Ofrecemos una solución {secure} y {trustless} que le permite transmitir sus activos a sus seres queridos.",
+  "ourService.p1": "Se han perdido miles de millones de dólares en criptoactivos debido a la falta de soluciones para recuperar activos bloqueados en billeteras después de que sus propietarios ya no están. Ofrecemos una solución {secure} y {trustless} que le permite transmitir sus activos a sus seres queridos.",
 
   "howItWorks.title": "Cómo Funciona",
-  "howItWorks.p1": "Nuestra DApp le permite crear {vaults}. Una vault es una dirección de contrato inteligente, como una billetera donde tienes administración independiente y control total sobre su contenido. Además, puede definir reglas sobre cómo desea que se distribuyan los activos. Cuando crea una vault, obtiene una dirección única, obtiene una {vaultKey} y especifica una {deadline}. Esta fecha límite puede retrasarse de vez en cuando, lo llamamos {proofOfLife}. Como propietario de una vault, puede retirar activos de la vault en cualquier momento, independientemente de los plazos. Puede compartir el acceso a la vault acuñando un token de vault-key y enviándolo a sus otras billeteras.",
-  "howItWorks.p2": "Dentro de su vault, puede crear subdivisiones llamadas {pockets} donde asigna sus activos heredados entre ellas. A continuación, podrá solicitar el envío de las {pocketKeys} asociadas a los beneficiarios. Son estos tokens de pocket-key los que les permiten reclamar su parte de los activos de los pockets designados sólo después de que la fecha límite de la vault haya transcurrido por completo.",
-  "howItWorks.p3": "Con esta DApp, puede evitar que sus criptoactivos se pierdan para siempre, bloqueados en su billetera si pierde su frase inicial o si sucede algo inesperado y aún no tiene planes de dejar sus criptoactivos. Ahora puede almacenar sus activos criptográficos de manera más segura porque ya no necesita confiar su frase inicial a un tercero.",
+  "howItWorks.p1": "Nuestra DApp te permite crear {vaults}. Una vault es un conjunto de contratos inteligentes, donde usted tiene control total sobre su contenido, tal como lo haría con una billetera con autocustodia. Pero además de eso, con la vault puedes definir reglas sobre cómo quieres que se distribuyan los activos una vez que ya no estés. Cuando crea una vault, obtendrá una dirección única, también obtendrá una {vaultKey} y establecerá una {deadline}. Esta deadline puede posponerse de vez en cuando para demostrar que todavía estás vivo, lo llamamos {proofOfLife}. Como propietario de la vault, puede retirar los activos de la vault en cualquier momento, independientemente de la deadline. Puede compartir el acceso a la vault acuñando más tokens de vault-key y enviándolos a sus otras billeteras.",
+  "howItWorks.p2": "Dentro de su vault, puede crear subdivisiones llamadas {pockets} donde asigna sus activos heredados entre ellas. A continuación, puede vincular las {pocketKeys} asociadas a los pockets para enviarlas a los beneficiarios. Son estos tokens de pocket-key los que les permiten reclamar su parte de los activos de los respectivos pockets una vez que ya no puedas demostrar que todavía estás vivo, lo cual ocurre solo después de que la deadline de la vault haya transcurrido por completo.",
+  "howItWorks.p3": "Con esta DApp, tus criptoactivos pueden ser reclamados por las personas que elijas después de que te hayas ido de manera trustless. Ahora puede almacenar sus criptoactivos con más tranquilidad porque ya no necesita confiar su frase inicial a un tercero.",
   "howItWorks.p4": "GenWealth es el primer protocolo de herencia en {cardano}; estamos planeando expandir nuestro servicio a otras blockchains en el futuro. Para más información sobre cómo funcionan nuestros contratos inteligentes, puedes leer la documentación del código {here}.",
 
   "roadmap.title": "Mapa Vial",
 
-  "roadmap1.time": "2023 Q3",
-  "roadmap1.title": "On Chain Proof of Concept",
+  "roadmap1.time": "2023 T3",
+  "roadmap1.title": "On Chain Prueba de Concepto",
 
-  "roadmap2.time": "2023 Q4",
-  "roadmap2.title": "Off Chain for Internal Testing",
+  "roadmap2.time": "2023 T4",
+  "roadmap2.title": "Off Chain para Pruebas Internas",
 
-  "roadmap3.time": "2024 Q1",
-  "roadmap3.title": "UI/UX Design for Public Testnet",
+  "roadmap3.time": "2024 T1",
+  "roadmap3.title": "Diseño UI/UX para Testnet Público",
 
-  "roadmap4.time": "2024 Q2",
+  "roadmap4.time": "2024 T2",
   "roadmap4.title": "Desarrollo de Frontend y Backend",
 
-  "roadmap5.time": "2024 Q3",
+  "roadmap5.time": "2024 T3",
   "roadmap5.title": "Public Testnet y Bug Bounty",
 
-  "roadmap6.time": "2024 Q4",
+  "roadmap6.time": "2024 T4",
   "roadmap6.title": "Auditoría y Mejoras de Productos",
 
   "roadmap7.time": "2025",
@@ -56,13 +56,13 @@
   "roadmap8.time": "2026",
   "roadmap8.title": "Explora Otra Blockchain (TBD)",
 
-  "roadmap9.time": "2030s",
+  "roadmap9.time": "Década de 2030",
   "roadmap9.title": "Served 4-5 Blockchains (TBD)",
 
   "aboutUs.title": "Sobre Nosotros",
   "aboutUs.p1": "Somos un equipo con habilidades complementarias, nos apasiona la Web3 Tech y sus potenciales. Nuestro objetivo es construir una plataforma que pueda empoderar financieramente a las personas, brindándoles más opciones, seguridad y control sobre los activos que poseen.",
 
-  "teamMembers.title": "Meet the Team",
+  "teamMembers.title": "Meet al Equipo",
   "teamMembers.you": "You",
   "teamMembers.you.p1": "¡Únase a la revolución Web3!",
   "teamMembers.talkToUs": "Habla con nosotros",
@@ -79,8 +79,8 @@
   "contactUs.p1": "Contáctenos en {email}",
   "contactUs.action1": "Enviar email",
 
-  "callToAction.title": "Try the Prototype",
-  "callToAction.p1": "¡Ya puedes probar la demo ahora mismo! Make sure to set your wallet network to Preview.",
+  "callToAction.title": "Try the Prototipo",
+  "callToAction.p1": "¡Ya puedes probar la demo ahora mismo! Asegúrese de configurar la red de su billetera en Preview.",
   "callToAction.p2": "{note} La apariencia actual de la aplicación no representa la versión pública real de Testnet y Mainnet posterior.",
   "callToAction.action1": "Ejecutar aplicación",
   "callToAction.action2": "Ver las documentaciones",
