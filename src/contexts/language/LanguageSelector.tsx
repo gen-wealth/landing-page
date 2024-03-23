@@ -12,7 +12,7 @@ type locale = {
 };
 const info: Record<string, locale> = {
   en: {
-    localName: "English",
+    localName: "English (US)",
     localFlag: <>&#127482;&#127480;</>, // 🇺🇸
   },
   es: {
@@ -100,7 +100,7 @@ function LanguageSelector(props: {
   const [language, setLanguage] = useLanguage();
 
   return (
-    <div className={`dropdown dropdown-hover ${props.dropdownClassName}`}>
+    <div className={`dropdown dropdown-hover text-primary text-center ${props.dropdownClassName}`}>
       <div tabIndex={0} role="button" className={`style-text-shadow ${props.buttonClassName}`}>
         {info[language].localFlag}
       </div>
