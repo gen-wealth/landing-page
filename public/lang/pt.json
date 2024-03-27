@@ -10,96 +10,96 @@
   "lang.ms": "Malaio",
   "lang.nl": "Holandês",
   "lang.pt": "Português",
-  "lang.zh": "Chinesa",
+  "lang.zh": "Chinês",
 
-  "navBar.menu1": "Nosso Serviço",
-  "navBar.menu2": "Roteiro",
+  "navBar.menu1": "O Nosso Serviço",
+  "navBar.menu2": "Roadmap",
   "navBar.menu3": "Quem Somos",
-  "navBar.menu4": "Nos Contate",
+  "navBar.menu4": "Contate-nos",
 
-  "navBar.action1": "Abrir o aplicativo",
+  "navBar.action1": "Abrir a App",
 
   "hero.action1": "Saiba mais",
 
-  "ourService.title": "Nosso Serviço",
-  "ourService.p1": "Bilhões de dólares em ativos criptográficos foram perdidos devido à falta de soluções para recuperar ativos bloqueados em carteiras após a partida de seus proprietários. Oferecemos uma solução {secure} e {trustless} que permite que você transmita seus ativos aos seus entes queridos.",
+  "ourService.title": "O Nosso Serviço",
+  "ourService.p1": " Perderam-se billiões de Euros em criptomoedas devido à falta de soluções eficazes para recuperar estes ativos de carteiras após o falecimentos dos proprietários. Oferecemos uma solução {secure} e {trustless} que permite aos teus entes queridos, a herança e recuperação das tuas criptomoedas.",
 
   "howItWorks.title": "Como Funciona",
-  "howItWorks.p1": "Nosso DApp permite criar {vaults}. Um vault é um conjunto de contratos inteligentes, onde você tem controle total sobre seu conteúdo, assim como faria com uma carteira com autocustódia. Mas, além disso, com o vault você pode definir regras sobre como deseja que os ativos sejam distribuídos quando você partir. Ao criar um vault, você obterá um endereço exclusivo, também receberá uma {vaultKey} e definirá um {deadline}. Esse deadline pode ser adiado de tempos em tempos para comprovar que você ainda está vivo, chamamos de {proofOfLife}. Como proprietário do vault, você pode retirar os ativos do vault a qualquer momento, independentemente do deadline. Você pode compartilhar o acesso ao vault criando mais tokens de vault-key e enviando-os para suas outras carteiras.",
-  "howItWorks.p2": "Dentro do seu vault, você pode criar subdivisões chamadas {pockets} onde aloca seus ativos herdados entre elas. Em seguida, você pode vincular os {pocketKeys} associados aos pockets para serem enviados aos beneficiários. São esses tokens de pocket-key que permitem que eles reivindiquem sua parte dos ativos dos respectivos pockets, uma vez que você não consiga mais provar que ainda está vivo, o que ocorre somente após o deadline do vault ter decorrido completamente.",
-  "howItWorks.p3": "Com este DApp, seus ativos criptográficos podem ser recuperados pelas pessoas que você escolher depois que você partir, de maneira trustless. Agora você pode armazenar seus ativos criptográficos com mais tranquilidade porque não precisa mais confiar sua frase inicial a terceiros.",
-  "howItWorks.p4": "GenWealth é o primeiro protocolo de herança em {cardano}, estamos planejando expandir nosso serviço para outras blockchains no futuro. Para obter mais informações sobre como nossos contratos inteligentes funcionam, você pode ler a documentação do código {here}.",
+  "howItWorks.p1": " A Nossa DApp permite criar {vaults}. Um cofre é um conjunto de smart contracts, onde tens todo o controlo sobre as tuas criptomoedas e NFTs, como se fosse uma carteira. Mas, além disso, com o vault podes definir regras de distribuíção dos teus ativos, após um eventual falecimento. Ao criar um cofre, recebes uma {vaultKey} na tua carteira e defines um {deadline}. A atualização deste deadline é utilizado para comprar que estás vivo e garantir que ninguém pode reclamar a herança antes de tempo, e é conhecido como {proofOfLife}. A posse da chave do cofre, define o proprietário do cofre e dá-te liberdade total de gestão dos teus ativos e de definição das regras de herança.",
+  "howItWorks.p2": "Dentro do teu cofre, podes criar subdivisões chamadas {pockets} , que te permitem alocar a os teus ativos a diferentes beneficiários. Podes criar e enviar {pocketKeys} aos beneficiários, para que possam reivindicar a sua parte da herança após o teu falecimento e o ultrapassar do deadline que definiste.",
+  "howItWorks.p3": "Com esta DApp, as tuas criptomoedas e NFTs podem ser recuperados, por pessoas à tua escolha, respeitando os teus desejos e sem a necessidade de recorrer a intermediários. Isto remove a necessidade de partilhar a tua seedphrase com intermediários, proporcionando-te a paz de espirito de saber que a tua cripto está mais segura enquanto está vivo, e que tens um plano e regras claras para que esta possa ser recuperada por aqueles que mais amas.",
+  "howItWorks.p4": "GenWealth é o primeiro protocolo de herança na {cardano}, e planeamos expandir o nosso serviço a outras blockchains no futuro. Para obter mais informações sobre cesta tecnologia, podes ler a nossa documentação {here}.",
 
-  "roadmap.title": "Roteiro",
+  "roadmap.title": "Roadmap",
 
-  "roadmap1.time": "2023 T3",
-  "roadmap1.title": "Prova de Conceito em On Chain",
+  "roadmap1.time": "3ºT de 2023",
+  "roadmap1.title": "Protótipo - Smart Contracts",
 
-  "roadmap2.time": "2023 T4",
-  "roadmap2.title": "Off Chain para Testes Internos",
+  "roadmap2.time": "4ºT de 2023",
+  "roadmap2.title": "Protótipo - Off Chain e Interface para Testes Internos",
 
-  "roadmap3.time": "2024 T1",
+  "roadmap3.time": "1ºT de 2024",
   "roadmap3.title": "Design UI/UX para Testnet Pública",
 
-  "roadmap4.time": "2024 T2",
+  "roadmap4.time": "2ºT de 2024",
   "roadmap4.title": "Desenvolvimento de Frontend e Backend",
 
-  "roadmap5.time": "2024 T3",
+  "roadmap5.time": "3ºT de 2024",
   "roadmap5.title": "Testnet Pública e Recompensa de Bugs",
 
-  "roadmap6.time": "2024 T4",
+  "roadmap6.time": "4ºT de 2024",
   "roadmap6.title": "Auditoria e Melhorias de Produto",
 
   "roadmap7.time": "2025",
-  "roadmap7.title": "Lançamento em Cardano Mainnet",
+  "roadmap7.title": "Lançamento na Mainnet da Cardano ",
 
   "roadmap8.time": "2026",
-  "roadmap8.title": "Explorar Outro Blockchain (TBD)",
+  "roadmap8.title": "Explorar Outra Blockchain (TBD)",
 
   "roadmap9.time": "Década de 2030",
-  "roadmap9.title": "Served 4-5 Blockchains (TBD)",
+  "roadmap9.title": "Servir 4 a 5 Blockchains (TBD)",
 
   "aboutUs.title": "Quem Somos",
-  "aboutUs.p1": "Somos uma equipa com competências complementares, somos apaixonados pela Web3 Tech e pelas suas potencialidades. Nosso objetivo é construir uma plataforma que possa capacitar financeiramente os indivíduos, dando-lhes mais opções, segurança e controle sobre os ativos que possuem.",
+  "aboutUs.p1": "Somos uma equipa com competências complementares, apaixonados pela Tecnologia Web3 e pelo seu potencial. O nosso objetivo é construir uma plataforma que possa empoderar as pessoas financeiramente, dando-lhes mais opções, segurança e controlo sobre os seus ativos.",
 
-  "teamMembers.title": "Conheça the Team",
-  "teamMembers.you": "You",
-  "teamMembers.you.p1": "Vamos nos juntar à revolução Web3!",
-  "teamMembers.talkToUs": "Fale conosco",
+  "teamMembers.title": "Conheça a Equipa",
+  "teamMembers.you": "Tu",
+  "teamMembers.you.p1": "Junta-te à revolução Web3!",
+  "teamMembers.talkToUs": "Fala connosco",
 
   "teamMembers.rafaelCardoso": "Rafael Cardoso",
-  "teamMembers.rafaelCardoso.p1": "Olá, meu nome é Rafael. Tenho mais de 5 anos de experiência em desenvolvimento de negócios, marketing e produto em diversas startups de Web2.",
-  "teamMembers.rafaelCardoso.p2": "Experiência em gestão de equipes, projetos e orçamentos. Também sou o fundador do {decentralizedNation}, um canal de notícias sobre Criptomoedas no Youtube. Minha experiência anterior inclui liderar o marketing para o lançamento de {willEasy}, uma plataforma de Criação de Testamento online no Reino Unido.",
+  "teamMembers.rafaelCardoso.p1": "Olá, o meu nome é Rafael. Tenho mais de 5 anos de experiência em vendas, marketing e produto em diversas startups Web2.",
+  "teamMembers.rafaelCardoso.p2": "Geri durante vários anos equipas, projetos e orçamentos. Sou o fundador do canal de Youtube {decentralizedNation}, focado em Blockchain e Criptomoedas.Liderei o marketing para o lançamento de {willEasy} no Reino Unido, uma plataforma de Criação de Testamentos online.",
 
   "teamMembers.ariadyPutra": "Ariady Putra",
-  "teamMembers.ariadyPutra.p1": "Olá, sou Ariady. Tenho mais de uma década de experiência trabalhando como desenvolvedor de software em tempo integral. Em 2022, adquiri meu {cardanoDeveloperProfessionalBadge}.",
-  "teamMembers.ariadyPutra.p2": "Sou responsável pelo desenvolvimento do DApp, tanto pelas partes on-chain quanto off-chain do sistema, bem como por decidir qual conjunto de tecnologia usar. Antes da GenWealth, desenvolvi o contrato inteligente {morbid} conforme apresentado em {awesomeAiken}, uma implementação mais simples do contrato {deadMansSwitch}.",
+  "teamMembers.ariadyPutra.p1": "Olá, sou Ariady. Tenho mais de uma década de experiência como programador de software a tempo inteiro. Em 2022, adquiri meu {cardanoDeveloperProfessionalBadge}.",
+  "teamMembers.ariadyPutra.p2": "Sou responsável pelo desenvolvimento da DApp, tanto pelo on-chain como o off-chain do sistema, bem como por decidir qual a tecnologia que devemos utilizar. Antes da GenWealth, desenvolvi o {morbid} smart-contract, uma implementação mais simples do {deadMansSwitch}, e que foi referenciada pela publicação {awesomeAiken}.",
 
-  "contactUs.title": "Nos Contate",
-  "contactUs.p1": "Sinta-se à vontade para nos contatar em {email}",
+  "contactUs.title": "Contacte-nosc",
+  "contactUs.p1": "Sinta-se à vontade para nos contactar em {email}",
   "contactUs.action1": "Enviar email",
 
-  "callToAction.title": "Tente o Protótipo",
-  "callToAction.p1": "Você já pode experimentar a demonstração agora mesmo! Certifique-se de definir a rede da sua carteira como Preview.",
-  "callToAction.p2": "{note} A aparência atual do aplicativo não representa o lançamento público real do Testnet e Mainnet posteriormente.",
-  "callToAction.action1": "Abrir o aplicativo",
-  "callToAction.action2": "Veja as documentações",
+  "callToAction.title": "Teste o Protótipo",
+  "callToAction.p1": "Podes expeerimentar o nosso protótipo agora mesmo! Seleciona a rede Preview na tu carteira.",
+  "callToAction.p2": "{note} A aparência atual da App é bastante rustica, apenas utilizadas para testes internos e não tem qualquer similariedade com a versão oficial que lançaremos posteriormente.",
+  "callToAction.action1": "Abrir a APP",
+  "callToAction.action2": "Ver documentação",
 
-  "secure": "secure",
-  "trustless": "trustless",
+  "secure": "segura",
+  "trustless": "sem necessidade de intermediários",
 
-  "vault": "vault",
-  "vaults": "vaults",
-  "vaultKey": "vault key",
-  "vaultKeys": "vault keys",
+  "vault": "cofre",
+  "vaults": "cofres",
+  "vaultKey": "chave do cofre",
+  "vaultKeys": "chaves do cofre",
 
-  "pocket": "pocket",
-  "pockets": "pockets",
-  "pocketKey": "pocket key",
-  "pocketKeys": "pocket keys",
+  "pocket": "gaveta",
+  "pockets": "gaveta",
+  "pocketKey": "chave da gaveta",
+  "pocketKeys": "chaves das gavetas",
 
   "deadline": "deadline",
-  "proofOfLife": "Proof of Life",
+  "proofOfLife": "Prova de Vida",
 
   "cardano": "Cardano",
   "cardanoDeveloperProfessionalBadge": "Cardano Developer Professional Badge",
@@ -113,15 +113,15 @@
 
   "completed": "Concluído",
   "inProgress": "Em curso",
-  "planned": "Planejado",
+  "planned": "Planeado",
 
   "here": "aqui",
   "showMore": "ver mais",
   "showLess": "ver menos",
   "note": "nota",
 
-  "ceo": "Diretor-presidente",
-  "cto": "Diretor de Tecnologia",
+  "ceo": "CEO",
+  "cto": "CTO",
 
-  "copyright": "Direito Autoral © 2024 - Todos os direitos reservados"
+  "copyright": "Copyright © 2024 - Todos os direitos reservados"
 }
