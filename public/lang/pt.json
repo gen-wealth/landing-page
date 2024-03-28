@@ -33,13 +33,13 @@
   "sideBar.actionSecondary": "Ver documentação",
 
   "ourService.title": "O Nosso Serviço",
-  "ourService.p1": "Perderam-se billiões de Euros em criptomoedas devido à falta de soluções eficazes para recuperar estes ativos de carteiras após o falecimentos dos proprietários. Oferecemos uma solução {secure} e {trustless} que permite aos teus entes queridos, a herança e recuperação das tuas criptomoedas.",
+  "ourService.p1": "Perderam-se billiões de Euros em criptomoedas devido à falta de soluções eficazes para recuperar estes ativos de carteiras, após o falecimentos dos proprietários. Oferecemos uma solução {secure} e {trustless} que permite aos teus entes queridos, a herança e recuperação das tuas criptomoedas.",
 
   "howItWorks.title": "Como Funciona",
-  "howItWorks.p1": "A nossa DApp permite criar {vaults}. Um cofre é um conjunto de smart contracts, onde tens todo o controlo sobre as tuas criptomoedas e NFTs, como se fosse uma carteira. Mas, além disso, com o vault podes definir regras de distribuíção dos teus ativos, após um eventual falecimento. Ao criar um cofre, recebes uma {vaultKey} na tua carteira e defines um {deadline}. A atualização deste deadline é utilizado para comprar que estás vivo e garantir que ninguém pode reclamar a herança antes de tempo, e é conhecido como {proofOfLife}. A posse da chave do cofre, define o proprietário do cofre e dá-te liberdade total de gestão dos teus ativos e de definição das regras de herança.",
-  "howItWorks.p2": "Dentro do teu cofre, podes criar subdivisões chamadas {pockets}, que te permitem alocar a os teus ativos a diferentes beneficiários. Podes criar e enviar {pocketKeys} aos beneficiários, para que possam reivindicar a sua parte da herança após o teu falecimento e o ultrapassar do deadline que definiste.",
-  "howItWorks.p3": "Com esta DApp, as tuas criptomoedas e NFTs podem ser recuperados, por pessoas à tua escolha, respeitando os teus desejos e sem a necessidade de recorrer a intermediários. Isto remove a necessidade de partilhar a tua seedphrase com intermediários, proporcionando-te a paz de espirito de saber que a tua cripto está mais segura enquanto está vivo, e que tens um plano e regras claras para que esta possa ser recuperada por aqueles que mais amas.",
-  "howItWorks.p4": "GenWealth é o primeiro protocolo de herança na {cardano}, e planeamos expandir o nosso serviço a outras blockchains no futuro. Para obter mais informações sobre cesta tecnologia, podes ler a nossa documentação {here}.",
+  "howItWorks.p1": "A nossa DApp permite criar {vaults}. Um cofre é um conjunto de smart contracts, onde tens todo o controlo sobre as tuas criptomoedas e NFTs, como se fosse uma carteira. Mas, além disso, com o cofre podes definir regras de distribuição dos teus ativos, após um eventual falecimento. Ao criar um cofre, recebes uma {vaultKey} na tua carteira e defines um {deadline}. A atualização deste deadline é utilizado para comprovar que estás vivo e garantir que ninguém pode reclamar a herança antes de tempo, e é conhecido como {proofOfLife}. A posse da chave do cofre, define o proprietário do cofre e dá-te liberdade total de gestão dos teus ativos e de definição das regras de herança.",
+  "howItWorks.p2": "Dentro do teu cofre, podes criar subdivisões chamadas {pockets}, que te permitem alocar os teus ativos a diferentes beneficiários. Podes criar e enviar {pocketKeys} aos beneficiários, para que possam reivindicar a sua parte da herança, após o teu falecimento e o ultrapassar do deadline que definiste.",
+  "howItWorks.p3": "Com esta DApp, as tuas criptomoedas e NFTs podem ser recuperados, por pessoas à tua escolha, respeitando os teus desejos e sem a necessidade de recorrer a intermediários. Isto remove a necessidade de partilhar a tua seedphrase com intermediários, proporcionando-te a paz de espírito de saber que a tua cripto está mais segura enquanto estás vivo, e que tens um plano fácil e com regras claras para que esta possa ser recuperada por aqueles que mais amas.",
+  "howItWorks.p4": "GenWealth é o primeiro protocolo de herança na {cardano}, e planeamos expandir o nosso serviço a outras blockchains no futuro. Para obteres mais informações sobre esta tecnologia, podes ler a nossa documentação {here}.",
 
   "roadmap.title": "Roadmap",
 
@@ -80,7 +80,7 @@
 
   "teamMembers.rafaelCardoso": "Rafael Cardoso",
   "teamMembers.rafaelCardoso.p1": "Olá, o meu nome é Rafael. Tenho mais de 5 anos de experiência em vendas, marketing e produto em diversas startups Web2.",
-  "teamMembers.rafaelCardoso.p2": "Geri durante vários anos equipas, projetos e orçamentos. Sou o fundador do canal de Youtube {decentralizedNation}, focado em Blockchain e Criptomoedas.Liderei o marketing para o lançamento de {willEasy} no Reino Unido, uma plataforma de Criação de Testamentos online.",
+  "teamMembers.rafaelCardoso.p2": "Geri durante vários anos equipas, projetos e orçamentos. Sou o fundador do canal de Youtube {decentralizedNation}, focado em Blockchain e Criptomoedas. Liderei o marketing para o lançamento da {willEasy} no Reino Unido, uma plataforma de Criação de Testamentos online.",
 
   "teamMembers.ariadyPutra": "Ariady Putra",
   "teamMembers.ariadyPutra.p1": "Olá, sou Ariady. Tenho mais de uma década de experiência como programador de software a tempo inteiro. Em 2022, adquiri meu {cardanoDeveloperProfessionalBadge}.",
@@ -91,8 +91,8 @@
   "contactUs.action1": "Enviar email",
 
   "callToAction.title": "Teste o Protótipo",
-  "callToAction.p1": "Podes expeerimentar o nosso protótipo agora mesmo! Seleciona a rede Preview na tu carteira.",
-  "callToAction.p2": "{note} A aparência atual da App é bastante rustica, apenas utilizadas para testes internos e não tem qualquer similariedade com a versão oficial que lançaremos posteriormente.",
+  "callToAction.p1": "Podes experimentar o nosso protótipo agora mesmo! Seleciona a rede Preview na tua carteira.",
+  "callToAction.p2": "{note} A aparência atual da App é bastante rústica, sendo apenas utilizada para testes internos e não tem qualquer similariedade com a versão oficial que lançaremos posteriormente.",
   "callToAction.action1": "Abrir a app",
   "callToAction.action2": "Ver documentação",
 
@@ -105,9 +105,9 @@
   "vaultKeys": "chaves do cofre",
 
   "pocket": "gaveta",
-  "pockets": "gaveta",
+  "pockets": "gavetas",
   "pocketKey": "chave da gaveta",
-  "pocketKeys": "chaves das gavetas",
+  "pocketKeys": "chaves de gavetas",
 
   "deadline": "deadline",
   "proofOfLife": "Prova de Vida",
