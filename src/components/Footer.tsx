@@ -1,14 +1,14 @@
 import { useIntl } from "react-intl";
 import { scrollToTop } from "../util";
-import Svg from "./Svg";
 import ThemeController from "../contexts/theme/ThemeController";
+import Svg from "./Svg";
 
 function Footer() {
   const intl = useIntl();
   const title = intl.formatMessage({ id: "genWealth" });
 
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto 2xl:hidden">
       <footer className="footer max-sm:flex max-sm:flex-col items-center p-4 bg-neutral bg-opacity-[calc(2/3)] text-neutral-content rounded-box m-2 w-auto shadow-xl">
         <aside className="items-center flex flex-wrap sm:flex-nowrap">
           <a
@@ -19,18 +19,15 @@ function Footer() {
             <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
               <img alt={title} src="/GenWealth.ico" className="w-12 mask mask-squircle" />
             </div>
-            <h5 className="max-sm:w-full font-bold text-center">{title}</h5>
+
+            <h5 className="max-sm:w-full font-bold text-center text-sm">{title}</h5>
+
+            <span className="max-sm:hidden text-xs">&laquo;</span>
+            <h6 className="max-sm:w-full font-bold text-center text-sm">{intl.formatMessage({ id: "tagLine" })}</h6>
+            <span className="max-sm:hidden text-xs">&raquo;</span>
           </a>
 
-          {/* <img src="/CardanoWhite.svg" width={20} className="max-sm:hidden" /> */}
-          <span className="max-sm:hidden">&bull;</span>
-
-          <h6 className="max-sm:w-full font-bold text-center">{intl.formatMessage({ id: "tagLine" })}</h6>
-
-          {/* <img src="/CardanoWhite.svg" width={20} className="max-sm:hidden" /> */}
-          <span className="max-sm:hidden">&bull;</span>
-
-          <p className="max-sm:w-full text-center">{intl.formatMessage({ id: "copyright" })}</p>
+          <p className="max-sm:w-full text-center text-xs">{intl.formatMessage({ id: "copyright" })}</p>
         </aside>
         <nav className="grid-flow-col gap-4 max-sm:place-self-center sm:justify-self-end">
           <ThemeController
