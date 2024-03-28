@@ -39,7 +39,7 @@ export function VideoCarousel(props: PropState) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="grow aspect-video w-full shadow-xl"
-          ></iframe>
+          />
 
           <div className="absolute flex justify-between pointer-events-none transform -translate-y-1/2 left-2 right-2 top-1/2">
             <a
@@ -55,7 +55,7 @@ export function VideoCarousel(props: PropState) {
               // href={`#slide-${(index + 1) % videos.length}`}
               className={`${
                 index == videos.length - 1 && "invisible"
-              } btn btn-circle  border-none bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)] pointer-events-auto shadow-xl`}
+              } btn btn-circle border-none bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)] pointer-events-auto shadow-xl`}
               onClick={(e) => props.slideToVideo(e, (index + 1) % videos.length)}
             >
               &#10095; {/* ❯ */}

@@ -135,7 +135,7 @@ function Roadmap() {
                   <AnchorScrollOffset id={"roadmap-" + i} />
                   <AnchorScrollOffset id={"roadmap-" + i + "-portrait"} className="-top-20 -left-12" />
                   <time className="font-mono italic">{roadmap.time}</time>
-                  <div className="text-lg text-primary font-black">
+                  <div className="text-lg text-primary font-black pr-7">
                     <a
                       // id={"roadmap-" + i}
                       onClick={(e) => {

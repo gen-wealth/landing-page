@@ -32,7 +32,7 @@ function NavBar() {
   ];
 
   return (
-    <div className="fixed w-full max-w-screen-xl h-min mx-auto inset-0 z-10">
+    <div className="fixed w-full h-min mx-auto inset-0 z-30">
       <div className="flex justify-between navbar shadow-xl bg-base-content bg-opacity-[calc(2/3)] backdrop-blur-sm rounded-box m-2 w-auto">
         <div>
           {/* GenWealth logo */}
@@ -90,8 +90,8 @@ function NavBar() {
           <LanguageSelector
             dropdownClassName="-ml-2"
             buttonClassName="p-2"
-            contentClassName="bg-base-content bg-opacity-[calc(5/6)] gap-2 p-2 top-0"
-            tooltipClassName="tooltip-left 2xl:tooltip-right"
+            contentClassName="bg-base-content gap-2 py-2 pl-2 pr-[7px] top-0"
+            tooltipClassName="tooltip-left" // 2xl:tooltip-right"
           />
         </div>
       </div>

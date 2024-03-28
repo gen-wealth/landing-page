@@ -1,6 +1,6 @@
 import { MouseEvent, useState } from "react";
-import VideoCarousel, { VideoCarouselIndicator } from "./VideoCarousel";
 import { FormattedMessage, useIntl } from "react-intl";
+import VideoCarousel, { VideoCarouselIndicator } from "./VideoCarousel";
 import Container from "../../Container";
 
 function HowItWorks() {
@@ -86,9 +86,9 @@ function HowItWorks() {
           <FormattedMessage id="howItWorks.p3" />
         </>,
         // <>
-        //   With this DApp, you can avoid the issue of your crypto assets being lost forever, locked in a wallet if you lose your seedphrase, or if something
-        //   unexpected happens and you're gone without having an inheritance plan ready yet. Now you can keep your crypto assets safer as there's no need to share
-        //   seedphrases anymore.
+        //   With this DApp, your crypto assets can be reclaimed by the people you selected after you're gone in a trustless manner. Now you can store your crypto
+        //   assets with more peace of mind because you no longer need to entrust your seedphrase to a third party. Your vault trully acts like a self custody
+        //   wallet.
         // </>,
 
         // p4
@@ -97,7 +97,7 @@ function HowItWorks() {
             id="howItWorks.p4"
             values={{
               cardano: (
-                <a href="https://cardano.org" className="link link-hover style-link">
+                <a href="https://cardano.org" target="_blank" className="link link-hover style-link">
                   {intl.formatMessage({ id: "cardano" })}
                 </a>
               ),
