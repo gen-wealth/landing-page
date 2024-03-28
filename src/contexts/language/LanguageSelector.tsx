@@ -101,11 +101,10 @@ function LanguageSelector(props: {
 
   return (
     <div className={`dropdown dropdown-hover text-primary text-center ${props.dropdownClassName}`}>
-      <div tabIndex={0} role="button" className={`style-text-shadow ${props.buttonClassName}`}>
+      <div role="button" className={`style-text-shadow ${props.buttonClassName}`}>
         {info[language].localFlag}
       </div>
       <ul
-        tabIndex={0}
         className={`dropdown-content rounded-box
         flex flex-col shadow-xl drop-shadow-xl
         ${props.contentClassName}`}
