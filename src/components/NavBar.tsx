@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { MouseEvent, useState } from "react";
 import { useIntl } from "react-intl";
 import { scrollToElement, scrollToTop } from "../util";
 import ThemeController from "../contexts/theme/ThemeController";
@@ -34,11 +34,15 @@ function NavBar() {
   ];
 
   const [showSmallScreenMenu, setShowSmallScreenMenu] = useState(false);
-  useEffect(() => {
-    const hideSmallScreenMenu = () => setShowSmallScreenMenu(false);
-    window.addEventListener("scroll", hideSmallScreenMenu);
-    return () => window.removeEventListener("scroll", hideSmallScreenMenu);
-  }, []);
+
+  const onScrollToTop = (e: MouseEvent) => {
+    setShowSmallScreenMenu(false);
+    scrollToTop(e);
+  };
+  const onScrollToElement = (e: MouseEvent, elementId: string) => {
+    setShowSmallScreenMenu(false);
+    scrollToElement(e, elementId);
+  };
 
   const themeLanguage = (
     <>
@@ -82,7 +86,7 @@ function NavBar() {
             {/* GenWealth logo */}
             <a
               // href="#"
-              onClick={scrollToTop}
+              onClick={onScrollToTop}
               className="flex gap-2 h-12"
             >
               <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
@@ -102,7 +106,7 @@ function NavBar() {
                 <a
                   key={menu.linkName}
                   // href={menu.linkURL}
-                  onClick={(e) => scrollToElement(e, menu.linkId)}
+                  onClick={(e) => onScrollToElement(e, menu.linkId)}
                   className="link link-hover text-center place-self-center join-item style-link"
                 >
                   {menu.linkName}
@@ -156,7 +160,7 @@ function NavBar() {
                 <li key={`pageMap.${menu.linkName}`} className="text-[10vw] style-link">
                   <a
                     // href={menu.linkURL}
-                    onClick={(e) => scrollToElement(e, menu.linkId)}
+                    onClick={(e) => onScrollToElement(e, menu.linkId)}
                     className="link link-hover join-item"
                   >
                     {menu.linkName}
@@ -169,7 +173,7 @@ function NavBar() {
 
             {/* footer */}
             <div className="shrink-0 -m-2">
-              <Footer className="bg-none text-primary" />
+              <Footer className="bg-none text-primary" onClickScrollToTop={() => setShowSmallScreenMenu(false)} />
             </div>
           </div>
         </div>

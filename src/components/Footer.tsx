@@ -3,7 +3,7 @@ import { scrollToTop } from "../util";
 import ThemeController from "../contexts/theme/ThemeController";
 import Svg from "./Svg";
 
-function Footer(props: { className?: string }) {
+function Footer(props: { className?: string; onClickScrollToTop?: () => void }) {
   const intl = useIntl();
   const title = intl.formatMessage({ id: "genWealth" });
 
@@ -16,7 +16,10 @@ function Footer(props: { className?: string }) {
         <aside className="items-center text-center flex flex-wrap sm:flex-nowrap">
           <a
             // href="#"
-            onClick={scrollToTop}
+            onClick={(e) => {
+              if (props.onClickScrollToTop) props.onClickScrollToTop();
+              scrollToTop(e);
+            }}
             className="flex max-sm:flex-col gap-2 max-sm:gap-0 font-bold items-center mx-auto"
           >
             <div className="btn btn-ghost btn-circle hover:bg-opacity-0">

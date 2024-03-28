@@ -2,13 +2,16 @@ import { FormattedMessage } from "react-intl";
 import { scrollToTop } from "../util";
 import Svg from "./Svg";
 
-function FooterSideBar() {
+function FooterSideBar(props: { onClickScrollToTop?: () => void }) {
   return (
     <footer className="footer footer-center gap-4">
       <aside>
         <a
           // href="#"
-          onClick={scrollToTop}
+          onClick={(e) => {
+            if (props.onClickScrollToTop) props.onClickScrollToTop();
+            scrollToTop(e);
+          }}
           className="font-bold"
         >
           <h5 className="text-xl">
