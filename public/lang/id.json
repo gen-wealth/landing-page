@@ -29,6 +29,9 @@
   "pageMap.menu4": "Kontak Kami",
   "pageMap.menu5": "Coba Prototipe",
 
+  "sideBar.actionPrimary": "Buka aplikasi",
+  "sideBar.actionSecondary": "Lihat dokumentasi",
+
   "ourService.title": "Layanan Kami",
   "ourService.p1": "Aset crypto bernilai miliaran dollar telah hangus karena kurangnya solusi untuk mereklaim aset yang terkunci di wallet setelah pemiliknya tiada. Kami menawarkan sebuah solusi yang {secure} dan {trustless} sehingga Anda dapat mewariskan aset kepada orang-orang yang Anda cintai.",
 

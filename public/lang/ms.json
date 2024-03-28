@@ -29,11 +29,14 @@
   "pageMap.menu4": "Hubungi Kami",
   "pageMap.menu5": "Cuba Prototaip",
 
+  "sideBar.actionPrimary": "Buka aplikasi",
+  "sideBar.actionSecondary": "Lihat dokumen",
+
   "ourService.title": "Perkhidmatan Kami",
   "ourService.p1": "Biliaran dolar aset crypto telah hilang karena kurangnya solusi untuk mengambil kembali aset yang terkunci di wallet setelah pemiliknya tiada. Kami menawarkan solusi {secure} dan {trustless} yang memungkinkan anda mewariskan aset anda kepada orang-orang yang anda cintai.",
 
   "howItWorks.title": "Cara Kerja",
-  "howItWorks.p1": "DApp kami membolehkan anda untuk mencipta {vaults}. Vault adalah satu set smart-contract, di mana anda mempunyai kawalan penuh ke atas kandungannya seperti dompet self-custody. Tetapi dengan Vault, anda boleh menetapkan peraturan tentang bagaimana anda ingin asetnya didistribusikan setelah anda tiada. Apabila anda mencipta vault, anda akan menerima alamat yang unik, anda juga akan menerima {vaultKey}, dan anda menetapkan {deadline}. Deadline ini boleh ditangguhkan dari semasa ke semasa untuk membuktikan bahawa anda masih hidup, kami menyebutnya {proofOfLife}. Dengan memiliki token vault-key di dalam dompet, anda mendapat akses untuk menarik aset dari vault pada bila-bila masa, tidak bergantung pada deadline.",
+  "howItWorks.p1": "DApp kami membolehkan anda untuk mencipta {vaults}. Vault adalah satu set smart-contract, di mana anda mempunyai kawalan penuh ke atas kandungannya seperti self-custody wallet. Tetapi dengan Vault, anda boleh menetapkan peraturan tentang bagaimana anda ingin asetnya didistribusikan setelah anda tiada. Apabila anda mencipta vault, anda akan menerima alamat yang unik, anda juga akan menerima {vaultKey}, dan anda menetapkan {deadline}. Deadline ini boleh ditangguhkan dari semasa ke semasa untuk membuktikan bahawa anda masih hidup, kami menyebutnya {proofOfLife}. Dengan memiliki token vault-key di dalam wallet, anda mendapat akses untuk menarik aset dari vault pada bila-bila masa, tidak bergantung pada deadline.",
   "howItWorks.p2": "Dalam vault, anda boleh membuat subdivisi yang dipanggil {pockets} di mana anda mengalokasikan aset. Seterusnya, anda boleh me-mint {pocketKeys} yang berkaitan untuk dihantar kepada waris-waris. Token pocket-keys inilah yang membolehkan seseorang mengklaim bahagian aset mereka dari setiap pocket setelah anda tidak lagi dapat membuktikan bahawa anda masih hidup, yang hanya berlaku selepas deadline vault sepenuhnya berlalu.",
   "howItWorks.p3": "Dengan DApp ini, aset crypto anda boleh dikembalikan oleh individu yang anda pilih selepas anda tiada dalam cara yang trustless. Kini anda boleh menyimpan aset crypto anda dengan lebih tenang kerana anda tidak perlu lagi mempercayai seedphrase anda kepada pihak ketiga. Vault anda benar-benar berfungsi seperti self-custody wallet tetapi dengan ciri tambahan.",
   "howItWorks.p4": "GenWealth adalah protokol pewarisan pertama di {cardano}, kami merancang untuk memperluas perkhidmatan kami ke blockchain lain pada masa akan datang. Untuk maklumat lanjut mengenai bagaimana smart-contracts kami berfungsi, anda boleh membaca dokumentasi kod {here}.",

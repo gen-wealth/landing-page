@@ -29,6 +29,9 @@
   "pageMap.menu4": "Contáctanos",
   "pageMap.menu5": "Prueba el Prototipo",
 
+  "sideBar.actionPrimary": "Abrir aplicación",
+  "sideBar.actionSecondary": "Ver las documentaciones",
+
   "ourService.title": "Nuestro Servicio",
   "ourService.p1": "Billones de dólares en activos de criptomonedas se han perdido debido a la falta de soluciones para recuperar los activos bloqueados en billeteras después de que sus propietarios han fallecido. Ofrecemos una solución {secure} y {trustless} que le permite transmitir sus activos a sus seres queridos.",
 

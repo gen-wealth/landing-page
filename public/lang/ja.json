@@ -29,6 +29,9 @@
   "pageMap.menu4": "お問い合わせ",
   "pageMap.menu5": "プロトタイプを試す",
 
+  "sideBar.actionPrimary": "アプリの起動",
+  "sideBar.actionSecondary": "ドキュメントを確認",
+
   "ourService.title": "サービス",
   "ourService.p1": "所有者が亡くなった後、ウォレット内でロックされた資産を回収するソリューションがないために、何十億ドルもの暗号資産が失われています。私たちは、愛する人に資産を引き継ぐことができる{secure}で{trustless}できるソリューションを提供します。",
 

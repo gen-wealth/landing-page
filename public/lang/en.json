@@ -29,8 +29,11 @@
   "pageMap.menu4": "Contact Us",
   "pageMap.menu5": "Try the Prototype",
 
+  "sideBar.actionPrimary": "Launch app",
+  "sideBar.actionSecondary": "View docs",
+
   "ourService.title": "Our Service",
-  "ourService.p1": "Billions of dollars worth of crypto assets have been lost due to the lack of solutions to reclaim assets locked in wallets after their owners are gone. We offer a {secure} and {trustless} solution that allows you to pass on your assets to your loved ones.",
+  "ourService.p1": "Billions of dollars worth of crypto assets have been lost due to the lack of solutions to reclaim assets locked in wallets after their owners are gone. We offer a {secure} and {trustless} solution that enables you to pass on your assets to your loved ones, providing peace of mind and ensuring the safe transfer of wealth.",
 
   "howItWorks.title": "How it Works",
   "howItWorks.p1": "Our DApp allows you to create {vaults}. A vault is a set of smart contracts, where you have full control over its contents, just like you would with a self custody wallet. In addition, with the vault you can define rules for how you want the assets to be distributed once you're gone. When you create a vault, you'll get a unique address, a {vaultKey}, and you set a {deadline}. This deadline can be postponed from time to time to prove that you're still alive, we call it {proofOfLife}. Possessing a vault key token in your wallet grants you access to withdraw assets from the vault at any time, irrespective of the deadline.",

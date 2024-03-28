@@ -98,14 +98,14 @@ function SideBar() {
               className={`join-item
               ${theme === "sun" ? "button-primary" : "button-secondary"}`}
             >
-              {intl.formatMessage({ id: "navBar.action1" })}
+              {intl.formatMessage({ id: "sideBar.actionPrimary" })}
             </a>
             <a
               href="https://docs.genwealth.app"
               className={`join-item
               ${theme === "moon" ? "button-outline" : "button-outline-dark"}`}
             >
-              {intl.formatMessage({ id: "callToAction.action2" })}
+              {intl.formatMessage({ id: "sideBar.actionSecondary" })}
             </a>
           </div>
         </div>

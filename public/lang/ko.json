@@ -29,6 +29,9 @@
   "pageMap.menu4": "문의하기",
   "pageMap.menu5": "프로토타입 시도",
 
+  "sideBar.actionPrimary": "앱 실행",
+  "sideBar.actionSecondary": "문서 보기",
+
   "ourService.title": "서비스",
   "ourService.p1": "소유자가 돌아가신 후, 지갑에 잠긴 자산을 회수하기 위한 솔루션의 부족으로 수십억 달러의 암호화폐 자산이 손실되었습니다. 우리는 여러분이 소중한 사람들에게 자산을 전달할 수 있는 {secure}하고 {trustless}한 솔루션을 제공합니다.",
 

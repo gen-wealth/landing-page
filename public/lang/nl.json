@@ -29,6 +29,9 @@
   "pageMap.menu4": "Neem Contact Op",
   "pageMap.menu5": "Probeer het Prototype",
 
+  "sideBar.actionPrimary": "App openen",
+  "sideBar.actionSecondary": "Bekijk de docs",
+
   "ourService.title": "Onze Dienst",
   "ourService.p1": "Miljarden dollars aan crypto-activa zijn verloren gegaan door het ontbreken van oplossingen om activa die vergrendeld zijn in portefeuilles na het overlijden van de eigenaren terug te krijgen. We bieden een {secure} en {trustless} oplossing die u in staat stelt uw activa over te dragen aan uw dierbaren.",
 

@@ -29,6 +29,9 @@
   "pageMap.menu4": "联系我们",
   "pageMap.menu5": "试用原型",
 
+  "sideBar.actionPrimary": "打开应用程序",
+  "sideBar.actionSecondary": "查看文档",
+
   "ourService.title": "我们的服务",
   "ourService.p1": "由于缺乏解决方案来在所有者去世后恢复被锁定在钱包中的资产, 数十亿美元的加密资产已经丢失。我们提供了一个{secure}和{trustless}的解决方案, 使您能够将资产传递给您所爱的人。",
 
