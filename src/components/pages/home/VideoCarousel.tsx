@@ -44,18 +44,18 @@ export function VideoCarousel(props: PropState) {
           <div className="absolute flex justify-between pointer-events-none transform -translate-y-1/2 left-2 right-2 top-1/2">
             <a
               // href={`#slide-${(index - 1 + videos.length) % videos.length}`}
-              className={`${
-                index == 0 && "invisible"
-              } btn btn-circle border-none bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)] pointer-events-auto shadow-xl`}
+              className={`${index == 0 && "invisible"} btn btn-circle border-none shadow-xl
+              bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)]
+              pointer-events-auto`}
               onClick={(e) => props.slideToVideo(e, (index - 1 + videos.length) % videos.length)}
             >
               {/* ❮ */} &#10094;
             </a>
             <a
               // href={`#slide-${(index + 1) % videos.length}`}
-              className={`${
-                index == videos.length - 1 && "invisible"
-              } btn btn-circle border-none bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)] pointer-events-auto shadow-xl`}
+              className={`${index == videos.length - 1 && "invisible"} btn btn-circle border-none shadow-xl
+              bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)]
+              pointer-events-auto`}
               onClick={(e) => props.slideToVideo(e, (index + 1) % videos.length)}
             >
               &#10095; {/* ❯ */}

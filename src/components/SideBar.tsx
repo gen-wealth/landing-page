@@ -3,7 +3,7 @@ import { useTheme } from "../contexts/theme/ThemeProvider";
 import { scrollToElement } from "../util";
 import LanguageSelector from "../contexts/language/LanguageSelector";
 import ThemeController from "../contexts/theme/ThemeController";
-import Footer3 from "./Footer3";
+import FooterSideBar from "./FooterSideBar";
 
 type menu = {
   linkId: string;
@@ -78,11 +78,11 @@ function SideBar() {
       className={`sticky inset-0 z-10
       ${theme === "sun" ? "text-primary" : "text-primary-content"}
       w-[calc(.5*(100%-1280px)+8px)] h-0
-      top-[4.5rem] max-2xl:hidden`}
+      top-[4.5rem] max-[1792px]:hidden`}
     >
       <div className="flex flex-col h-[calc(100vh-4.5rem)]">
-        <div className="max-w-full mx-auto shrink overflow-x-hidden style-mask-y-sm">
-          <ul className="menu">
+        <div className="w-full mx-auto shrink overflow-x-hidden style-mask-y-sm">
+          <ul className="menu w-fit m-auto">
             {menus.map((menu) => {
               return mapMenu(menu, "font-bold");
             })}
@@ -112,13 +112,17 @@ function SideBar() {
 
         <div className="flex justify-center gap-px my-4 join">
           <LanguageSelector
-            dropdownClassName="btn-circle btn-secondary btn-sm bg-base-content bg-opacity-[calc(5/6)] hover:bg-base-content join-item shadow-xl"
+            dropdownClassName="btn-circle btn-secondary btn-sm
+            bg-base-content bg-opacity-[calc(5/6)] hover:bg-base-content
+            join-item shadow-xl"
             buttonClassName="px-2 py-1.5"
             contentClassName="bg-base-content rounded-tr-none gap-2 pl-2 pr-[7px] py-1.5 top-0"
             tooltipClassName="tooltip-right"
           />
           <ThemeController
-            className="btn-circle btn-secondary btn-sm bg-base-content bg-opacity-[calc(5/6)] hover:bg-base-content join-item shadow-xl"
+            className="btn-circle btn-secondary btn-sm
+            bg-base-content bg-opacity-[calc(5/6)] hover:bg-base-content
+            join-item shadow-xl"
             sun={{
               w: 16,
               h: 16,
@@ -147,7 +151,7 @@ function SideBar() {
                   ? "bg-opacity-25 hover:bg-opacity-15" // dark
                   : "bg-opacity-10 hover:bg-opacity-5" // light
               }
-              rounded-box transition-all duration-500 flex`}
+              rounded-box transition-all duration-300 flex`}
               >
                 <div
                   className="bg-base-content bg-opacity-75
@@ -166,7 +170,7 @@ function SideBar() {
         </div>
 
         <div className="m-4">
-          <Footer3 />
+          <FooterSideBar />
         </div>
       </div>
     </aside>

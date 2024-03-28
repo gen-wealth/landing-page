@@ -28,7 +28,7 @@ function Marketing() {
                 ? "bg-opacity-40 hover:bg-opacity-35" // dark
                 : "bg-opacity-30 hover:bg-opacity-25" // light
             }
-            rounded-box transition-all duration-500 flex`}
+            rounded-box transition-all duration-300 flex`}
           >
             <div
               className="bg-base-content bg-opacity-75
@@ -66,7 +66,7 @@ function Marketing() {
                 ? "bg-opacity-40 hover:bg-opacity-35" // dark
                 : "bg-opacity-30 hover:bg-opacity-25" // light
             }
-            rounded-box transition-all duration-500 flex`}
+            rounded-box transition-all duration-300 flex`}
           >
             <div
               className="bg-base-content bg-opacity-75

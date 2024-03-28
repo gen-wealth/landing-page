@@ -226,7 +226,10 @@ function TeamMembers() {
       <div className="mockup-browser bg-base-content bg-opacity-[calc(2/3)] m-2 shadow-xl">
         {/* Toolbar */}
         <div className="flex toolbar">
-          <div className="w-full h-fit px-8 py-4 truncate font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base !leading-[30px]">
+          <div
+            className="w-full h-fit px-8 py-4 truncate font-bold !leading-[30px]
+            xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base"
+          >
             <a
               // href="#team-members"
               onClick={(e) => scrollToElement(e, "team-members")}

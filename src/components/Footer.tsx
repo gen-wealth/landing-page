@@ -3,13 +3,16 @@ import { scrollToTop } from "../util";
 import ThemeController from "../contexts/theme/ThemeController";
 import Svg from "./Svg";
 
-function Footer() {
+function Footer(props: { className?: string }) {
   const intl = useIntl();
   const title = intl.formatMessage({ id: "genWealth" });
 
   return (
-    <div className="max-w-screen-xl mx-auto 2xl:hidden">
-      <footer className="footer max-sm:flex max-sm:flex-col items-center p-4 bg-neutral bg-opacity-[calc(2/3)] text-neutral-content rounded-box m-2 w-auto shadow-xl">
+    <div className="max-w-screen-xl mx-auto min-[1792px]:hidden">
+      <footer
+        className={`footer max-sm:flex max-sm:flex-col items-center p-4 rounded-box m-2 w-auto shadow-xl
+        ${props.className ?? "bg-neutral bg-opacity-[calc(2/3)] text-neutral-content"}`}
+      >
         <aside className="items-center flex flex-wrap sm:flex-nowrap">
           <a
             // href="#"
@@ -30,7 +33,7 @@ function Footer() {
           <p className="max-sm:w-full text-center text-xs">{intl.formatMessage({ id: "copyright" })}</p>
         </aside>
         <nav className="grid-flow-col gap-4 max-sm:place-self-center sm:justify-self-end">
-          <ThemeController
+          {/* <ThemeController
             className="m-auto"
             sun={{
               w: 20,
@@ -42,7 +45,7 @@ function Footer() {
               h: 20,
               className: "fill-current",
             }}
-          />
+          /> */}
           <a href="https://twitter.com/genwealth_app" aria-label="Twitter">
             <Svg xlinkHref="#social-twitter" w={23} h={23} className="fill-current" />
           </a>

@@ -48,7 +48,7 @@ a {
     @apply shadow-xl;
     @apply border-t-0;
     @apply border-l-0;
-    /* @apply border-none; */
+    @apply rounded-full;
     @apply normal-case;
   }
   .button-primary {
