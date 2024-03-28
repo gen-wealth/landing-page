@@ -1,5 +1,5 @@
-import Svg from "../../components/Svg";
 import { useTheme } from "./ThemeProvider";
+import Svg from "../../components/Svg";
 
 type SvgProps = { w?: number; h?: number; className?: string; filter?: string };
 function ThemeController(props: { className?: string; sun: SvgProps; moon: SvgProps }) {
@@ -8,7 +8,7 @@ function ThemeController(props: { className?: string; sun: SvgProps; moon: SvgPr
   return (
     <label className={`swap swap-rotate ${props.className}`}>
       {/* this hidden checkbox controls the state */}
-      <input type="checkbox" onChange={() => setCurrTheme(currTheme === "sun" ? "moon" : "sun")} checked={currTheme === "sun"} />
+      <input type="checkbox" className="hidden" onChange={() => setCurrTheme(currTheme === "sun" ? "moon" : "sun")} checked={currTheme === "sun"} />
       {/* sun icon */}
       <Svg xlinkHref="#theme-sun" w={props.sun.w} h={props.sun.h} className={`swap-on ${props.sun.className}`} filter={props.sun.filter} />
       {/* moon icon */}
