@@ -1,6 +1,6 @@
 {
   "genWealth": "GenWealth",
-  "tagLine": "The Crypto Inheritance Protocol",
+  "tagLine": "Protokol Pewarisan Crypto",
 
   "lang.en": "Inggris",
   "lang.es": "Spanyol",
@@ -13,7 +13,7 @@
   "lang.zh": "Mandarin",
 
   "navBar.menu1": "Layanan Kami",
-  "navBar.menu2": "Peta Perjalanan",
+  "navBar.menu2": "Rencana Perjalanan",
   "navBar.menu3": "Tentang Kami",
   "navBar.menu4": "Kontak Kami",
 
@@ -21,13 +21,21 @@
 
   "hero.action1": "Pelajari lebih lanjut",
 
+  "pageMap.menu1": "Layanan Kami",
+  "pageMap.menu1.sub1": "Cara Kerja",
+  "pageMap.menu2": "Rencana Perjalanan",
+  "pageMap.menu3": "Tentang Kami",
+  "pageMap.menu3.sub1": "Bertemu dengan Tim",
+  "pageMap.menu4": "Kontak Kami",
+  "pageMap.menu5": "Coba Prototipe",
+
   "ourService.title": "Layanan Kami",
-  "ourService.p1": "Aset crypto bernilai miliaran dollar telah hangus karena kurangnya solusi untuk mereklaim aset yang terkunci di wallet setelah pemiliknya tiada. Kami menawarkan sebuah solusi yang {secure} dan {trustless} untuk Anda dapat mewariskan aset bagi orang-orang yang Anda cintai.",
+  "ourService.p1": "Aset crypto bernilai miliaran dollar telah hangus karena kurangnya solusi untuk mereklaim aset yang terkunci di wallet setelah pemiliknya tiada. Kami menawarkan sebuah solusi yang {secure} dan {trustless} sehingga Anda dapat mewariskan aset kepada orang-orang yang Anda cintai.",
 
   "howItWorks.title": "Cara Kerja",
-  "howItWorks.p1": "DApp kami memungkinkan Anda untuk membuat {vaults}. Vault adalah serangkaian smart-contract, di mana Anda memiliki kontrol penuh atas isinya seperti layaknya sebuah wallet self-custody. Tetapi dengan Vault, Anda dapat menentukan aturan tentang bagaimana Anda ingin asetnya didistribusikan setelah Anda tiada. Ketika Anda membuat vault, Anda akan mendapatkan sebuah alamat yang unik, Anda juga akan mendapatkan sebuah {vaultKey}, dan Anda menentukan {deadline}. Deadline ini dapat diundur dari waktu ke waktu untuk membuktikan bahwa Anda masih hidup, kami menyebutnya {proofOfLife}. Sebagai pemilik vault, Anda dapat menarik aset dari vault kapanpun, tidak tergantung deadline. Anda dapat membagikan akses vault dengan me-minting token vault-key dan mengirimkannya ke wallet Anda yang lain.",
+  "howItWorks.p1": "DApp kami memungkinkan Anda untuk membuat {vaults}. Vault adalah serangkaian smart-contract, di mana Anda memiliki kontrol penuh atas isinya seperti layaknya sebuah wallet self-custody. Tetapi dengan Vault, Anda dapat menentukan aturan tentang bagaimana Anda ingin asetnya didistribusikan setelah Anda tiada. Ketika Anda membuat vault, Anda akan mendapatkan sebuah alamat yang unik, Anda juga akan mendapatkan sebuah {vaultKey}, dan Anda menentukan {deadline}. Deadline ini dapat diundur dari waktu ke waktu untuk membuktikan bahwa Anda masih hidup, kami menyebutnya {proofOfLife}. Adanya token vault-key di dalam wallet memberikan Anda akses untuk menarik aset dari vault kapanpun, tidak tergantung deadline.",
   "howItWorks.p2": "Di dalam vault, Anda dapat membuat subdivisi yang disebut {pockets} tempat Anda mengalokasikan aset warisan ke dalamnya. Selanjutnya Anda dapat me-mint {pocketKeys} yang terikat ke pocket tadi untuk dikirimkan ke ahli-waris. Token pocket-key inilah yang memungkinkan seseorang untuk mengklaim jatah aset mereka dari masing-masing pocket setelah Anda tidak lagi dapat membuktikan bahwa Anda masih hidup, yang mana hanya setelah deadline vault sepenuhnya berlalu.",
-  "howItWorks.p3": "Dengan DApp ini, aset crypto Anda dapat direklaim oleh orang-orang yang Anda tentukan setelah Anda tiada secara trustless. Kini Anda dapat menyimpan aset crypto dengan lebih tenang karena Anda tidak lagi perlu untuk mempercayakan seedphrase Anda kepada pihak ketiga.",
+  "howItWorks.p3": "Dengan DApp ini, aset crypto Anda dapat direklaim oleh orang-orang yang Anda tentukan setelah Anda tiada secara trustless. Kini Anda dapat menyimpan aset crypto dengan lebih tenang karena Anda tidak lagi perlu untuk mempercayakan seedphrase Anda kepada pihak ketiga. Vault Anda benar-benar berfungsi layaknya seperti sebuah wallet self-custody tetapi dengan tambahan fitur.",
   "howItWorks.p4": "GenWealth adalah protokol pewarisan pertama di {cardano}, kami berencana untuk memperluas layanan kami ke jaringan blockchain lainnya di masa depan. Untuk informasi lebih lanjut terkait cara kerja smart-contract kami, Anda dapat membaca dokumentasi teknisnya {here}.",
 
   "roadmap.title": "Peta Perjalanan",
@@ -119,6 +127,7 @@
   "showMore": "tampilkan lebih banyak",
   "showLess": "tampilkan lebih sedikit",
   "note": "catatan",
+  "ad": "iklan",
 
   "ceo": "CEO",
   "cto": "CTO",
