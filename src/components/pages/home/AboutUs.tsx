@@ -9,7 +9,7 @@ function AboutUs() {
     <ContainerTxtImg
       id={"about-us"}
       image={{
-        imageSource: "/svg/AboutUs.svg",
+        imageSource: "https://gen-wealth.github.io/public/svg/AboutUs.svg",
         alternateText: title,
         className: "p-4 max-w-96 max-h-96 !object-contain",
       }}

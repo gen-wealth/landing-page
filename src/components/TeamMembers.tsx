@@ -73,7 +73,7 @@ function TeamMembers() {
           </p> */}
         </>
       ),
-      image: "/team/RafaelCardoso.jpg",
+      image: "https://gen-wealth.github.io/public/team/RafaelCardoso.jpg",
       chatPosition: "start",
       social: {
         prefix: "",
@@ -159,7 +159,7 @@ function TeamMembers() {
           </p> */}
         </>
       ),
-      image: "/team/AriadyPutra.jpg",
+      image: "https://gen-wealth.github.io/public/team/AriadyPutra.jpg",
       chatPosition: "start",
       social: {
         prefix: "",
@@ -186,7 +186,7 @@ function TeamMembers() {
           <FormattedMessage id="teamMembers.you.p1" />
         </p>
       ),
-      image: "/svg/You.svg",
+      image: "https://gen-wealth.github.io/public/svg/You.svg",
       chatPosition: "end",
       social: {
         // prefix: "Talk to us:",

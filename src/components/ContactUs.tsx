@@ -9,7 +9,7 @@ function ContactUs() {
     <ContainerImgTxt
       id="contact-us"
       image={{
-        imageSource: "/svg/ContactUs.svg",
+        imageSource: "https://gen-wealth.github.io/public/svg/ContactUs.svg",
         alternateText: "hello@genwealth.app",
         className: "p-4 max-w-96 max-h-96 !object-contain",
       }}

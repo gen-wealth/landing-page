@@ -9,7 +9,7 @@ function OurService() {
     <ContainerImgTxt
       id={"our-service"}
       image={{
-        imageSource: "/svg/Vault.svg",
+        imageSource: "https://gen-wealth.github.io/public/svg/Vault.svg",
         alternateText: title,
         className: "p-4 max-w-96 max-h-96 !object-contain",
       }}

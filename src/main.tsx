@@ -6,7 +6,7 @@ import LanguageProvider, { getLocale } from "./contexts/language/LanguageProvide
 import ThemeProvider from "./contexts/theme/ThemeProvider";
 
 const locale = getLocale();
-fetch(`/lang/${locale}.json`).then((lang) => {
+fetch(`https://gen-wealth.github.io/public/lang/${locale}.json`).then((lang) => {
   lang.json().then((messages) => {
     ReactDOM.createRoot(document.getElementById("root")!).render(
       <React.StrictMode>

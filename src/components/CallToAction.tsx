@@ -46,7 +46,7 @@ function CallToAction() {
 
           {/* Body */}
           <div className="w-full">
-            <img src="/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-4.5rem] sm:mt-4 max-sm:mt-4" />
+            <img src="https://gen-wealth.github.io/public/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-4.5rem] sm:mt-4 max-sm:mt-4" />
             <div className="text-neutral">
               {/* p1 */}
               <p className="my-2 style-p">
