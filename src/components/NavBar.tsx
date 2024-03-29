@@ -1,4 +1,4 @@
-import { MouseEvent, useState } from "react";
+import { MouseEvent, useReducer } from "react";
 import { useIntl } from "react-intl";
 import { scrollToElement, scrollToTop } from "../util";
 import ThemeController from "../contexts/theme/ThemeController";
@@ -8,6 +8,12 @@ import Footer from "./Footer";
 type menu = {
   linkId: string;
   linkName: string;
+};
+
+type onShowSmallScreenMenu = {
+  action: "toggle" | "scrollToTop" | "scrollToElement";
+  e?: MouseEvent;
+  args?: any[];
 };
 
 function NavBar() {
@@ -33,16 +39,7 @@ function NavBar() {
     },
   ];
 
-  const [showSmallScreenMenu, setShowSmallScreenMenu] = useState(false);
-
-  const onScrollToTop = (e: MouseEvent) => {
-    setShowSmallScreenMenu(false);
-    scrollToTop(e);
-  };
-  const onScrollToElement = (e: MouseEvent, elementId: string) => {
-    setShowSmallScreenMenu(false);
-    scrollToElement(e, elementId);
-  };
+  const [showSmallScreenMenu, setShowSmallScreenMenu] = useReducer(onSetShowSmallScreenMenu, false);
 
   const themeLanguage = (
     <>
@@ -86,7 +83,7 @@ function NavBar() {
             {/* GenWealth logo */}
             <a
               // href="#"
-              onClick={onScrollToTop}
+              onClick={(e) => setShowSmallScreenMenu({ action: "scrollToTop", e })}
               className="flex gap-2 h-12"
             >
               <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
@@ -106,7 +103,7 @@ function NavBar() {
                 <a
                   key={menu.linkName}
                   // href={menu.linkURL}
-                  onClick={(e) => onScrollToElement(e, menu.linkId)}
+                  onClick={(e) => setShowSmallScreenMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
                   className="link link-hover text-center place-self-center join-item style-link"
                 >
                   {menu.linkName}
@@ -125,7 +122,7 @@ function NavBar() {
             {/* Menu for Small Screens */}
             <label className="swap swap-rotate -ml-2 sm:hidden">
               {/* this hidden checkbox controls the state */}
-              <input type="checkbox" className="hidden" onChange={() => setShowSmallScreenMenu(!showSmallScreenMenu)} checked={!showSmallScreenMenu} />
+              <input type="checkbox" className="hidden" onChange={() => setShowSmallScreenMenu({ action: "toggle" })} checked={!showSmallScreenMenu} />
               {/* hamburger icon */}
               <svg className="swap-on fill-primary" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
                 <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
@@ -160,7 +157,7 @@ function NavBar() {
                 <li key={`pageMap.${menu.linkName}`} className="text-[10vw] style-link">
                   <a
                     // href={menu.linkURL}
-                    onClick={(e) => onScrollToElement(e, menu.linkId)}
+                    onClick={(e) => setShowSmallScreenMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
                     className="link link-hover join-item"
                   >
                     {menu.linkName}
@@ -173,13 +170,34 @@ function NavBar() {
 
             {/* footer */}
             <div className="shrink-0 -m-2">
-              <Footer className="bg-none text-primary" onClickScrollToTop={() => setShowSmallScreenMenu(false)} />
+              <Footer className="bg-none text-primary" onClickScrollToTop={() => setShowSmallScreenMenu({ action: "toggle" })} />
             </div>
           </div>
         </div>
       </div>
     </>
   );
+}
+
+function onSetShowSmallScreenMenu(showSmallScreenMenu: boolean, setShowSmallScreenMenu: onShowSmallScreenMenu) {
+  switch (setShowSmallScreenMenu.action) {
+    case "toggle":
+      document.documentElement.style.overflow = showSmallScreenMenu ? "auto" : "hidden";
+      return !showSmallScreenMenu;
+
+    case "scrollToTop":
+      document.documentElement.style.overflow = "auto";
+      scrollToTop(setShowSmallScreenMenu.e!);
+      return false;
+
+    case "scrollToElement":
+      document.documentElement.style.overflow = "auto";
+      scrollToElement(setShowSmallScreenMenu.e!, setShowSmallScreenMenu.args![0]);
+      return false;
+
+    default:
+      return showSmallScreenMenu;
+  }
 }
 
 export default NavBar;
