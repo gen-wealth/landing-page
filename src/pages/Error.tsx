@@ -27,14 +27,13 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
 
       {/* Stopwatch */}
       <div
-        className="radial-progress bg-base-content bg-opacity-[calc(2/3)]
-        text-primary-focus border-4 border-transparent
-        hover:animate-wiggle"
+        className="radial-progress bg-base-content bg-opacity-[calc(2/3)] text-primary-focus
+        border-none -scale-x-100 shadow-xl after:shadow-xl after:blur-sm before:blur-3xl"
         style={{ "--value": (100 * countdown) / props.timeout, "--size": "24rem", "--thickness": "3rem" }}
         role="progressbar"
       >
-        <div className="flex flex-col items-center gap-2 z-10">
-          <p className="style-p">Automatically reload page in</p>
+        <div className="flex flex-col items-center gap-2 z-10 -scale-x-100">
+          <p className="mt-5 style-p">Automatically reload page in</p>
 
           <div className="shrink countdown text-3xl">
             <span style={{ "--value": countdown }} className="font-mono" />
