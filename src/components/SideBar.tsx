@@ -142,10 +142,10 @@ function SideBar() {
               href="https://nike.com"
               target="_blank"
               className="flex rounded-box size-full
-              bg-[url('/ContainerImg.jpg')] bg-cover"
+              bg-[url('https://gen-wealth.github.io/public/ContainerImg.jpg')] bg-cover"
             >
               <div
-                className={`hero-overlay
+                className={`hero-overlay relative
               ${
                 theme === "moon"
                   ? "bg-opacity-25 hover:bg-opacity-15" // dark
@@ -164,6 +164,15 @@ function SideBar() {
                     {intl.formatMessage({ id: "ad" })}
                   </span>
                 </div>
+
+                <span
+                  className="absolute top-1/2 left-1/2
+                  -translate-x-1/2 -translate-y-1/2
+                  font-bold text-[2vw]
+                  mix-blend-soft-light"
+                >
+                  Nike
+                </span>
               </div>
             </a> */}
           </div>

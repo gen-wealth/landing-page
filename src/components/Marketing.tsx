@@ -19,7 +19,7 @@ function Marketing() {
           href="https://airbnb.com"
           target="_blank"
           className="grow aspect-[9/16] rounded-box
-          bg-[url('/HeroBg.jpg')] bg-cover bg-center"
+          bg-[url('https://gen-wealth.github.io/public/HeroBg.jpg')] bg-cover bg-center"
         >
           <div
             className={`hero-overlay relative
@@ -57,10 +57,10 @@ function Marketing() {
           href="https://soundcloud.com"
           target="_blank"
           className="shrink aspect-square rounded-box
-          bg-[url('/ContactUs.jpg')] bg-cover"
+          bg-[url('https://gen-wealth.github.io/public/ContactUs.jpg')] bg-cover"
         >
           <div
-            className={`hero-overlay
+            className={`hero-overlay relative
             ${
               theme === "moon"
                 ? "bg-opacity-40 hover:bg-opacity-35" // dark
@@ -79,6 +79,15 @@ function Marketing() {
                 <FormattedMessage id="ad" />
               </span>
             </div>
+
+            <span
+              className="absolute top-1/2 left-1/2
+              -translate-x-1/2 -translate-y-1/2
+              font-bold text-[2vw]
+              mix-blend-soft-light"
+            >
+              SoundCloud
+            </span>
           </div>
         </a>
       </div>
