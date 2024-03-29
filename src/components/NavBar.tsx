@@ -1,4 +1,4 @@
-import { MouseEvent, useReducer } from "react";
+import { MouseEvent, useEffect, useReducer } from "react";
 import { useIntl } from "react-intl";
 import { scrollToElement, scrollToTop } from "../util";
 import ThemeController from "../contexts/theme/ThemeController";
@@ -8,12 +8,6 @@ import Footer from "./Footer";
 type menu = {
   linkId: string;
   linkName: string;
-};
-
-type onShowSmallScreenMenu = {
-  action: "toggle" | "scrollToTop" | "scrollToElement";
-  e?: MouseEvent;
-  args?: any[];
 };
 
 function NavBar() {
@@ -39,36 +33,84 @@ function NavBar() {
     },
   ];
 
-  const [showSmallScreenMenu, setShowSmallScreenMenu] = useReducer(onSetShowSmallScreenMenu, false);
+  type onShowHamburgerMenu =
+    | false
+    | {
+        action: "toggle" | "scrollToTop" | "scrollToElement";
+        e?: MouseEvent;
+        args?: any[];
+      };
 
-  const themeLanguage = (
-    <>
-      <ThemeController
-        className="btn-circle btn-secondary btn-sm
-        bg-base-content bg-opacity-[calc(5/6)] hover:bg-base-content
-        join-item shadow-xl"
-        sun={{
-          w: 16,
-          h: 16,
-          className: "fill-primary",
-        }}
-        moon={{
-          w: 16,
-          h: 16,
-          className: "fill-primary",
-        }}
-      />
-      <LanguageSelector
-        dropdownClassName="btn-circle btn-secondary btn-sm
-        bg-base-content bg-opacity-[calc(5/6)] hover:bg-base-content
-        join-item shadow-xl"
-        buttonClassName="px-2 py-1.5"
-        contentClassName="bg-base-content rounded-tl-none
-        gap-2 pl-2 pr-[7px] py-1.5 top-0"
-        tooltipClassName="tooltip-left"
-      />
-    </>
-  );
+  const [showHamburgerMenu, setShowHamburgerMenu] = useReducer(onSetShowHamburgerMenu, false);
+
+  useEffect(() => {
+    const hideHamburgerMenu = () => {
+      // sm:hidden
+      if (document.documentElement.clientWidth >= 640) {
+        setShowHamburgerMenu(false);
+      }
+    };
+
+    window.addEventListener("resize", hideHamburgerMenu);
+    return () => window.removeEventListener("resize", hideHamburgerMenu);
+  }, []);
+
+  function onSetShowHamburgerMenu(currHamburgerMenu: boolean, showHamburgerMenu: onShowHamburgerMenu) {
+    if (!showHamburgerMenu) {
+      document.documentElement.style.overflow = "auto";
+      return false;
+    }
+
+    switch (showHamburgerMenu.action) {
+      case "toggle":
+        document.documentElement.style.overflow = currHamburgerMenu ? "auto" : "hidden";
+        return !currHamburgerMenu;
+
+      case "scrollToTop":
+        document.documentElement.style.overflow = "auto";
+        scrollToTop(showHamburgerMenu.e!);
+        return false;
+
+      case "scrollToElement":
+        document.documentElement.style.overflow = "auto";
+        scrollToElement(showHamburgerMenu.e!, showHamburgerMenu.args![0]);
+        return false;
+
+      default:
+        return currHamburgerMenu;
+    }
+  }
+
+  function ThemeLanguage() {
+    return (
+      <>
+        <ThemeController
+          className="btn-circle btn-secondary btn-sm
+          bg-base-content bg-opacity-[calc(5/6)] hover:bg-base-content
+          join-item shadow-xl"
+          sun={{
+            w: 16,
+            h: 16,
+            className: "fill-primary",
+          }}
+          moon={{
+            w: 16,
+            h: 16,
+            className: "fill-primary",
+          }}
+        />
+        <LanguageSelector
+          dropdownClassName="btn-circle btn-secondary btn-sm
+          bg-base-content bg-opacity-[calc(5/6)] hover:bg-base-content
+          join-item shadow-xl"
+          buttonClassName="px-2 py-1.5"
+          contentClassName="bg-base-content rounded-tl-none
+          gap-2 pl-2 pr-[7px] py-1.5 top-0"
+          tooltipClassName="tooltip-left"
+        />
+      </>
+    );
+  }
 
   return (
     <>
@@ -83,7 +125,7 @@ function NavBar() {
             {/* GenWealth logo */}
             <a
               // href="#"
-              onClick={(e) => setShowSmallScreenMenu({ action: "scrollToTop", e })}
+              onClick={(e) => setShowHamburgerMenu({ action: "scrollToTop", e })}
               className="flex gap-2 h-12"
             >
               <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
@@ -103,7 +145,7 @@ function NavBar() {
                 <a
                   key={menu.linkName}
                   // href={menu.linkURL}
-                  onClick={(e) => setShowSmallScreenMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
+                  onClick={(e) => setShowHamburgerMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
                   className="link link-hover text-center place-self-center join-item style-link"
                 >
                   {menu.linkName}
@@ -117,12 +159,14 @@ function NavBar() {
             </a>
 
             {/* (theme | language) */}
-            <div className="gap-px z-40 -ml-2 join max-sm:hidden">{themeLanguage}</div>
+            <div className="gap-px z-40 -ml-2 join max-sm:hidden">
+              <ThemeLanguage />
+            </div>
 
-            {/* Menu for Small Screens */}
+            {/* Hamburger */}
             <label className="swap swap-rotate -ml-2 sm:hidden">
               {/* this hidden checkbox controls the state */}
-              <input type="checkbox" className="hidden" onChange={() => setShowSmallScreenMenu({ action: "toggle" })} checked={!showSmallScreenMenu} />
+              <input type="checkbox" className="hidden" onChange={() => setShowHamburgerMenu({ action: "toggle" })} checked={!showHamburgerMenu} />
               {/* hamburger icon */}
               <svg className="swap-on fill-primary" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
                 <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
@@ -138,10 +182,10 @@ function NavBar() {
 
       <div
         className={`fixed w-full h-min mx-auto inset-0 z-20 top-[4.5rem]
-        ${showSmallScreenMenu ? "pointer-events-auto ease-out" : "pointer-events-none ease-in scale-x-0 opacity-0 translate-x-full"}
+        ${showHamburgerMenu ? "pointer-events-auto ease-out" : "pointer-events-none ease-in scale-x-0 opacity-0 translate-x-full"}
         transition-all duration-150 sm:hidden`}
       >
-        {/* Small Screen Menu */}
+        {/* Hamburger Menu */}
         <div
           className="bg-base-content bg-opacity-[calc(2/3)]
           backdrop-blur-lg rounded-box shadow-xl m-2
@@ -149,7 +193,9 @@ function NavBar() {
         >
           <div className="flex flex-col justify-between h-full">
             {/* (theme | language) */}
-            <div className="flex justify-center gap-px shrink-0 m-2 z-40 self-end join">{themeLanguage}</div>
+            <div className="flex justify-center gap-px shrink-0 m-2 z-40 self-end join">
+              <ThemeLanguage />
+            </div>
 
             {/* menu */}
             <ul className="text-center shrink overflow-auto style-mask-y-md p-2">
@@ -157,7 +203,7 @@ function NavBar() {
                 <li key={`pageMap.${menu.linkName}`} className="text-[10vw] style-link">
                   <a
                     // href={menu.linkURL}
-                    onClick={(e) => setShowSmallScreenMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
+                    onClick={(e) => setShowHamburgerMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
                     className="link link-hover join-item"
                   >
                     {menu.linkName}
@@ -170,34 +216,13 @@ function NavBar() {
 
             {/* footer */}
             <div className="shrink-0 -m-2">
-              <Footer className="bg-none text-primary" onClickScrollToTop={() => setShowSmallScreenMenu({ action: "toggle" })} />
+              <Footer className="bg-none text-primary" onClickScrollToTop={() => setShowHamburgerMenu({ action: "toggle" })} />
             </div>
           </div>
         </div>
       </div>
     </>
   );
-}
-
-function onSetShowSmallScreenMenu(showSmallScreenMenu: boolean, setShowSmallScreenMenu: onShowSmallScreenMenu) {
-  switch (setShowSmallScreenMenu.action) {
-    case "toggle":
-      document.documentElement.style.overflow = showSmallScreenMenu ? "auto" : "hidden";
-      return !showSmallScreenMenu;
-
-    case "scrollToTop":
-      document.documentElement.style.overflow = "auto";
-      scrollToTop(setShowSmallScreenMenu.e!);
-      return false;
-
-    case "scrollToElement":
-      document.documentElement.style.overflow = "auto";
-      scrollToElement(setShowSmallScreenMenu.e!, setShowSmallScreenMenu.args![0]);
-      return false;
-
-    default:
-      return showSmallScreenMenu;
-  }
 }
 
 export default NavBar;
