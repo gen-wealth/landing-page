@@ -27,8 +27,8 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
 
       {/* Stopwatch */}
       <div
-        className="radial-progress bg-base-content bg-opacity-[calc(2/3)] text-primary-focus
-        border-none -scale-x-100 shadow-xl after:shadow-xl after:blur-sm before:blur-3xl"
+        className="radial-progress bg-base-content bg-opacity-[calc(2/3)] text-primary-focus border-none
+        -scale-x-100 shrink-0 shadow-xl after:shadow-xl after:blur-sm before:blur-3xl"
         style={{ "--value": (100 * countdown) / props.timeout, "--size": "24rem", "--thickness": "3rem" }}
         role="progressbar"
       >
@@ -47,7 +47,7 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
       </div>
 
       {/* to make sure Stopwatch in the middle of the page */}
-      <h1 className="mt-10 text-5xl font-bold style1 invisible">{title}</h1>
+      <h1 className="mt-10 text-5xl font-bold style1 invisible shrink overflow-clip">{title}</h1>
 
       {/* Error Message */}
       {!props.message ? (
