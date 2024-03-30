@@ -11,7 +11,7 @@ function renderApp(app: JSX.Element) {
 }
 
 const locale = getLocale();
-fetch(`https://gen-wealth.github.io/public/lang/${locale}.json`)
+fetch(`https://gen-wealth.github.io/public/lang/${locale}.json`, { cache: "no-cache" })
   .then((language) => {
     language
       .json()

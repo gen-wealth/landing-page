@@ -63,7 +63,7 @@ function LanguageProvider(props: {
     callback?: () => void, // onFulfilled
     onError?: (error: any) => void // onRejected
   ) => {
-    fetch(`https://gen-wealth.github.io/public/lang/${locale}.json`)
+    fetch(`https://gen-wealth.github.io/public/lang/${locale}.json`, { cache: "no-cache" })
       .then((lang) => {
         lang
           .json()
