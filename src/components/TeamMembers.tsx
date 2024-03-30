@@ -264,7 +264,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
         <div className="chat-image avatar">
           <div className="w-32 mask mask-hexagon bg-primary bg-opacity-[calc(1/3)]">
             <div className="h-[7.75rem] mask mask-hexagon m-0.5">
-              <img src={member.image} />
+              <img src={member.image} alt={member.name} loading="lazy" />
             </div>
           </div>
         </div>
