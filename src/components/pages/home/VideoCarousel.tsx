@@ -39,6 +39,7 @@ export function VideoCarousel(props: PropState) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="grow aspect-video w-full shadow-xl"
+            loading="lazy"
           />
 
           <div className="absolute flex justify-between pointer-events-none transform -translate-y-1/2 left-2 right-2 top-1/2">
