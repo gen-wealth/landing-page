@@ -23,7 +23,7 @@ function Footer(props: { className?: string; onClickScrollToTop?: () => void }) 
             className="flex max-sm:flex-col gap-2 max-sm:gap-0 font-bold items-center mx-auto"
           >
             <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
-              <img src="/GenWealth.ico" alt={title} loading="lazy" className="w-12 mask mask-squircle" />
+              <img src="/GenWealth.ico" alt={title} loading="eager" className="w-12 mask mask-squircle" />
             </div>
 
             <h5 className="text-sm max-sm:text-xl max-sm:w-full">{title}</h5>

@@ -129,7 +129,7 @@ function NavBar() {
               className="flex gap-2 h-12"
             >
               <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
-                <img src="/GenWealth.ico" alt={title} loading="lazy" className="mask mask-squircle" />
+                <img src="/GenWealth.ico" alt={title} loading="eager" className="mask mask-squircle" />
               </div>
               <span className="text-primary text-xl lg:text-2xl font-bold self-center max-md:hidden max-sm:flex">{title}</span>
             </a>
@@ -198,9 +198,9 @@ function NavBar() {
             </div>
 
             {/* menu */}
-            <ul className="text-center shrink overflow-auto style-mask-y-md p-2">
-              {menus.map((menu) => (
-                <li key={`pageMap.${menu.linkName}`} className="text-[10vw] style-link">
+            <ul tabIndex={0} className="text-center shrink overflow-auto style-mask-y-md p-2">
+              {menus.map((menu, i) => (
+                <li tabIndex={i + 1} key={`pageMap.${menu.linkName}`} className="text-[10vw] style-link">
                   <a
                     // href={menu.linkURL}
                     onClick={(e) => setShowHamburgerMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
