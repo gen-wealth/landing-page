@@ -5,6 +5,7 @@ import SideBar from "../components/SideBar";
 import Marketing from "../components/Marketing";
 import HomeContents from "../components/pages/HomeContents";
 import Footer from "../components/Footer";
+import PrivacyNotice from "../components/PrivacyNotice";
 
 function Home() {
   // Scroll element into view from pathname as anchor on page load
@@ -30,6 +31,8 @@ function Home() {
       </div>
 
       <Footer />
+
+      <PrivacyNotice />
     </>
   );
 }
