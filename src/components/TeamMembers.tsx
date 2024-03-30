@@ -73,7 +73,7 @@ function TeamMembers() {
           </p> */}
         </>
       ),
-      image: "https://gen-wealth.github.io/public/team/RafaelCardoso.jpg",
+      image: "https://gen-wealth.github.io/public/team/RafaelCardoso.webp",
       chatPosition: "start",
       social: {
         prefix: "",
@@ -159,7 +159,7 @@ function TeamMembers() {
           </p> */}
         </>
       ),
-      image: "https://gen-wealth.github.io/public/team/AriadyPutra.jpg",
+      image: "https://gen-wealth.github.io/public/team/AriadyPutra.webp",
       chatPosition: "start",
       social: {
         prefix: "",
@@ -264,7 +264,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
         <div className="chat-image avatar">
           <div className="w-32 mask mask-hexagon bg-primary bg-opacity-[calc(1/3)]">
             <div className="h-[7.75rem] mask mask-hexagon m-0.5">
-              <img src={member.image} alt={member.name} loading="lazy" />
+              <img src={member.image} alt={member.name} loading="eager" />
             </div>
           </div>
         </div>
@@ -331,7 +331,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
             <div className="flex items-center text-[1em]">
               <p className="style-p">{member.social.prefix}&nbsp;</p>
               {member.social.links.map((link) => (
-                <a key={`${link.xlinkHref}.${member.name}`} href={link.linkURL} className="fill-primary mr-2">
+                <a key={`${link.xlinkHref}.${member.name}`} href={link.linkURL} aria-label={`${link.linkURL}`} className="fill-primary mr-2">
                   <Svg xlinkHref={link.xlinkHref} w={24} h={24} />
                 </a>
               ))}

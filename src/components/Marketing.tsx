@@ -19,7 +19,7 @@ function Marketing() {
           href="https://airbnb.com"
           target="_blank"
           className="grow aspect-[9/16] rounded-box
-          bg-[url('https://gen-wealth.github.io/public/HeroBg.jpg')] bg-cover bg-center"
+          bg-[url('https://gen-wealth.github.io/public/HeroBg.webp')] bg-cover bg-center"
         >
           <div
             className={`hero-overlay relative
@@ -57,7 +57,7 @@ function Marketing() {
           href="https://soundcloud.com"
           target="_blank"
           className="shrink aspect-square rounded-box
-          bg-[url('https://gen-wealth.github.io/public/ContactUs.jpg')] bg-cover"
+          bg-[url('https://gen-wealth.github.io/public/ContactUs.webp')] bg-cover"
         >
           <div
             className={`hero-overlay relative
