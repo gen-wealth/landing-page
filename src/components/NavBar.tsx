@@ -114,7 +114,7 @@ function NavBar() {
 
   return (
     <>
-      <div className="fixed w-full h-min mx-auto inset-0 z-30">
+      <div className="fixed w-full z-30">
         <div
           className="navbar flex justify-between shadow-xl
           bg-base-content bg-opacity-[calc(2/3)]
