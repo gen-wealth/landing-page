@@ -55,9 +55,9 @@ function SideBar() {
 
   const [theme, _] = useTheme();
   const mapMenu = (menu: menu, className?: string) => (
-    <li key={menu.linkId} tabIndex={1}>
+    <li key={menu.linkId} tabIndex={0}>
       <a
-        // href={menu.linkURL}
+        // href={menu.linkId}
         onClick={(e) => scrollToElement(e, menu.linkId)}
         className={`whitespace-break-spaces active:!bg-transparent
         ${theme === "moon" ? "" : "hover:text-primary-focus active:!text-primary-focus"}
@@ -65,7 +65,7 @@ function SideBar() {
       >
         {menu.linkName}
       </a>
-      <ul tabIndex={2}>
+      <ul tabIndex={0}>
         {menu.subMenus.map((menu) => {
           return mapMenu(menu);
         })}
