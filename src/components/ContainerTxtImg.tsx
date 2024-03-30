@@ -36,7 +36,7 @@ function ContainerTxtImg(props: {
       <AnchorScrollOffset id={props.id} />
 
       {/* Card */}
-      <div id={props.id} className="card sm:card-side bg-base-content bg-opacity-[calc(2/3)] m-2 shadow-xl">
+      <div className="card sm:card-side bg-base-content bg-opacity-[calc(2/3)] m-2 shadow-xl">
         {/* Contents */}
         <div className="card-body overflow-auto">
           <h2
@@ -66,7 +66,7 @@ function ContainerTxtImg(props: {
 
         {/* Image */}
         <figure>
-          <img src={props.image.imageSource} alt={props.image.alternateText} loading="lazy" className={`object-cover w-full h-full ${props.image.className}`} />
+          <img src={props.image.imageSource} alt={props.image.alternateText} loading="eager" className={`object-cover w-full h-full ${props.image.className}`} />
         </figure>
       </div>
     </div>
