@@ -14,12 +14,12 @@ function FooterSideBar(props: { onClickScrollToTop?: () => void }) {
           }}
           className="font-bold"
         >
-          <h5 className="text-xl">
+          <p className="text-xl">
             <FormattedMessage id="genWealth" />
-          </h5>
-          <h6 className="text-xs">
+          </p>
+          <p className="text-xs">
             <FormattedMessage id="tagLine" />
-          </h6>
+          </p>
         </a>
         <p className="text-xs">
           <FormattedMessage id="copyright" />

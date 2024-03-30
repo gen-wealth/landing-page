@@ -26,10 +26,10 @@ function Footer(props: { className?: string; onClickScrollToTop?: () => void }) 
               <img src="/GenWealth.ico" alt={title} loading="eager" className="w-12 mask mask-squircle" />
             </div>
 
-            <h5 className="text-sm max-sm:text-xl max-sm:w-full">{title}</h5>
+            <p className="text-sm max-sm:text-xl max-sm:w-full">{title}</p>
 
             <span className="text-xs max-sm:hidden">&laquo;</span>
-            <h6 className="text-sm max-sm:text-xs max-sm:w-full">{intl.formatMessage({ id: "tagLine" })}</h6>
+            <p className="text-sm max-sm:text-xs max-sm:w-full">{intl.formatMessage({ id: "tagLine" })}</p>
             <span className="text-xs max-sm:hidden">&raquo;</span>
           </a>
 
