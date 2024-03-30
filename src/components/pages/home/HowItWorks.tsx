@@ -97,12 +97,12 @@ function HowItWorks() {
             id="howItWorks.p4"
             values={{
               cardano: (
-                <a href="https://cardano.org" target="_blank" className="link link-hover style-link">
+                <a href="https://cardano.org" target="_blank" aria-label="Cardano" className="link link-hover style-link">
                   {intl.formatMessage({ id: "cardano" })}
                 </a>
               ),
               here: (
-                <a href="https://docs.genwealth.app" className="link link-hover style-link">
+                <a href="https://docs.genwealth.app" aria-label="GenWealth Docs" className="link link-hover style-link">
                   {intl.formatMessage({ id: "here" })}
                 </a>
               ),
