@@ -66,7 +66,12 @@ function ContainerTxtImg(props: {
 
         {/* Image */}
         <figure>
-          <img src={props.image.imageSource} alt={props.image.alternateText} loading="eager" className={`object-cover w-full h-full ${props.image.className}`} />
+          <img
+            src={props.image.imageSource}
+            alt={props.image.alternateText}
+            loading="eager"
+            className={`object-cover w-full h-full ${props.image.className}`}
+          />
         </figure>
       </div>
     </div>
