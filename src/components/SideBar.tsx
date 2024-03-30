@@ -55,7 +55,7 @@ function SideBar() {
 
   const [theme, _] = useTheme();
   const mapMenu = (menu: menu, className?: string) => (
-    <li key={menu.linkId}>
+    <li key={menu.linkId} tabIndex={1}>
       <a
         // href={menu.linkURL}
         onClick={(e) => scrollToElement(e, menu.linkId)}
@@ -65,7 +65,7 @@ function SideBar() {
       >
         {menu.linkName}
       </a>
-      <ul>
+      <ul tabIndex={2}>
         {menu.subMenus.map((menu) => {
           return mapMenu(menu);
         })}
@@ -82,7 +82,7 @@ function SideBar() {
     >
       <div className="flex flex-col h-[calc(100vh-4.5rem)]">
         <div className="w-full mx-auto shrink overflow-x-hidden style-mask-y-sm">
-          <ul className="menu w-fit m-auto">
+          <ul tabIndex={0} className="menu w-fit m-auto">
             {menus.map((menu) => {
               return mapMenu(menu, "font-bold");
             })}
@@ -142,7 +142,7 @@ function SideBar() {
               href="https://nike.com"
               target="_blank"
               className="flex rounded-box size-full
-              bg-[url('https://gen-wealth.github.io/public/ContainerImg.jpg')] bg-cover"
+              bg-[url('https://gen-wealth.github.io/public/ContainerImg.webp')] bg-cover"
             >
               <div
                 className={`hero-overlay relative

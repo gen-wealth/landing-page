@@ -117,7 +117,7 @@ function Roadmap() {
       title={title}
       paragraphs={[
         <div ref={roadmapRef} className="overflow-x-auto">
-          <ul className="steps max-sm:steps-vertical">
+          <ul tabIndex={0} className="steps max-sm:steps-vertical">
             {roadmaps.map((roadmap, i) => (
               <li
                 key={roadmap.title}
@@ -130,6 +130,7 @@ function Roadmap() {
                     : "step-primary before:!bg-accent after:!bg-accent after:!text-accent-content"
                 }`}
                 data-content={roadmapStatus[roadmap.status]}
+                tabIndex={i + 1}
               >
                 <div className="text-start text-neutral place-self-start mb-10">
                   <AnchorScrollOffset id={"roadmap-" + i} />

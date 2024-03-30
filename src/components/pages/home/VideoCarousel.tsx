@@ -26,9 +26,9 @@ const videos = [
 type PropState = { videoIndex: number; slideToVideo: (e: MouseEvent, index: number) => void };
 export function VideoCarousel(props: PropState) {
   return (
-    <div className="carousel w-full shadow-xl rounded-box">
+    <div tabIndex={0} className="carousel w-full shadow-xl rounded-box">
       {videos.map((video, index) => (
-        <div id={`slide-${index}`} key={`slide-${index}`} className="carousel-item relative w-full gap-2 flex-wrap">
+        <div id={`slide-${index}`} key={`slide-${index}`} tabIndex={index + 1} className="carousel-item relative w-full gap-2 flex-wrap">
           <div className="absolute flex justify-between pointer-events-none transform -translate-y-1/2 left-5 right-5 top-1/2 -z-50">
             <progress className="progress m-auto w-1/2" />
           </div>

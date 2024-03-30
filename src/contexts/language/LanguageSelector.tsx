@@ -108,15 +108,16 @@ function LanguageSelector(props: {
         className={`dropdown-content rounded-box
         flex flex-col shadow-xl drop-shadow-xl
         ${props.contentClassName}`}
+        tabIndex={0}
       >
-        <li>
+        <li tabIndex={1}>
           <a className="style-text-shadow">{info[language].localFlag}</a>
         </li>
         {langs
           .sort((l, r) => (info[l.code].localName < info[r.code].localName ? -1 : 1))
           .filter((lang) => lang.code !== language)
-          .map((lang) => (
-            <li key={lang.code}>
+          .map((lang, i) => (
+            <li key={lang.code} tabIndex={i + 2}>
               <a
                 className={`style-text-shadow
                 before:bg-info before:text-info-content
