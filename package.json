@@ -6,11 +6,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "pako": "^2.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-intl": "^6.6.2"
   },
   "devDependencies": {
+    "@types/pako": "^2.0.3",
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",

@@ -1,14 +1,15 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { getCookie, setCookie } from "../../cookie";
 
 type Theme = "sun" | "moon";
 
-function getStoredTheme() {
-  return (localStorage.getItem("genwealth.theme") || // matches preference?
+function getTheme() {
+  return (getCookie()?.theme || // if no cookie, matches preference?
     (window.matchMedia("(prefers-color-scheme: light)").matches
       ? "sun" // fallback:
       : "moon")) as Theme;
 }
-function setStoredTheme(theme: Theme) {
+function setTheme(theme: Theme) {
   const html = document.documentElement;
   html.setAttribute("data-theme", theme);
 
@@ -23,8 +24,6 @@ function setStoredTheme(theme: Theme) {
       style.background = "";
       break;
   }
-
-  localStorage.setItem("genwealth.theme", theme);
 }
 
 const ThemeContext = createContext<
@@ -32,20 +31,22 @@ const ThemeContext = createContext<
     string, // Theme
     (theme: Theme) => void // to change theme
   ]
->(["", setStoredTheme]);
+>(["", setTheme]);
 export const useTheme = () => useContext(ThemeContext);
 
 function ThemeProvider(props: { children: JSX.Element }) {
   const [currTheme, setCurrTheme] = useState("");
 
   useEffect(() => {
-    const storedTheme = getStoredTheme();
-    updateTheme(storedTheme);
+    const storedTheme = getTheme();
+    setTheme(storedTheme);
+    setCurrTheme(storedTheme);
   }, []);
 
   const updateTheme = (theme: Theme) => {
-    setStoredTheme(theme);
+    setTheme(theme);
     setCurrTheme(theme);
+    setCookie({ theme });
   };
 
   return <ThemeContext.Provider value={[currTheme, updateTheme]}>{props.children}</ThemeContext.Provider>;

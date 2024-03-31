@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { IntlProvider } from "react-intl";
+import { getCookie, setCookie } from "../../cookie";
 
 const langs = [
   "en", // "English"
@@ -24,7 +25,7 @@ const langs = [
  */
 export function getLocale() {
   return (
-    localStorage.getItem("genwealth.locale") ||
+    getCookie()?.locale ||
     langs.find((lang) => {
       return navigator.language.startsWith(lang);
     }) ||
@@ -32,7 +33,7 @@ export function getLocale() {
   );
 }
 export function setLocale(locale: string) {
-  localStorage.setItem("genwealth.locale", locale);
+  setCookie({ locale });
 }
 
 const LanguageContext = createContext<

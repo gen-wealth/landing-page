@@ -10,6 +10,8 @@ function renderApp(app: JSX.Element) {
   return ReactDOM.createRoot(document.getElementById("root")!).render(<React.StrictMode>{app}</React.StrictMode>);
 }
 
+localStorage.clear();
+
 const locale = getLocale();
 fetch(`https://gen-wealth.github.io/public/lang/${locale}.json`, { cache: "no-cache" })
   .then((language) => {
@@ -24,6 +26,6 @@ fetch(`https://gen-wealth.github.io/public/lang/${locale}.json`, { cache: "no-ca
           </LanguageProvider>
         );
       })
-      .catch((x) => renderApp(<Error message={`${x}`} />));
+      .catch((langToJsonError) => renderApp(<Error message={`${langToJsonError}`} />));
   })
-  .catch((x) => renderApp(<Error message={`${x}`} />));
+  .catch((fetchLangJsonError) => renderApp(<Error message={`${fetchLangJsonError}`} />));
