@@ -5,17 +5,19 @@ import { getCookie, setCookie } from "../../cookie";
 const langs = [
   "en", // "English"
   "es", // "Spanish"
+  "fr", // "French"
   "id", // "Indonesian"
   "ja", // "Japanese"
   "ko", // "Korean"
   "ms", // "Malay"
-  "nl", // "Dutch"
+  // "nl", // "Dutch"
   "pt", // "Portuguese"
+  "ru", // "Russian"
   "zh", // "Chinese"
 ];
 
 /**
- * 1st preference: `genwealth.locale` from `localStorage`
+ * 1st preference: `locale` from `document.cookie`
  *
  * 2nd preference: `navigator.language`
  *

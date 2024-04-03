@@ -11,42 +11,17 @@ type locale = {
   localFlag: JSX.Element;
 };
 const info: Record<string, locale> = {
-  en: {
-    localName: "English (US)",
-    localFlag: <>&#127482;&#127480;</>, // 🇺🇸
-  },
-  es: {
-    localName: "Español",
-    localFlag: <>&#127466;&#127480;</>, // 🇪🇸
-  },
-  id: {
-    localName: "Indonesia",
-    localFlag: <>&#127470;&#127465;</>, // 🇮🇩
-  },
-  ja: {
-    localName: "日本語",
-    localFlag: <>&#127471;&#127477;</>, // 🇯🇵
-  },
-  ko: {
-    localName: "한국어",
-    localFlag: <>&#127472;&#127479;</>, // 🇰🇷
-  },
-  ms: {
-    localName: "Melayu",
-    localFlag: <>&#127474;&#127486;</>, // 🇲🇾
-  },
-  nl: {
-    localName: "Nederlands",
-    localFlag: <>&#127475;&#127473;</>, // 🇳🇱
-  },
-  pt: {
-    localName: "Português",
-    localFlag: <>&#127477;&#127481;</>, // 🇵🇹
-  },
-  zh: {
-    localName: "中文",
-    localFlag: <>&#127464;&#127475;</>, // 🇨🇳
-  },
+  en: { localName: "English (US)", localFlag: <>🇺🇸</> },
+  es: { localName: "Español", localFlag: <>🇪🇸</> },
+  fr: { localName: "Français", localFlag: <>🇫🇷</> },
+  id: { localName: "Indonesia", localFlag: <>🇮🇩</> },
+  ja: { localName: "日本語", localFlag: <>🇯🇵</> },
+  ko: { localName: "한국어", localFlag: <>🇰🇷</> },
+  ms: { localName: "Melayu", localFlag: <>🇲🇾</> },
+  // nl: { localName: "Nederlands", localFlag: <>🇳🇱</> },
+  pt: { localName: "Português", localFlag: <>🇵🇹</> },
+  ru: { localName: "Русский", localFlag: <>🇷🇺</> },
+  zh: { localName: "中文", localFlag: <>🇨🇳</> },
 };
 
 function LanguageSelector(props: {
@@ -60,42 +35,17 @@ function LanguageSelector(props: {
   const intl = useIntl();
 
   const langs: lang[] = [
-    {
-      name: intl.formatMessage({ id: "lang.en" }),
-      code: "en",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.es" }),
-      code: "es",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.id" }),
-      code: "id",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.ja" }),
-      code: "ja",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.ko" }),
-      code: "ko",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.ms" }),
-      code: "ms",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.nl" }),
-      code: "nl",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.pt" }),
-      code: "pt",
-    },
-    {
-      name: intl.formatMessage({ id: "lang.zh" }),
-      code: "zh",
-    },
+    { name: intl.formatMessage({ id: "lang.en" }), code: "en" },
+    { name: intl.formatMessage({ id: "lang.es" }), code: "es" },
+    { name: intl.formatMessage({ id: "lang.fr" }), code: "fr" },
+    { name: intl.formatMessage({ id: "lang.id" }), code: "id" },
+    { name: intl.formatMessage({ id: "lang.ja" }), code: "ja" },
+    { name: intl.formatMessage({ id: "lang.ko" }), code: "ko" },
+    { name: intl.formatMessage({ id: "lang.ms" }), code: "ms" },
+    // { name: intl.formatMessage({ id: "lang.nl" }), code: "nl" },
+    { name: intl.formatMessage({ id: "lang.pt" }), code: "pt" },
+    { name: intl.formatMessage({ id: "lang.ru" }), code: "ru" },
+    { name: intl.formatMessage({ id: "lang.zh" }), code: "zh" },
   ];
   const [language, setLanguage] = useLanguage();
 
