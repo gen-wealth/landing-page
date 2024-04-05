@@ -40,9 +40,9 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
             &nbsp;sec.
           </div>
 
-          <a href="/" className="button-primary">
+          <button className="button-primary" onClick={() => location.reload()}>
             Reload now
-          </a>
+          </button>
         </div>
       </div>
 
