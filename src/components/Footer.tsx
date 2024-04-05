@@ -13,7 +13,9 @@ function Footer(props: { className?: string; onClickScrollToTop?: () => void }) 
         className={`footer max-sm:flex max-sm:flex-col items-center p-4 rounded-box m-2 w-auto shadow-xl
         ${props.className ?? "bg-neutral bg-opacity-[calc(2/3)] text-neutral-content"}`}
       >
+        {/* Copyright */}
         <aside className="items-center text-center flex flex-wrap sm:flex-nowrap">
+          {/* scroll to top */}
           <a
             // href="#"
             onClick={(e) => {
@@ -35,6 +37,8 @@ function Footer(props: { className?: string; onClickScrollToTop?: () => void }) 
 
           <p className="text-xs max-sm:w-full">{intl.formatMessage({ id: "copyright" })}</p>
         </aside>
+
+        {/* Socials */}
         <nav className="grid-flow-col gap-4 sm:justify-self-end max-sm:place-self-center max-sm:-mt-6">
           {/* <ThemeController
             className="m-auto"

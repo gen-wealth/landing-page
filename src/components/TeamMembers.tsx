@@ -48,12 +48,12 @@ function TeamMembers() {
               id="teamMembers.rafaelCardoso.p2"
               values={{
                 decentralizedNation: (
-                  <a href="https://www.youtube.com/@decentralizednation" target="_blank" className="link">
+                  <a href="https://www.youtube.com/@decentralizednation" target="_blank" rel="noreferrer" className="link">
                     {intl.formatMessage({ id: "decentralizedNation" })}
                   </a>
                 ),
                 willEasy: (
-                  <a href="https://www.willeasy.co.uk" target="_blank" className="link">
+                  <a href="https://www.willeasy.co.uk" target="_blank" rel="noreferrer" className="link">
                     {intl.formatMessage({ id: "willEasy" })}
                   </a>
                 ),
@@ -101,7 +101,7 @@ function TeamMembers() {
               id="teamMembers.ariadyPutra.p1"
               values={{
                 cardanoDeveloperProfessionalBadge: (
-                  <a href="https://www.credly.com/badges/d40bc004-8d8d-4249-9cd3-cfd79c55f5ac" target="_blank" className="link">
+                  <a href="https://www.credly.com/badges/d40bc004-8d8d-4249-9cd3-cfd79c55f5ac" target="_blank" rel="noreferrer" className="link">
                     {intl.formatMessage({ id: "cardanoDeveloperProfessionalBadge" })}
                   </a>
                 ),
@@ -125,7 +125,7 @@ function TeamMembers() {
               id="teamMembers.ariadyPutra.p2"
               values={{
                 morbid: (
-                  <a href="https://github.com/ariady-putra/morbid" target="_blank" className="link">
+                  <a href="https://github.com/ariady-putra/morbid" target="_blank" rel="noreferrer" className="link">
                     {intl.formatMessage({ id: "morbid" })}
                   </a>
                 ),
@@ -133,6 +133,7 @@ function TeamMembers() {
                   <a
                     href="https://github.com/aiken-lang/awesome-aiken?tab=readme-ov-file#Dapps:~:text=morbid%20%2D%20A%20dead%2Dman%27s%20switch%20contract"
                     target="_blank"
+                    rel="noreferrer"
                     className="link"
                   >
                     {intl.formatMessage({ id: "awesomeAiken" })}

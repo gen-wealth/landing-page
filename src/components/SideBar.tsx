@@ -141,6 +141,7 @@ function SideBar() {
             {/* <a
               href="https://nike.com"
               target="_blank"
+              rel="noreferrer"
               className="flex rounded-box size-full
               bg-[url('https://gen-wealth.github.io/public/ContainerImg.webp')] bg-cover"
             >

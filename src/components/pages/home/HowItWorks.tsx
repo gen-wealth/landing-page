@@ -97,7 +97,7 @@ function HowItWorks() {
             id="howItWorks.p4"
             values={{
               cardano: (
-                <a href="https://cardano.org" target="_blank" aria-label="Cardano" className="link link-hover style-link">
+                <a href="https://cardano.org" target="_blank" rel="noreferrer" aria-label="Cardano" className="link link-hover style-link">
                   {intl.formatMessage({ id: "cardano" })}
                 </a>
               ),

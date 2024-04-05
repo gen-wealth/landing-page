@@ -18,6 +18,7 @@ function Marketing() {
         <a
           href="https://airbnb.com"
           target="_blank"
+          rel="noreferrer"
           className="grow aspect-[9/16] rounded-box
           bg-[url('https://gen-wealth.github.io/public/HeroBg.webp')] bg-cover bg-center"
         >
@@ -56,6 +57,7 @@ function Marketing() {
         <a
           href="https://soundcloud.com"
           target="_blank"
+          rel="noreferrer"
           className="shrink aspect-square rounded-box
           bg-[url('https://gen-wealth.github.io/public/ContactUs.webp')] bg-cover"
         >
