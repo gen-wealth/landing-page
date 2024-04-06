@@ -43,24 +43,22 @@ export function VideoCarousel(props: PropState) {
           />
 
           <div className="absolute flex justify-between pointer-events-none transform -translate-y-1/2 left-2 right-2 top-1/2">
-            <a
-              // href={`#slide-${(index - 1 + videos.length) % videos.length}`}
+            <button
               className={`${index == 0 && "invisible"} btn btn-circle border-none shadow-xl
               bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)]
               pointer-events-auto`}
               onClick={(e) => props.slideToVideo(e, (index - 1 + videos.length) % videos.length)}
             >
               {/* ❮ */} &#10094;
-            </a>
-            <a
-              // href={`#slide-${(index + 1) % videos.length}`}
+            </button>
+            <button
               className={`${index == videos.length - 1 && "invisible"} btn btn-circle border-none shadow-xl
               bg-base-content hover:bg-base-content bg-opacity-[calc(1/3)] hover:bg-opacity-[calc(2/3)]
               pointer-events-auto`}
               onClick={(e) => props.slideToVideo(e, (index + 1) % videos.length)}
             >
               &#10095; {/* ❯ */}
-            </a>
+            </button>
           </div>
         </div>
       ))}
@@ -72,9 +70,8 @@ export function VideoCarouselIndicator(props: PropState) {
   return (
     <div className="flex justify-center w-full -my-8 gap-2 scale-50">
       {videos.map((_, index) => (
-        <a
+        <button
           key={`indicator-${index}`}
-          // href={`#slide-${index}`}
           className={`button-primary !btn-circle !btn-xs border-none ${
             index == props.videoIndex
               ? "!bg-primary-focus btn-disabled" // it's current index

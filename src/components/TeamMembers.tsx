@@ -229,14 +229,9 @@ function TeamMembers() {
         <div className="flex toolbar">
           <div
             className="w-full h-fit px-8 py-4 truncate font-bold !leading-[30px]
-            xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base"
+            xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base logo"
           >
-            <a
-              // href="#team-members"
-              onClick={(e) => scrollToElement(e, "team-members")}
-            >
-              {title}
-            </a>
+            <button onClick={(e) => scrollToElement(e, "team-members")}>{title}</button>
           </div>
           <div className="btn btn-circle btn-xs btn-disabled !btn-success mr-2 my-auto" />
           <div className="btn btn-circle btn-xs btn-disabled !btn-warning mr-2 my-auto" />
@@ -273,9 +268,9 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
         <div className={`flex flex-col w-full items-${member.chatPosition}`}>
           {/* chat-header */}
           <div className="chat-header flex flex-wrap gap-1 ml-2 items-baseline whitespace-nowrap">
-            <a onClick={(e) => scrollToElement(e, member.id)} className="text-[1em]">
+            <button onClick={(e) => scrollToElement(e, member.id)} className="text-[1em] logo">
               {member.name}
-            </a>
+            </button>
             <span className="text-[.75em] opacity-50 mr-2 -mt-2">{member.title}</span>
           </div>
 
@@ -330,7 +325,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
           {/* chat-footer */}
           <div className="chat-footer text-primary">
             <div className="flex items-center text-[1em]">
-              <p className="style-p">{member.social.prefix}&nbsp;</p>
+              <p className="style-p logo">{member.social.prefix}&nbsp;</p>
               {member.social.links.map((link) => (
                 <a key={`${link.xlinkHref}.${member.name}`} href={link.linkURL} aria-label={`${link.linkURL}`} className="fill-primary mr-2">
                   <Svg xlinkHref={link.xlinkHref} w={24} h={24} />

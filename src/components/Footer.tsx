@@ -1,4 +1,4 @@
-import { useIntl } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import { scrollToTop } from "../util";
 import ThemeController from "../contexts/theme/ThemeController";
 import Svg from "./Svg";
@@ -16,8 +16,7 @@ function Footer(props: { className?: string; onClickScrollToTop?: () => void }) 
         {/* Copyright */}
         <aside className="items-center text-center flex flex-wrap sm:flex-nowrap">
           {/* scroll to top */}
-          <a
-            // href="#"
+          <button
             onClick={(e) => {
               if (props.onClickScrollToTop) props.onClickScrollToTop();
               scrollToTop(e);
@@ -28,14 +27,18 @@ function Footer(props: { className?: string; onClickScrollToTop?: () => void }) 
               <img src="/GenWealth.ico" alt={title} loading="eager" className="w-12 mask mask-squircle" />
             </div>
 
-            <p className="text-sm max-sm:text-xl max-sm:w-full">{title}</p>
+            <p className="text-sm logo max-sm:text-xl max-sm:w-full">{title}</p>
 
             <span className="text-xs max-sm:hidden">&laquo;</span>
-            <p className="text-sm max-sm:text-xs max-sm:w-full">{intl.formatMessage({ id: "tagLine" })}</p>
+            <p className="text-sm logo max-sm:text-xs max-sm:w-full">
+              <FormattedMessage id="tagLine" />
+            </p>
             <span className="text-xs max-sm:hidden">&raquo;</span>
-          </a>
+          </button>
 
-          <p className="text-xs max-sm:w-full">{intl.formatMessage({ id: "copyright" })}</p>
+          <p className="text-xs max-sm:w-full">
+            <FormattedMessage id="copyright" />
+          </p>
         </aside>
 
         {/* Socials */}

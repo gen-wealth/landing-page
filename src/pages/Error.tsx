@@ -23,7 +23,7 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
   return (
     <div className="flex flex-col justify-center text-center items-center gap-4 w-fit h-screen m-auto">
       {/* Title */}
-      <h1 className="mt-10 text-5xl font-bold style1">{title}</h1>
+      <h1 className="mt-10 text-5xl font-bold style1 logo !leading-loose">{title}</h1>
 
       {/* Stopwatch */}
       <div
@@ -47,7 +47,7 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
       </div>
 
       {/* to make sure Stopwatch in the middle of the page */}
-      <h1 className="mt-10 text-5xl font-bold style1 invisible shrink overflow-clip">{title}</h1>
+      <h1 className="mt-10 text-5xl font-bold style1  logo !leading-loose invisible shrink overflow-clip">{title}</h1>
 
       {/* Error Message */}
       {!props.message ? (

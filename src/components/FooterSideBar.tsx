@@ -6,21 +6,20 @@ function FooterSideBar(props: { onClickScrollToTop?: () => void }) {
   return (
     <footer className="footer footer-center gap-4">
       <aside>
-        <a
-          // href="#"
+        <button
           onClick={(e) => {
             if (props.onClickScrollToTop) props.onClickScrollToTop();
             scrollToTop(e);
           }}
           className="font-bold"
         >
-          <p className="text-xl">
+          <p className="text-xl logo">
             <FormattedMessage id="genWealth" />
           </p>
-          <p className="text-xs">
+          <p className="text-xs logo">
             <FormattedMessage id="tagLine" />
           </p>
-        </a>
+        </button>
         <p className="text-xs">
           <FormattedMessage id="copyright" />
         </p>

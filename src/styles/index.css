@@ -24,7 +24,7 @@
 html {
   background-image: radial-gradient(ellipse at bottom, #d4f9c05f, transparent), radial-gradient(ellipse at top, #6e46565f, transparent),
     radial-gradient(farthest-corner at top right, #ff33555f 0%, #4433ee5f 100%);
-  font-family: "Inter", sans-serif;
+  font-family: sans-serif;
   scroll-behavior: smooth;
 
   /* transition: all;
@@ -40,6 +40,10 @@ html {
 
 a {
   cursor: pointer;
+}
+
+.logo {
+  font-family: "Lexend", sans-serif;
 }
 
 @layer components {
@@ -164,7 +168,7 @@ h2.style1,
 h3.style1,
 p.style1 {
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   letter-spacing: -0.175rem;
   width: 100%;
   font-size: 4.25em;
@@ -176,7 +180,7 @@ p.style1 {
 }
 .style-h1 {
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   letter-spacing: -0.175rem;
   width: 100%;
   font-size: 3em;
@@ -233,7 +237,7 @@ h2.style3,
 h3.style3,
 p.style3 {
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   letter-spacing: -0.05rem;
   width: 100%;
   font-size: 2em;
@@ -282,12 +286,13 @@ h2.style4,
 h3.style4,
 p.style4 {
   color: rgba(255, 255, 255, 0.478);
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   font-size: 1em;
   line-height: 1.875;
   font-weight: 400;
 }
 .style-p {
+  font-family: "Inter", sans-serif;
   line-height: 1.875;
 }
 h1.style4 a,
@@ -313,7 +318,7 @@ h2.style2,
 h3.style2,
 p.style2 {
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   letter-spacing: -0.175rem;
   width: 100%;
   font-size: 3em;
@@ -326,6 +331,7 @@ p.style2 {
 .style-h2 {
   letter-spacing: -0.175rem;
   font-size: 3em;
+  font-family: "Lexend", sans-serif;
   line-height: 1.125;
   font-weight: 500;
   -webkit-background-clip: text;
@@ -369,7 +375,7 @@ h2.style5,
 h3.style5,
 p.style5 {
   color: #5f476b;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   font-size: 0.75em;
   line-height: 1.875;
   font-weight: 400;

@@ -123,16 +123,12 @@ function NavBar() {
         >
           <div>
             {/* GenWealth logo */}
-            <a
-              // href="#"
-              onClick={(e) => setShowHamburgerMenu({ action: "scrollToTop", e })}
-              className="flex gap-2 h-12"
-            >
+            <button onClick={(e) => setShowHamburgerMenu({ action: "scrollToTop", e })} className="flex gap-2 h-12">
               <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
                 <img src="/GenWealth.ico" alt={title} loading="eager" className="mask mask-squircle" />
               </div>
-              <span className="text-primary text-xl lg:text-2xl font-bold self-center max-md:hidden max-sm:flex">{title}</span>
-            </a>
+              <span className="text-primary text-xl logo lg:text-2xl font-bold self-center max-md:hidden max-sm:flex">{title}</span>
+            </button>
           </div>
 
           {/* Divider */}
@@ -142,14 +138,13 @@ function NavBar() {
             {/* Menu */}
             <div className="join gap-4 max-sm:hidden">
               {menus.map((menu) => (
-                <a
+                <button
                   key={menu.linkName}
-                  // href={menu.linkId}
                   onClick={(e) => setShowHamburgerMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
-                  className="link link-hover text-center place-self-center join-item style-link"
+                  className="link link-hover text-center place-self-center join-item style-link logo"
                 >
                   {menu.linkName}
-                </a>
+                </button>
               ))}
             </div>
 
@@ -198,16 +193,12 @@ function NavBar() {
             </div>
 
             {/* menu */}
-            <ul tabIndex={0} className="text-center shrink overflow-auto style-mask-y-md p-2">
+            <ul tabIndex={0} className="text-center shrink overflow-auto style-mask-y-md p-2 logo">
               {menus.map((menu) => (
                 <li tabIndex={0} key={`pageMap.${menu.linkName}`} className="text-[10vw] style-link">
-                  <a
-                    // href={menu.linkId}
-                    onClick={(e) => setShowHamburgerMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
-                    className="link link-hover join-item"
-                  >
+                  <button onClick={(e) => setShowHamburgerMenu({ action: "scrollToElement", e, args: [menu.linkId] })} className="link link-hover join-item">
                     {menu.linkName}
-                  </a>
+                  </button>
 
                   <hr className="border-primary border-[1vw] w-[calc(700%/24)] mx-auto my-[5vw] scale-50" />
                 </li>
