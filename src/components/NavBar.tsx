@@ -125,7 +125,7 @@ function NavBar() {
             {/* GenWealth logo */}
             <button onClick={(e) => setShowHamburgerMenu({ action: "scrollToTop", e })} className="flex gap-2 h-12">
               <div className="btn btn-ghost btn-circle hover:bg-opacity-0">
-                <img src="/GenWealth.ico" alt={title} loading="eager" className="mask mask-squircle" />
+                <img src="/GenWealth.ico" alt={title} loading="eager" width={48} height={48} className="mask mask-squircle" />
               </div>
               <span className="text-primary text-xl logo lg:text-2xl font-bold self-center max-md:hidden max-sm:flex">{title}</span>
             </button>
