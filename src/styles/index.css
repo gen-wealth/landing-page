@@ -293,8 +293,8 @@ p.style4 {
   font-weight: 400;
 }
 .style-p {
-  font-family: "Inter", sans-serif;
-  font-display: "swap";
+  /* font-family: "Inter", sans-serif; */
+  /* font-display: "swap"; */
   line-height: 1.875;
 }
 h1.style4 a,
@@ -333,8 +333,8 @@ p.style2 {
 .style-h2 {
   letter-spacing: -0.175rem;
   font-size: 3em;
-  font-family: "Lexend", sans-serif;
-  font-display: "swap";
+  /* font-family: "Lexend", sans-serif; */
+  /* font-display: "swap"; */
   line-height: 1.125;
   font-weight: 500;
   -webkit-background-clip: text;

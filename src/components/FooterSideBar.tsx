@@ -11,12 +11,12 @@ function FooterSideBar(props: { onClickScrollToTop?: () => void }) {
             if (props.onClickScrollToTop) props.onClickScrollToTop();
             scrollToTop(e);
           }}
-          className="font-bold"
+          className="font-bold logo"
         >
-          <p className="text-xl logo">
+          <p className="text-xl">
             <FormattedMessage id="genWealth" />
           </p>
-          <p className="text-xs logo">
+          <p className="text-xs">
             <FormattedMessage id="tagLine" />
           </p>
         </button>

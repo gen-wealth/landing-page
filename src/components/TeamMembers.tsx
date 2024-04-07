@@ -229,7 +229,7 @@ function TeamMembers() {
         <div className="flex toolbar">
           <div
             className="w-full h-fit px-8 py-4 truncate font-bold !leading-[30px]
-            xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base logo"
+            xl:text-3xl lg:text-2xl md:text-xl sm:text-lg max-sm:text-base" // logo"
           >
             <button onClick={(e) => scrollToElement(e, "team-members")}>{title}</button>
           </div>
@@ -268,7 +268,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
         <div className={`flex flex-col w-full items-${member.chatPosition}`}>
           {/* chat-header */}
           <div className="chat-header flex flex-wrap gap-1 ml-2 items-baseline whitespace-nowrap">
-            <button onClick={(e) => scrollToElement(e, member.id)} className="text-[1em] logo">
+            <button onClick={(e) => scrollToElement(e, member.id)} className="text-[1em]">
               {member.name}
             </button>
             <span className="text-[.75em] opacity-50 mr-2 -mt-2">{member.title}</span>
@@ -325,7 +325,7 @@ function memberBubble(member: member, index: number, total: number, intl: IntlSh
           {/* chat-footer */}
           <div className="chat-footer text-primary">
             <div className="flex items-center text-[1em]">
-              <p className="style-p logo">{member.social.prefix}&nbsp;</p>
+              <p className="style-p">{member.social.prefix}&nbsp;</p>
               {member.social.links.map((link) => (
                 <a key={`${link.xlinkHref}.${member.name}`} href={link.linkURL} aria-label={`${link.linkURL}`} className="fill-primary mr-2">
                   <Svg xlinkHref={link.xlinkHref} w={24} h={24} />

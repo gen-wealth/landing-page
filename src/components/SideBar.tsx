@@ -81,7 +81,7 @@ function SideBar() {
     >
       <div className="flex flex-col h-[calc(100vh-4.5rem)]">
         <div className="w-full mx-auto shrink overflow-x-hidden style-mask-y-sm">
-          <ul tabIndex={0} className="menu w-fit m-auto logo">
+          <ul tabIndex={0} className="menu w-fit m-auto">
             {menus.map((menu) => {
               return mapMenu(menu, "font-bold");
             })}

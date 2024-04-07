@@ -141,7 +141,7 @@ function NavBar() {
                 <button
                   key={menu.linkName}
                   onClick={(e) => setShowHamburgerMenu({ action: "scrollToElement", e, args: [menu.linkId] })}
-                  className="link link-hover text-center place-self-center join-item style-link logo"
+                  className="link link-hover text-center place-self-center join-item style-link" // logo"
                 >
                   {menu.linkName}
                 </button>
@@ -193,7 +193,7 @@ function NavBar() {
             </div>
 
             {/* menu */}
-            <ul tabIndex={0} className="text-center shrink overflow-auto style-mask-y-md p-2 logo">
+            <ul tabIndex={0} className="text-center shrink overflow-auto style-mask-y-md p-2">
               {menus.map((menu) => (
                 <li tabIndex={0} key={`pageMap.${menu.linkName}`} className="text-[10vw] style-link">
                   <button onClick={(e) => setShowHamburgerMenu({ action: "scrollToElement", e, args: [menu.linkId] })} className="link link-hover join-item">
