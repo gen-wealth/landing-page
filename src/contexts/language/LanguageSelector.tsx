@@ -61,14 +61,14 @@ function LanguageSelector(props: {
         tabIndex={0}
       >
         <li tabIndex={0}>
-          <a className="style-text-shadow">{info[language].localFlag}</a>
+          <button className="style-text-shadow">{info[language].localFlag}</button>
         </li>
         {langs
           .sort((l, r) => (info[l.code].localName < info[r.code].localName ? -1 : 1))
           .filter((lang) => lang.code !== language)
           .map((lang) => (
             <li key={lang.code} tabIndex={0}>
-              <a
+              <button
                 className={`style-text-shadow
                 before:bg-info before:text-info-content
                 tooltip ${props.tooltipClassName}`}
@@ -78,7 +78,7 @@ function LanguageSelector(props: {
                 }}
               >
                 {info[lang.code].localFlag}
-              </a>
+              </button>
             </li>
           ))}
       </ul>

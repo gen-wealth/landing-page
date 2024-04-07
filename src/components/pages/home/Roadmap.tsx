@@ -137,8 +137,7 @@ function Roadmap() {
                   <AnchorScrollOffset id={"roadmap-" + i + "-portrait"} className="-top-20 -left-12" />
                   <time className="font-mono italic">{roadmap.time}</time>
                   <div className="text-lg text-primary font-black pr-7">
-                    <a
-                      // id={"roadmap-" + i}
+                    <button
                       onClick={(e) => {
                         e.preventDefault();
                         const roadmap = roadmapRef.current;
@@ -156,7 +155,7 @@ function Roadmap() {
                       }}
                     >
                       {roadmap.title}
-                    </a>
+                    </button>
                   </div>
                   <FormattedMessage id={roadmapStatusLangKey[roadmap.status]} />
                 </div>
