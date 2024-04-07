@@ -44,6 +44,7 @@ a {
 
 .logo {
   font-family: "Lexend", sans-serif;
+  font-display: "swap";
 }
 
 @layer components {
@@ -293,6 +294,7 @@ p.style4 {
 }
 .style-p {
   font-family: "Inter", sans-serif;
+  font-display: "swap";
   line-height: 1.875;
 }
 h1.style4 a,
@@ -332,6 +334,7 @@ p.style2 {
   letter-spacing: -0.175rem;
   font-size: 3em;
   font-family: "Lexend", sans-serif;
+  font-display: "swap";
   line-height: 1.125;
   font-weight: 500;
   -webkit-background-clip: text;
