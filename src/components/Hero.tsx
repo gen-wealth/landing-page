@@ -7,10 +7,10 @@ function Hero() {
       <div className="hero-overlay bg-opacity-[calc(2/3)]" />
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-lg">
-          <h1 className="mt-10 text-5xl font-bold style1 logo">
+          <h1 className="mt-10 text-5xl font-bold style1 logo !leading-none">
             <FormattedMessage id="genWealth" />
           </h1>
-          <p className="mb-5 style3 logo">
+          <p className="mb-5 style3 logo !leading-tight">
             <FormattedMessage id="tagLine" />
           </p>
           <button onClick={(e) => scrollToElement(e, "our-service")} className="button-secondary">
