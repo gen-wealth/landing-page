@@ -149,7 +149,7 @@ function NavBar() {
             </div>
 
             {/* Launch App button */}
-            <a href="https://preview.genwealth.app" className="button-primary">
+            <a href="https://preview.genwealth.app" className="button-primary shrink">
               {intl.formatMessage({ id: "navBar.action1" })}
             </a>
 
