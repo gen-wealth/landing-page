@@ -30,7 +30,7 @@ export function VideoCarousel(props: PropState) {
       {videos.map((video, index) => (
         <div id={`slide-${index}`} key={`slide-${index}`} tabIndex={0} className="carousel-item relative w-full gap-2 flex-wrap">
           <div className="absolute flex justify-between pointer-events-none transform -translate-y-1/2 left-5 right-5 top-1/2 -z-50">
-            <progress className="progress m-auto w-1/2" />
+            <progress className="progress progress-accent m-auto w-1/2" />
           </div>
 
           <iframe
