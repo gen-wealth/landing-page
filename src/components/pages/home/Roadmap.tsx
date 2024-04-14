@@ -153,6 +153,7 @@ function Roadmap() {
                           });
                         }
                       }}
+                      className="text-left"
                     >
                       {roadmap.title}
                     </button>
