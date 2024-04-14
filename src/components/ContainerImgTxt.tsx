@@ -21,6 +21,7 @@ function ContainerImgTxt(props: {
     imageSource: string;
     alternateText: string;
     className?: string;
+    attribution?: JSX.Element;
   };
   title: string;
   paragraphs: JSX.Element[];
@@ -38,13 +39,14 @@ function ContainerImgTxt(props: {
       {/* Card */}
       <div className="card sm:card-side bg-base-content bg-opacity-[calc(2/3)] m-2 shadow-xl">
         {/* Image */}
-        <figure>
+        <figure className="flex flex-col py-8">
           <img
             src={props.image.imageSource}
             alt={props.image.alternateText}
             loading="eager"
             className={`object-cover w-full h-full ${props.image.className}`}
           />
+          <div className="px-4">{props.image.attribution}</div>
         </figure>
 
         {/* Contents */}

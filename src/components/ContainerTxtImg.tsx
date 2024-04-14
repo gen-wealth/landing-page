@@ -21,6 +21,7 @@ function ContainerTxtImg(props: {
     imageSource: string;
     alternateText: string;
     className?: string;
+    attribution?: JSX.Element;
   };
   title: string;
   paragraphs: JSX.Element[];
@@ -60,13 +61,14 @@ function ContainerTxtImg(props: {
         </div>
 
         {/* Image */}
-        <figure>
+        <figure className="flex flex-col py-8">
           <img
             src={props.image.imageSource}
             alt={props.image.alternateText}
             loading="eager"
             className={`object-cover w-full h-full ${props.image.className}`}
           />
+          <div className="px-4">{props.image.attribution}</div>
         </figure>
       </div>
     </div>

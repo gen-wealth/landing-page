@@ -41,12 +41,27 @@ function CallToAction() {
 
           {/* Body */}
           <div className="w-full">
-            <img
-              src="https://gen-wealth.github.io/public/svg/Prototype.svg"
-              alt={title}
-              className="float-right w-1/2 ml-2 mb-2 lg:mt-[-4.5rem] sm:mt-4 max-sm:mt-4"
-              loading="eager"
-            />
+            <div className="float-right w-1/2 ml-2 mb-2 lg:mt-[-4.5rem] sm:mt-4 max-sm:mt-4">
+              <img src="https://gen-wealth.github.io/public/svg/StartupLaunch.svg" alt={title} loading="eager" />
+              <div className="text-primary text-center text-xs text-opacity-[calc(1/3)]">
+                <a
+                  href="https://iconscout.com/illustrations/startup-launch"
+                  className="text-underline font-size-sm link link-hover style-link !text-opacity-[calc(2/3)]"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Illustration
+                </a>
+                {" by "}
+                <a
+                  href="https://iconscout.com/contributors/woobrodesign"
+                  className="text-underline font-size-sm link link-hover style-link !text-opacity-[calc(2/3)]"
+                  target="_blank"
+                >
+                  WOOBRO LTD
+                </a>
+              </div>
+            </div>
             <div className="text-neutral">
               {/* p1 */}
               <p className="my-2 style-p">

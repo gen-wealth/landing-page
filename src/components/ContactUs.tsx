@@ -9,9 +9,30 @@ function ContactUs() {
     <ContainerImgTxt
       id="contact-us"
       image={{
-        imageSource: "https://gen-wealth.github.io/public/svg/ContactUs.svg",
+        imageSource: "https://gen-wealth.github.io/public/svg/DesignAndDevelopmentProcess.svg",
         alternateText: "hello@genwealth.app",
         className: "p-4 max-w-96 max-h-96 !object-contain",
+        attribution: (
+          <div className="text-primary text-center text-xs text-opacity-[calc(1/3)]">
+            <a
+              href="https://iconscout.com/illustrations/design"
+              className="text-underline font-size-sm link link-hover style-link !text-opacity-[calc(2/3)]"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Illustration
+            </a>
+            {" by "}
+            <a
+              href="https://iconscout.com/contributors/woobrodesign"
+              className="text-underline font-size-sm link link-hover style-link !text-opacity-[calc(2/3)]"
+              target="_blank"
+              rel="noreferrer"
+            >
+              WOOBRO LTD
+            </a>
+          </div>
+        ),
       }}
       title={title}
       paragraphs={[
