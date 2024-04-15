@@ -41,33 +41,12 @@ function CallToAction() {
 
           {/* Body */}
           <div className="w-full">
-            <div className="float-right w-1/2 ml-2 mb-2 lg:mt-[-4.5rem] sm:mt-4 max-sm:mt-4">
-              <img src="https://gen-wealth.github.io/public/svg/StartupLaunch.svg" alt={title} loading="eager" />
-              <div className="text-primary text-center text-xs text-opacity-[calc(1/3)]">
-                <a
-                  href="https://iconscout.com/illustrations/startup-launch"
-                  className="text-underline font-size-sm link link-hover style-link !text-opacity-[calc(2/3)]"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Illustration
-                </a>
-                {" by "}
-                <a
-                  href="https://iconscout.com/contributors/woobrodesign"
-                  className="text-underline font-size-sm link link-hover style-link !text-opacity-[calc(2/3)]"
-                  target="_blank"
-                >
-                  WOOBRO LTD
-                </a>
-              </div>
-            </div>
+            <img src="https://gen-wealth.github.io/public/svg/Prototype.svg" className="float-right w-1/2 ml-2 mb-2 lg:mt-[-4.5rem] sm:mt-4 max-sm:mt-4" />
             <div className="text-neutral">
               {/* p1 */}
               <p className="my-2 style-p">
                 <FormattedMessage id="callToAction.p1" />
               </p>
-              {/* <p className="my-2 style-p">You can already try the demo right now! Make sure to set your wallet network to Preview.</p> */}
 
               {/* gap-2 */}
               <div className="h-2" />
@@ -81,9 +60,6 @@ function CallToAction() {
                   }}
                 />
               </p>
-              {/* <p className="my-2 style-p">
-                <b>NOTE:</b> The current look and feel of the app does not represent the actual public Testnet and Mainnet release later.
-              </p> */}
             </div>
           </div>
 

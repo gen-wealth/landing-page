@@ -61,14 +61,8 @@ function ContainerTxtImg(props: {
         </div>
 
         {/* Image */}
-        <figure className="flex flex-col py-8">
-          <img
-            src={props.image.imageSource}
-            alt={props.image.alternateText}
-            loading="eager"
-            className={`object-cover w-full h-full ${props.image.className}`}
-          />
-          <div className="px-4">{props.image.attribution}</div>
+        <figure>
+          <img src={props.image.imageSource} alt={props.image.alternateText} loading="eager" className={`object-contain size-full ${props.image.className}`} />
         </figure>
       </div>
     </div>
