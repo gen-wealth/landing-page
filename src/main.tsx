@@ -5,9 +5,14 @@ import Error from "./pages/Error";
 import "./styles/index.css";
 import LanguageProvider, { getLocale } from "./contexts/language/LanguageProvider";
 import ThemeProvider from "./contexts/theme/ThemeProvider";
+import ToastProvider from "./contexts/toast/ToastProvider";
 
 function renderApp(app: JSX.Element) {
-  return ReactDOM.createRoot(document.getElementById("root")!).render(<React.StrictMode>{app}</React.StrictMode>);
+  return ReactDOM.createRoot(document.getElementById("root")!).render(
+    <React.StrictMode>
+      <ToastProvider>{app}</ToastProvider>
+    </React.StrictMode>
+  );
 }
 
 localStorage.clear();

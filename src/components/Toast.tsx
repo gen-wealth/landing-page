@@ -1,8 +1,12 @@
+import { useToast } from "../contexts/toast/ToastContext";
+
 function Toast(props: { alert?: "info" | "success" | "warning" | "error"; message: JSX.Element }) {
+  const setToast = useToast();
+
   return (
-    <div className="toast">
+    <div className="toast toast-center z-50">
       <div
-        className={`alert shadow-xl ${
+        className={`alert flex shadow-xl ${
           props.alert === "info"
             ? "alert-info"
             : props.alert === "success"
@@ -14,7 +18,10 @@ function Toast(props: { alert?: "info" | "success" | "warning" | "error"; messag
             : ""
         }`}
       >
-        <span className="font-bold text-xs">{props.message}</span>
+        <div className="font-bold text-xs">{props.message}</div>
+        <button onClick={() => setToast({})}>
+          <span className="label label-text">✕</span>
+        </button>
       </div>
     </div>
   );

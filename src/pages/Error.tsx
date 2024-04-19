@@ -1,5 +1,5 @@
 import { CSSProperties, useEffect, useState } from "react";
-import Toast from "../components/Toast";
+import { useToast } from "../contexts/toast/ToastContext";
 
 interface CountdownCSS extends CSSProperties {
   "--value"?: number;
@@ -13,6 +13,8 @@ Error.defaultProps = {
   timeout: 60,
 };
 function Error(props: { title?: string; message?: string; timeout: number }) {
+  const setToast = useToast();
+
   const [countdown, setCountdown] = useState(props.timeout);
   function updateCountdown(countdown: number) {
     if (countdown < 0) {
@@ -26,6 +28,12 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
   }
   useEffect(() => {
     updateCountdown(countdown - 1);
+    if (props.message) {
+      setToast({
+        message: <p>{props.message}</p>,
+        alert: "error",
+      });
+    }
   }, []);
 
   const title = props.title ?? "Page Failed to Load";
@@ -67,9 +75,6 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
 
       {/* to make sure Stopwatch in the middle of the page */}
       <h1 className="mt-10 text-[min(10vw,10vh)] font-bold style1 invisible shrink overflow-clip">{title}</h1>
-
-      {/* Error Message */}
-      {!props.message ? <></> : <Toast message={<p>{props.message}</p>} alert="error" />}
     </div>
   );
 }
