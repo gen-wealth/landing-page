@@ -22,7 +22,7 @@ function PrivacyNotice() {
         className={`alert flex flex-col text-neutral-content
         bg-neutral bg-opacity-[calc(2/3)] backdrop-blur-3xl
         w-[calc(.5*(100%-1280px))] max-sm:w-full min-w-min
-        origin-bottom-right ease-in
+        origin-bottom-right ease-in shadow-xl
         ${showNotice ? "pointer-events-auto" : "transition-all duration-[600ms] opacity-0 scale-0 motion-safe:-rotate-180 motion-safe:translate-y-full"}`}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 size-6">
