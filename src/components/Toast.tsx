@@ -1,7 +1,7 @@
 import { useToast } from "../contexts/toast/ToastContext";
 
 function Toast(props: { alert?: "info" | "success" | "warning" | "error"; message: JSX.Element }) {
-  const setToast = useToast();
+  const showToast = useToast();
 
   return (
     <div className="toast toast-center z-50">
@@ -19,7 +19,7 @@ function Toast(props: { alert?: "info" | "success" | "warning" | "error"; messag
         }`}
       >
         <div className="font-bold text-xs">{props.message}</div>
-        <button onClick={() => setToast({})}>
+        <button onClick={() => showToast({})}>
           <span className="label label-text">✕</span>
         </button>
       </div>

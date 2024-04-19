@@ -9,14 +9,15 @@ interface RadialProgressCSS extends CountdownCSS {
   "--thickness"?: string;
 }
 
+type sec = number;
 Error.defaultProps = {
   timeout: 60,
 };
-function Error(props: { title?: string; message?: string; timeout: number }) {
-  const setToast = useToast();
+function Error(props: { title?: string; message?: string; timeout: sec }) {
+  const showToast = useToast();
 
   const [countdown, setCountdown] = useState(props.timeout);
-  function updateCountdown(countdown: number) {
+  function updateCountdown(countdown: sec) {
     if (countdown < 0) {
       location.reload();
     } else {
@@ -29,10 +30,13 @@ function Error(props: { title?: string; message?: string; timeout: number }) {
   useEffect(() => {
     updateCountdown(countdown - 1);
     if (props.message) {
-      setToast({
-        message: <p>{props.message}</p>,
-        alert: "error",
-      });
+      showToast(
+        {
+          message: <p>{props.message}</p>,
+          alert: "error",
+        },
+        15_000
+      );
     }
   }, []);
 
