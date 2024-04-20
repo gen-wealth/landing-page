@@ -15,20 +15,7 @@ Error.defaultProps = {
 };
 function Error(props: { title?: string; message?: string; timeout: sec }) {
   const showToast = useToast();
-
-  const [countdown, setCountdown] = useState(props.timeout);
-  function updateCountdown(countdown: sec) {
-    if (countdown < 0) {
-      location.reload();
-    } else {
-      setTimeout(() => {
-        setCountdown(countdown);
-        updateCountdown(countdown - 1);
-      }, 1000);
-    }
-  }
   useEffect(() => {
-    updateCountdown(countdown - 1);
     if (props.message) {
       showToast(
         {
@@ -39,6 +26,16 @@ function Error(props: { title?: string; message?: string; timeout: sec }) {
       );
     }
   }, []);
+
+  const [countdown, setCountdown] = useState(props.timeout);
+  useEffect(() => {
+    if (countdown <= 0) {
+      location.reload();
+    } else {
+      const timeoutID = setTimeout(() => setCountdown(countdown - 1), 1_000);
+      return () => clearTimeout(timeoutID);
+    }
+  }, [countdown]);
 
   const title = props.title ?? "Page Failed to Load";
 
