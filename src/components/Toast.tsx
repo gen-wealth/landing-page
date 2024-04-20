@@ -18,9 +18,9 @@ function Toast(props: { alert?: "info" | "success" | "warning" | "error"; messag
             : ""
         }`}
       >
-        <div className="font-bold text-xs">{props.message}</div>
+        <div className="font-bold text-current text-xs">{props.message}</div>
         <button onClick={() => showToast({})}>
-          <span className="label label-text">✕</span>
+          <span className="label label-text text-current">✕</span>
         </button>
       </div>
     </div>
