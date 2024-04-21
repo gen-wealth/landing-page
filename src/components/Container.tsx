@@ -46,7 +46,7 @@ function Container(props: {
           ))}
           <div className={`${props.linksClassName} justify-center`}>
             {props.links.map((link) => (
-              <a key={`${props.title}.${link.linkName}`} href={link.linkURL} className={link.className || "button-primary"}>
+              <a key={`${props.title}.${link.linkName}`} href={link.linkURL} className={link.className ?? "button-primary"}>
                 {link.linkName}
               </a>
             ))}
