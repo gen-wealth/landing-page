@@ -68,7 +68,7 @@ function CallToAction() {
             <a href="https://preview.genwealth.app" className="button-primary join-item">
               {intl.formatMessage({ id: "callToAction.action1" })}
             </a>
-            <a href="https://docs.genwealth.app" className="button-secondary join-item">
+            <a href="https://docs.genwealth.app" className="button-outline-dark join-item">
               {intl.formatMessage({ id: "callToAction.action2" })}
             </a>
           </div>
