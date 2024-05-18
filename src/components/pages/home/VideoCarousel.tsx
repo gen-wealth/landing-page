@@ -1,6 +1,18 @@
 import { MouseEvent } from "react";
 
-const videos = [
+type Video = {
+  url: string;
+  title: string;
+};
+const videos: Video[] = [
+  {
+    url: "https://www.youtube-nocookie.com/embed/JORInkM1aFE",
+    title: "How to Leave Crypto for People Who Know Nothing About it?",
+  },
+  {
+    url: "https://www.youtube-nocookie.com/embed/MnHyczFeemg",
+    title: "How to Keep Your Crypto from Being Lost Forever!",
+  },
   {
     url: "https://www.youtube-nocookie.com/embed/8jbSy2PIBa8",
     title: "GenWealth - Eastern TownHall Presentation",
