@@ -31,6 +31,12 @@ fetch(`https://gen-wealth.github.io/public/lang/${locale}.json`, { cache: "no-ca
           </LanguageProvider>
         );
       })
-      .catch((langToJsonError) => renderApp(<Error message={`${langToJsonError}`} />));
+      .catch((langToJsonError) => {
+        console.log({ langToJsonError });
+        renderApp(<Error message={`${langToJsonError.message ?? langToJsonError}`} />);
+      });
   })
-  .catch((fetchLangJsonError) => renderApp(<Error message={`${fetchLangJsonError}`} />));
+  .catch((fetchLangJsonError) => {
+    console.log({ fetchLangJsonError });
+    renderApp(<Error message={`${fetchLangJsonError.message ?? fetchLangJsonError}`} />);
+  });
