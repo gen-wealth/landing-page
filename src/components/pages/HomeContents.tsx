@@ -19,7 +19,8 @@ function HomeContents() {
       {/* Partnerships & Sponsors */}
       {/* <div
         className="
-        sm:bg-[url('/CardanoFull.svg')] max-sm:bg-[url('/CardanoIcon.svg')]
+        sm:bg-[url('https://gen-wealth.github.io/public/CardanoFull.svg')]
+        max-sm:bg-[url('https://gen-wealth.github.io/public/CardanoIcon.svg')]
         bg-center bg-no-repeat mx-auto
         sm:aspect-[3] max-sm:aspect-[1/2]
         sm:w-11/12 max-sm:w-1/2"

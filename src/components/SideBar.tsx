@@ -137,44 +137,46 @@ function SideBar() {
 
         <div className="grow px-2">
           <div className="aspect-video">
-            {/* <a
-              href="https://nike.com"
+            {/* //#region Marketing / Campaign */}
+            <a
+              href="https://genwealthf11.my.canva.site/catalystf12"
               target="_blank"
               rel="noreferrer"
               className="flex rounded-box size-full
-              bg-[url('https://gen-wealth.github.io/public/ContainerImg.webp')] bg-cover"
+              bg-[url('https://gen-wealth.github.io/public/ad/GWF12.webp')] bg-cover"
             >
               <div
                 className={`hero-overlay relative
-              ${
-                theme === "moon"
-                  ? "bg-opacity-25 hover:bg-opacity-15" // dark
-                  : "bg-opacity-10 hover:bg-opacity-5" // light
-              }
-              rounded-box transition-all duration-300 flex`}
+                    ${
+                      theme === "moon"
+                        ? "bg-opacity-25 hover:bg-opacity-15" // dark
+                        : "bg-opacity-10 hover:bg-opacity-5" // light
+                    }
+                        rounded-box transition-all duration-300 flex`}
               >
                 <div
                   className="bg-base-content bg-opacity-75
-                size-fit rounded-tl-box rounded-br-box"
+                  size-fit rounded-tl-box rounded-br-box"
                 >
                   <span
                     className="text-white text-[.5vw] mix-blend-difference
-                  font-bold mx-2 capitalize"
+                    font-bold mx-2 capitalize"
                   >
                     {intl.formatMessage({ id: "ad" })}
                   </span>
                 </div>
 
-                <span
+                {/* <span
                   className="absolute top-1/2 left-1/2
                   -translate-x-1/2 -translate-y-1/2
                   font-bold text-[2vw]
                   mix-blend-soft-light"
                 >
-                  Nike
-                </span>
+                  Fund12
+                </span> */}
               </div>
-            </a> */}
+            </a>
+            {/* #endregion */}
           </div>
         </div>
 

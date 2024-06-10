@@ -56,7 +56,7 @@ function LanguageSelector(props: {
       </div>
       <ul
         className={`dropdown-content rounded-box
-        flex flex-col shadow-xl drop-shadow-xl
+        flex flex-col shadow-xl drop-shadow-xl z-50
         ${props.contentClassName}`}
         tabIndex={0}
       >
