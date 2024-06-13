@@ -6,12 +6,16 @@ type Video = {
 };
 const videos: Video[] = [
   {
+    url: "https://www.youtube-nocookie.com/embed/RVTlMUOZNOA",
+    title: "Crypto in the Afterlife?",
+  },
+  {
     url: "https://www.youtube-nocookie.com/embed/JORInkM1aFE",
-    title: "How to Leave Crypto for People Who Know Nothing About it?",
+    title: "Don't let your crypto die!",
   },
   {
     url: "https://www.youtube-nocookie.com/embed/MnHyczFeemg",
-    title: "How to Keep Your Crypto from Being Lost Forever!",
+    title: "Recover your Crypto",
   },
   {
     url: "https://www.youtube-nocookie.com/embed/8jbSy2PIBa8",
