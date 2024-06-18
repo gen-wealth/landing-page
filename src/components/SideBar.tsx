@@ -1,4 +1,5 @@
 import { useIntl } from "react-intl";
+import { useLanguage } from "../contexts/language/LanguageProvider";
 import { useTheme } from "../contexts/theme/ThemeProvider";
 import { scrollToElement } from "../util";
 import LanguageSelector from "../contexts/language/LanguageSelector";
@@ -12,6 +13,7 @@ type menu = {
 };
 
 function SideBar() {
+  const [locale] = useLanguage();
   const intl = useIntl();
   const menus: menu[] = [
     {
@@ -139,11 +141,15 @@ function SideBar() {
           <div className="aspect-video">
             {/* //#region Marketing / Campaign */}
             <a
-              href="https://genwealthf11.my.canva.site/catalystf12"
+              href={locale === "ja" ? "https://genwealthf11.my.canva.site/japan-landing-page-f12-genwealth" : "https://genwealthf11.my.canva.site/catalystf12"}
               target="_blank"
               rel="noreferrer"
-              className="flex rounded-box size-full
-              bg-[url('https://gen-wealth.github.io/public/ad/GWF12.webp')] bg-cover"
+              className={`flex rounded-box size-full bg-cover
+              ${
+                locale === "ja"
+                  ? "bg-[url('https://gen-wealth.github.io/public/ad/GWF12JP.webp')]"
+                  : "bg-[url('https://gen-wealth.github.io/public/ad/GWF12.webp')]"
+              }`}
             >
               <div
                 className={`hero-overlay relative
