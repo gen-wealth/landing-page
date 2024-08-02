@@ -10,10 +10,7 @@ interface RadialProgressCSS extends CountdownCSS {
 }
 
 type sec = number;
-Error.defaultProps = {
-  timeout: 60,
-};
-function Error(props: { title?: string; message?: string; timeout: sec }) {
+function Error(props: { title?: string; message?: string; timeout?: sec }) {
   const showToast = useToast();
   useEffect(() => {
     if (props.message) {
@@ -27,7 +24,8 @@ function Error(props: { title?: string; message?: string; timeout: sec }) {
     }
   }, []);
 
-  const [countdown, setCountdown] = useState(props.timeout);
+  const timeout = props.timeout ?? 60; // sec
+  const [countdown, setCountdown] = useState(timeout);
   useEffect(() => {
     if (countdown <= 0) {
       location.reload();
@@ -40,7 +38,7 @@ function Error(props: { title?: string; message?: string; timeout: sec }) {
   const title = props.title ?? "Page Failed to Load";
 
   const radialProgressCSS: RadialProgressCSS = {
-    "--value": (100 * countdown) / props.timeout,
+    "--value": (100 * countdown) / timeout,
     "--size": "24rem",
     "--thickness": "3rem",
   };

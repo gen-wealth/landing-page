@@ -1,9 +1,6 @@
 import { scrollToElement } from "../util";
 import AnchorScrollOffset from "./AnchorScrollOffset";
 
-Container.defaultProps = {
-  linksClassName: "card-actions",
-};
 /*************************************
  *                                   *
  *   [Heading]                       *
@@ -24,7 +21,7 @@ function Container(props: {
     linkURL: string;
     className?: string;
   }[];
-  linksClassName: string;
+  linksClassName?: string;
 }) {
   return (
     <div>
@@ -44,7 +41,7 @@ function Container(props: {
               {paragraph}
             </div>
           ))}
-          <div className={`${props.linksClassName} justify-center`}>
+          <div className={`${props.linksClassName ?? "card-actions"} justify-center`}>
             {props.links.map((link) => (
               <a key={`${props.title}.${link.linkName}`} href={link.linkURL} className={link.className ?? "button-primary"}>
                 {link.linkName}

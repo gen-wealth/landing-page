@@ -1,6 +1,6 @@
 import { FormattedMessage, useIntl } from "react-intl";
 import { scrollToTop } from "../util";
-import ThemeController from "../contexts/theme/ThemeController";
+// import ThemeController from "../contexts/theme/ThemeController";
 import Svg from "./Svg";
 
 function Footer(props: { className?: string; onClickScrollToTop?: () => void }) {

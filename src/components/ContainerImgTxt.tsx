@@ -1,9 +1,6 @@
 import { scrollToElement } from "../util";
 import AnchorScrollOffset from "./AnchorScrollOffset";
 
-ContainerImgTxt.defaultProps = {
-  linksClassName: "card-actions",
-};
 /***************************************************
  *                                                 *
  *   ***********   [Heading]                       *
@@ -29,7 +26,7 @@ function ContainerImgTxt(props: {
     linkURL: string;
     className?: string;
   }[];
-  linksClassName: string;
+  linksClassName?: string;
 }) {
   return (
     <div>
@@ -55,7 +52,7 @@ function ContainerImgTxt(props: {
               {paragraph}
             </div>
           ))}
-          <div className={`${props.linksClassName} justify-end`}>
+          <div className={`${props.linksClassName ?? "card-actions"} justify-end`}>
             {props.links.map((link) => (
               <a key={`${props.title}.${link.linkName}`} href={link.linkURL} className={link.className ?? "button-primary"}>
                 {link.linkName}

@@ -102,7 +102,7 @@ function SideBar() {
               {intl.formatMessage({ id: "sideBar.actionPrimary" })}
             </a>
             <a
-              href="https://docs.genwealth.app"
+              href="https://help.genwealth.app"
               className={`join-item
               ${theme === "moon" ? "button-outline" : "button-outline-dark"}`}
             >
@@ -140,7 +140,7 @@ function SideBar() {
         <div className="grow px-2">
           <div className="aspect-video">
             {/* //#region Marketing / Campaign */}
-            <a
+            {/* <a
               href={locale === "ja" ? "https://genwealthf11.my.canva.site/japan-landing-page-f12-genwealth" : "https://genwealthf11.my.canva.site/catalystf12"}
               target="_blank"
               rel="noreferrer"
@@ -170,9 +170,8 @@ function SideBar() {
                   >
                     {intl.formatMessage({ id: "ad" })}
                   </span>
-                </div>
-
-                {/* <span
+                </div> */}
+            {/* <span
                   className="absolute top-1/2 left-1/2
                   -translate-x-1/2 -translate-y-1/2
                   font-bold text-[2vw]
@@ -180,8 +179,8 @@ function SideBar() {
                 >
                   Fund12
                 </span> */}
-              </div>
-            </a>
+            {/* </div>
+            </a> */}
             {/* #endregion */}
           </div>
         </div>
