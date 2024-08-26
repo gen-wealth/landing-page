@@ -1,4 +1,4 @@
-import CallToAction from "../CallToAction";
+// import CallToAction from "../CallToAction";
 import ContactUs from "../ContactUs";
 import TeamMembers from "../TeamMembers";
 import AboutUs from "./home/AboutUs";
@@ -30,7 +30,7 @@ function HomeContents() {
       <TeamMembers />
       <ContactUs />
 
-      <CallToAction />
+      {/* <CallToAction /> */}
     </>
   );
 }

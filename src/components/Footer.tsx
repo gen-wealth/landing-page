@@ -59,7 +59,7 @@ function Footer(props: { className?: string; onClickScrollToTop?: () => void }) 
           <a href="https://twitter.com/genwealth_app" aria-label="Twitter">
             <Svg xlinkHref="#social-twitter" w={24} h={24} className="fill-current" />
           </a>
-          <a href="https://www.linkedin.com/company/genwealth-app" aria-label="LinkedIn">
+          <a href="https://linkedin.com/company/genwealth-app" aria-label="LinkedIn">
             <Svg xlinkHref="#social-linkedin" w={24} h={24} className="fill-current" />
           </a>
           <a href="https://github.com/gen-wealth" aria-label="GitHub">

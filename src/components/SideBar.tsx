@@ -1,5 +1,5 @@
 import { useIntl } from "react-intl";
-import { useLanguage } from "../contexts/language/LanguageProvider";
+// import { useLanguage } from "../contexts/language/LanguageProvider";
 import { useTheme } from "../contexts/theme/ThemeProvider";
 import { scrollToElement } from "../util";
 import LanguageSelector from "../contexts/language/LanguageSelector";
@@ -13,7 +13,7 @@ type menu = {
 };
 
 function SideBar() {
-  const [locale] = useLanguage();
+  //   const [locale] = useLanguage();
   const intl = useIntl();
   const menus: menu[] = [
     {
@@ -48,11 +48,11 @@ function SideBar() {
       linkName: intl.formatMessage({ id: "pageMap.menu4" }),
       subMenus: [],
     },
-    {
-      linkId: "call-to-action",
-      linkName: intl.formatMessage({ id: "pageMap.menu5" }),
-      subMenus: [],
-    },
+    // {
+    //   linkId: "call-to-action",
+    //   linkName: intl.formatMessage({ id: "pageMap.menu5" }),
+    //   subMenus: [],
+    // },
   ];
 
   const [theme, _] = useTheme();
@@ -95,7 +95,7 @@ function SideBar() {
         <div className="flex justify-center overflow-x-clip shrink-0">
           <div className="join join-vertical gap-px">
             <a
-              href="https://preview.genwealth.app"
+              href="https://countdown.genwealth.app"
               className={`join-item
               ${theme === "sun" ? "button-primary" : "button-secondary"}`}
             >

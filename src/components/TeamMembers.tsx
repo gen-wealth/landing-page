@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import { FormattedMessage, IntlShape, useIntl } from "react-intl";
 import { scrollToElement } from "../util";
 import AnchorScrollOffset from "./AnchorScrollOffset";
 import Svg from "./Svg";
-import { useEffect } from "react";
 
 type member = {
   id: string;
@@ -83,7 +83,7 @@ function TeamMembers() {
             xlinkHref: "#social-twitter",
           },
           {
-            linkURL: "https://www.linkedin.com/in/rafael-cardoso-2b03ba146/",
+            linkURL: "https://linkedin.com/in/rafael-cardoso-2b03ba146/",
             xlinkHref: "#social-linkedin",
           },
         ],
@@ -166,7 +166,7 @@ function TeamMembers() {
         prefix: "",
         links: [
           {
-            linkURL: "https://www.linkedin.com/in/ariady/",
+            linkURL: "https://linkedin.com/in/ariady/",
             xlinkHref: "#social-linkedin",
           },
           {

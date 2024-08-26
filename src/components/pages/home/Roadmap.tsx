@@ -52,7 +52,7 @@ function Roadmap() {
       time: intl.formatMessage({ id: "roadmap4.time" }),
       // Frontend and Backend Development
       title: intl.formatMessage({ id: "roadmap4.title" }),
-      status: "In progress",
+      status: "Completed",
     },
     {
       // 2024 Q3
@@ -93,13 +93,22 @@ function Roadmap() {
 
   const roadmapRef = useRef<HTMLDivElement>(null);
 
-  const indexOfInProgress = () => roadmaps.findIndex((roadmap) => roadmap.status === "In progress");
+  //   const indexOfInProgress = () => roadmaps.findIndex((roadmap) => roadmap.status === "In progress");
   const scrollToInProgress = async () => {
     const roadmap = roadmapRef.current; // is roadmap landscape?
     if (roadmap && roadmap.clientWidth > roadmap.clientHeight) {
-      const lastIndexOfCompleted = indexOfInProgress() - 1;
-      const margin = document.getElementById("roadmap-0")!.offsetLeft; // margin is always calculated using roadmap-0
-      const target = document.getElementById("roadmap-" + lastIndexOfCompleted)!;
+      let lastIndexOfCompleted = roadmaps.length - 1;
+      for (let i = lastIndexOfCompleted; i > 0; i--) {
+        if (roadmaps[i].status === "Completed") {
+          lastIndexOfCompleted = i;
+          break;
+        } else {
+          lastIndexOfCompleted = 0;
+        }
+      }
+
+      const margin = (document.getElementById("roadmap-0") as HTMLElement).offsetLeft; // margin is always calculated using roadmap-0
+      const target = document.getElementById("roadmap-" + lastIndexOfCompleted) as HTMLElement;
       const targetLeft = target.offsetLeft - margin;
 
       // const scrollPosition = targetLeft - (roadmap.clientWidth - target.clientWidth) / 2;
