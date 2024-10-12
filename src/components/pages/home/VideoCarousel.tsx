@@ -25,18 +25,6 @@ const videos: Video[] = [
     url: "https://www.youtube-nocookie.com/embed/umr_v0WR0Ek",
     title: "Intro by DecentralizedNation",
   },
-  {
-    url: "https://www.youtube-nocookie.com/embed/PGOgVaL9EM8",
-    title: "Full Demo ft. DecentralizedNation",
-  },
-  {
-    url: "https://www.youtube-nocookie.com/embed/PVJa5Leuz3g",
-    title: "Milestone v2 Pt.1",
-  },
-  {
-    url: "https://www.youtube-nocookie.com/embed/56DVog-oSvY",
-    title: "Milestone v2 Pt.2",
-  },
 ];
 
 type PropState = { videoIndex: number; slideToVideo: (e: MouseEvent, index: number) => void };

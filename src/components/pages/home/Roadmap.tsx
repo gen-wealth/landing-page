@@ -52,7 +52,7 @@ function Roadmap() {
       time: intl.formatMessage({ id: "roadmap4.time" }),
       // Frontend and Backend Development
       title: intl.formatMessage({ id: "roadmap4.title" }),
-      status: "Completed",
+      status: "In progress",
     },
     {
       // 2024 Q3
