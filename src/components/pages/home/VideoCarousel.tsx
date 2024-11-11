@@ -6,6 +6,10 @@ type Video = {
 };
 const videos: Video[] = [
   {
+    url: "https://www.youtube-nocookie.com/embed/zI-S1l6Uxm4",
+    title: "RWA Inheritance",
+  },
+  {
     url: "https://www.youtube-nocookie.com/embed/RVTlMUOZNOA",
     title: "Crypto in the Afterlife?",
   },
